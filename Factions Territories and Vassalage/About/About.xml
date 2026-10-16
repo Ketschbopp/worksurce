@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Faction Territories and Vassalage</name>
+  <author>jaeger972</author>
+  <packageId>jaeger972.factionterritories</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>
+Adds a  mode that draws territory regions around settlements for each faction.
+  </description>
+  <modDependencies>
+    <li>
+      <packageId>NozoMe.MapModeFramework</packageId>
+      <displayName>Map Mode Framework</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=3296654393</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>NozoMe.MapModeFramework</li>
+    <li>Torann.RimWar</li>
+  </loadAfter>
+</ModMetaData>

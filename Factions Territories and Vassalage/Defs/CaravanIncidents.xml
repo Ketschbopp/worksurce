@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+  
+    public enum CaravanIncidentFilterFlag
+    {
+        None,
+        Hostile,
+        Neutral,
+        NeutralAndAllied,
+        Allied,
+        Royalty,
+        Animal,
+        Neolithic,
+        Medieval,
+        Industrial,
+        Spacer,
+        Ultra,
+        Archotech
+    }
+  
+  -->
+
+  <FactionTerritories.CaravanIncidentEntryDef>
+    <defName>Ambush</defName>
+    <incident>Ambush</incident>
+    <defaultWeight>15</defaultWeight>
+    <orFlags>
+      <li>Hostile</li>
+    </orFlags>
+  </FactionTerritories.CaravanIncidentEntryDef>
+
+  <FactionTerritories.CaravanIncidentEntryDef>
+    <defName>CaravanMeeting</defName>
+    <incident>CaravanMeeting</incident>
+    <defaultWeight>10</defaultWeight>
+    <orFlags>
+      <li>Neolithic</li>
+      <li>Medieval</li>
+      <li>Industrial</li>
+      <li>Spacer</li>
+      <li>Ultra</li>
+      <li>Archotech</li>
+    </orFlags>
+  </FactionTerritories.CaravanIncidentEntryDef>
+
+</Defs>

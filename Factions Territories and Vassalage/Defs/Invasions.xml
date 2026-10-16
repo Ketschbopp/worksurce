@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<WorldObjectDef>
+  <defName>FT_BaseInvasion</defName>
+  <label>base invasion</label>
+  <worldObjectClass>FactionTerritories.Invasions.Invasion</worldObjectClass>
+  <texture>UI/Commands/AttackSettlement</texture>
+  <selectable>true</selectable>
+  <expandMore>false</expandMore>
+  <expandingIcon>false</expandingIcon>
+  <expandingIconTexture>UI/Commands/AttackSettlement</expandingIconTexture>
+</WorldObjectDef>
+  
+  <WorldObjectDef>
+    <defName>FT_SettlementConstruction</defName>
+    <label>settlement construction</label>
+    <worldObjectClass>FactionTerritories.Expansion.SettlementConstruction</worldObjectClass>
+    <texture>World/WorldObjects/DefaultSettlement</texture>
+    <selectable>true</selectable>
+    <expandMore>true</expandMore>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>World/WorldObjects/Expanding/Sites/Outpost</expandingIconTexture>
+  </WorldObjectDef>
+
+</Defs>

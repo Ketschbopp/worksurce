@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <MapModeFramework.MapModeDef>
+    <defName>FactionTerritories</defName>
+    <label>Faction Territories</label>
+    <description>Shows deterministic faction territory regions around settlements.</description>
+    <mapModeClass>FactionTerritories.MapMode_FactionTerritories</mapModeClass>
+    <worldLayerClass>MapModeFramework.WorldLayer_MapMode_Region</worldLayerClass>
+    <canCache>true</canCache>
+    <includeWater>false</includeWater>
+    <drawWorldObjects>true</drawWorldObjects>
+    <drawHills>true</drawHills>
+    <drawRivers>true</drawRivers>
+    <drawRoads>true</drawRoads>
+    <drawPollution>true</drawPollution>
+    <disableFeaturesText>false</disableFeaturesText>
+    <displayLabels>true</displayLabels>
+    <doTooltip>true</doTooltip>
+    <iconPath>UI/Commands/ChangeColor</iconPath>
+    <RegionProperties>
+      <overrideSelector>false</overrideSelector>
+      <doBorders>true</doBorders>
+      <borderWidth>0.7</borderWidth>
+    </RegionProperties>
+  </MapModeFramework.MapModeDef>
+</Defs>

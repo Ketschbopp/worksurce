@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <WorldObjectDef>
+    <defName>FT_VassalOutpost</defName>
+    <label>vassal outpost</label>
+    <worldObjectClass>FactionTerritories.Vassalise.FactionTerritories_VassalOutpost</worldObjectClass>
+    <texture>World/WorldObjects/DefaultSettlement</texture>
+    <selectable>true</selectable>
+    <expandMore>true</expandMore>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>World/WorldObjects/Expanding/Sites/Outpost</expandingIconTexture>
+  </WorldObjectDef>
+
+</Defs>

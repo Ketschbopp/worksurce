@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1633945216
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3451527a31cdf84b8d2d2d77d56ad49b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0df1dec30b5d061d422d3e6493d27647
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 3451527a31cdf84b8d2d2d77d56ad49b
+HashAppended: 0
+ClassTypes:
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Shaders/FT_WorldVoronoiPalette.shader
+Dependencies: []
