@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModMetaData>
+  <name>Pillage &amp; Plunder</name>
+  <packageId>lordfelix.pillageandplunder</packageId>
+  <author>lordfelix</author>
+  <description>[h1]Pillage &amp; Plunder[/h1]
+Enemy settlements no longer vanish after a single battle. Raid them, extort what you need, and leave them alive to rebuild — turning one-time conquests into a living, breathing world of persistent rivals worth raiding again and again.
+
+[h1]Features[/h1]
+
+[b]⚔ Raid instead of destroy[/b]
+[list]
+[*] A new [b]&quot;Plunder Settlement&quot;[/b] option sits right alongside vanilla &quot;Attack&quot; — in both the world-map right-click menu and the caravan command bar.
+[*] Choose annihilation OR exploitation: plundered settlements survive on the map instead of being wiped out.
+[*] Works on [b]hostile, neutral, and allied[/b] settlements (friendly targets ask for confirmation first).
+[/list]
+
+[b]💰 Extort what you need[/b]
+[list]
+[*] Win the battle, then pick [b]one[/b] reward from a clean loot screen:
+[*] [b]Silver[/b] — cold, hard cash.
+[*] [b]Food[/b] — packaged survival meals.
+[*] [b]Materials[/b] — steel and components.
+[*] [b]Prisoners[/b] — captives dropped unconscious, ready to haul home.
+[*] Loot is delivered [b]right at your pawns' feet[/b] — no drop pods, no fuss. Just grab it and reform your caravan.
+[/list]
+
+[b]📈 Wealth-based loot[/b]
+[list]
+[*] Rich settlements pay out big; poor ones far less. Loot scales with the target's actual wealth.
+[/list]
+
+[b]🔥 Settlements remember[/b]
+[list]
+[*] Raided bases enter a [b]Devastated[/b] recovery state, marked with a custom burning-ruin icon on the world map.
+[*] While recovering: [b]no trading[/b], and defenders are gutted to a skeleton crew if you strike again.
+[*] Recovery takes several in-game days — and longer each time you hit the same target.
+[/list]
+
+[b]⏳ Diminishing returns — no free lunch[/b]
+[list]
+[*] Hammer the same settlement repeatedly and the loot dries up fast.
+[*] Survivors [b]fortify[/b]: once recovered, previously-raided bases field tougher defenses.
+[/list]
+
+[b]🗡 Diplomatic fallout[/b]
+[list]
+[*] Allies of your victim [b]condemn[/b] the raid (goodwill hit).
+[*] Their enemies [b]applaud[/b] you (goodwill gain).
+[*] Beware — raided factions may launch a [b]revenge raid[/b] on your colony days later.
+[/list]
+
+[b]⚙ Configurable[/b]
+[list]
+[*] A [b]Loot Reward Multiplier[/b] slider in Mod Settings lets you tune payouts from 0.1x to 5x to fit your difficulty.
+[/list]
+
+[h1]Compatibility &amp; Performance[/h1]
+[list]
+[*] [b]Safe to add[/b] to existing saves.
+[*] No new items or defs — purely enhances vanilla settlement raiding, so it plays nice with most mods.
+[*] Fault-isolated patches and zero ticking overhead — no performance cost when you're not raiding.
+[/list]</description>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <!-- Optional: improves deterministic postfix ordering when Choose Where To Land is active. -->
+    <li>kearril.ChooseWhereToLand</li>
+    <!-- Optional: ensures the Melee Animation stale-map cleanup patch installs after its assembly loads. -->
+    <li>co.uk.epicguru.meleeanimation</li>
+    <!-- Optional: P&P wins explicit plunder defeat handling, then synchronizes WD strategic state. -->
+    <li>TSA.WorldDominationExperimental</li>
+  </loadAfter>
+</ModMetaData>

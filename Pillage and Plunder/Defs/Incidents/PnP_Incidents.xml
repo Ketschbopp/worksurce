@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Storyteller-driven world event. The C# worker chooses NPC attacker/victim settlements;
+       the player-home target simply gives the storyteller one stable target to schedule. -->
+  <IncidentDef>
+    <defName>PnP_NpcSettlementPlunder</defName>
+    <label>factions plunder each other</label>
+    <workerClass>PillageAndPlunder.IncidentWorker_NpcSettlementPlunder</workerClass>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <category>Misc</category>
+    <baseChance>4.0</baseChance>
+    <earliestDay>3</earliestDay>
+    <minPopulation>1</minPopulation>
+  </IncidentDef>
+</Defs>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <PnP_DialogSettlementDefeated>Settlement defeated</PnP_DialogSettlementDefeated>
+  <PnP_NorseLootSubtitle>Choose one reward. The settlement will survive and rebuild.</PnP_NorseLootSubtitle>
+  <PnP_SpoilsKicker>Raid spoils</PnP_SpoilsKicker>
+  <PnP_WealthChip>Wealth x{0}</PnP_WealthChip>
+  <PnP_CardSilverTitle>Silver</PnP_CardSilverTitle>
+  <PnP_CardSilverDetail>{0}–{1} silver for trade, tribute, and wages</PnP_CardSilverDetail>
+  <PnP_CardFoodTitle>Provisions</PnP_CardFoodTitle>
+  <PnP_CardFoodVanillaDetail>{0}–{1} packaged survival meals</PnP_CardFoodVanillaDetail>
+  <PnP_CardFoodMedievalDetail>{0}–{1} assorted medieval provisions</PnP_CardFoodMedievalDetail>
+  <PnP_CardMaterialsTitle>Materials</PnP_CardMaterialsTitle>
+  <PnP_CardMaterialsVanillaDetail>{0}–{1} steel • {2}–{3} components</PnP_CardMaterialsVanillaDetail>
+  <PnP_CardMaterialsMedievalDetail>Iron • timber • stone • textiles</PnP_CardMaterialsMedievalDetail>
+  <PnP_CardPreciousTitle>Precious loot</PnP_CardPreciousTitle>
+  <PnP_CardPreciousDetail>2–3 gemstone types • gold ore or ingots</PnP_CardPreciousDetail>
+  <PnP_CardPrisonersTitle>Captives</PnP_CardPrisonersTitle>
+  <PnP_CardPrisonersDetail>Up to {0} unconscious prisoners</PnP_CardPrisonersDetail>
+  <PnP_ClaimSelectedTribute>Claim tribute: {0}</PnP_ClaimSelectedTribute>
+  <PnP_ChooseReward>Choose a reward</PnP_ChooseReward>
+  <PnP_SelectRewardFirst>Choose one reward to continue.</PnP_SelectRewardFirst>
+  <PnP_TributeCollected>Tribute collected. Choose when to leave.</PnP_TributeCollected>
+  <PnP_ShuttleTributeCollected>Tribute collected. Load your shuttle before departure.</PnP_ShuttleTributeCollected>
+  <PnP_DepartureChoiceTitle>Leave the settlement?</PnP_DepartureChoiceTitle>
+  <PnP_DepartureChoiceText>The spoils are on the map. Reform a caravan now to choose which pawns, prisoners, and items to take, or stay to gather more loot.</PnP_DepartureChoiceText>
+  <PnP_ReformNow>Reform caravan now</PnP_ReformNow>
+  <PnP_StayAndLoot>Stay and loot</PnP_StayAndLoot>
+  <PnP_StayToLootReminder>Stay as long as you like. When ready, open the world map, select this settlement, and click Reform caravan.</PnP_StayToLootReminder>
+  <PnP_ReformUnavailable>Cannot reform the caravan yet. Check that a colonist is on the map and no hostile threats remain; you can reform later from the world map.</PnP_ReformUnavailable>
+  <PnP_PlunderFailurePreserved>Plunder processing failed for {0}. The settlement was preserved instead of destroyed; check the log for details.</PnP_PlunderFailurePreserved>
+  <PnP_LetterSettlementPlunderedLabel>Settlement plundered</PnP_LetterSettlementPlunderedLabel>
+  <PnP_PlunderSettlementLabel>Plunder settlement</PnP_PlunderSettlementLabel>
+  <PnP_PlunderSettlementTarget>Plunder settlement: {0}</PnP_PlunderSettlementTarget>
+  <PnP_PlunderTarget>Plunder {0}</PnP_PlunderTarget>
+  <PnP_CaravanPlunderReport>Caravan is going to plunder {0}</PnP_CaravanPlunderReport>
+  <PnP_CaravanPlunderReportUnknown>Caravan is going to plunder a settlement</PnP_CaravanPlunderReportUnknown>
+  <PnP_PlunderSettlementDescription>Attack the settlement to extort resources. The settlement will survive but enter recovery.</PnP_PlunderSettlementDescription>
+  <PnP_PlunderDropAtEdge>Plunder settlement: drop at edge ({0})</PnP_PlunderDropAtEdge>
+  <PnP_PlunderDropInCenter>Plunder settlement: drop in center ({0})</PnP_PlunderDropInCenter>
+  <PnP_PlunderSpecifyLanding>Plunder {0} (specify a landing spot)</PnP_PlunderSpecifyLanding>
+  <PnP_PlunderByShuttle>Plunder settlement by shuttle ({0})</PnP_PlunderByShuttle>
+  <PnP_InspectDevastatedRecovery>[Devastated] Recovering in {0}</PnP_InspectDevastatedRecovery>
+  <PnP_SettingsCategory>Pillage &amp; Plunder</PnP_SettingsCategory>
+  <PnP_SettingsLootMultiplier>Loot reward multiplier: {0}</PnP_SettingsLootMultiplier>
+  <PnP_SettingsLootMultiplierTip>Adjust the amount of loot gained from plundering.</PnP_SettingsLootMultiplierTip>
+  <PnP_SettingsRivalGoodwillGain>Rival goodwill gain from plunder</PnP_SettingsRivalGoodwillGain>
+  <PnP_SettingsRivalGoodwillGainTip>When enabled, factions hostile to the victim gain +5 goodwill after a successful player plunder. Enabled by default.</PnP_SettingsRivalGoodwillGainTip>
+  <PnP_SettingsNpcPlunderingEnabled>NPC factions plunder each other</PnP_SettingsNpcPlunderingEnabled>
+  <PnP_SettingsNpcPlunderingEnabledTip>Allow storyteller-scheduled NPC factions to plunder hostile settlements off-screen.</PnP_SettingsNpcPlunderingEnabledTip>
+  <PnP_SettingsNpcPlunderFrequency>NPC plunder frequency: {0}</PnP_SettingsNpcPlunderFrequency>
+  <PnP_SettingsNpcPlunderFrequencyTip>Scales both storyteller selection weight and candidate-cache refresh frequency. Lower values produce fewer events and less selection work; 1.0x is the default.</PnP_SettingsNpcPlunderFrequencyTip>
+  <PnP_WorldDominationNpcSimulationNotice>World Domination 2.0 is handling NPC world wars. P&amp;P's parallel NPC-plunder incident is disabled to avoid duplicate simulation work.</PnP_WorldDominationNpcSimulationNotice>
+  <PnP_NpcPlunderLetterLabel>Settlement plundered</PnP_NpcPlunderLetterLabel>
+  <PnP_NpcPlunderLetterText>Word spreads that {0} has plundered {1}. The settlement is devastated and struggling to rebuild.</PnP_NpcPlunderLetterText>
+  <PnP_RepeatedRaidLootReduced>Recent raids: {0}. The settlement's stockpiles are depleted and loot is reduced.</PnP_RepeatedRaidLootReduced>
+  <PnP_AllyCondemnsRaid>{0} condemns your raid as an ally of {1}: {2}</PnP_AllyCondemnsRaid>
+  <PnP_TributeRaidLetterLabel>Tribute reclamation raid</PnP_TributeRaidLetterLabel>
+  <PnP_TributeRaidLetterText>{0} has come to reclaim the tribute you stole. They will seize valuables and withdraw if they can.</PnP_TributeRaidLetterText>
+  <PnP_TributeRaidWarning>Survivors swear that {0} will come to reclaim the tribute you stole...</PnP_TributeRaidWarning>
+  <PnP_RewardDeliveryFailed>Some tribute could not be delivered. Check the log for details.</PnP_RewardDeliveryFailed>
+</LanguageData>
