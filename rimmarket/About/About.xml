@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>RimMarket</name>
+	<authors>
+		<li>BenFD</li>
+	</authors>
+	<packageId>forti.rimmarket</packageId>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<modVersion>1.0.3</modVersion>
+	<modIconPath>UI/RimMarketIcon</modIconPath>
+	<description>Trade caravans set up shop in your colony. Place a market marker, build stalls around it, and a caravan that finds a free stall walks over: the merchant stands behind the counter with the wares laid out, a guard stands post beside it, the pack animals wait at the caravan camp and the other guards at the guard rest spot. Trading uses the usual trade window, theres nothing new to learn.
+
+Merchants pay a stall fee on arrival and stay a market day. You get one try at haggling per visit. Every visit counts toward your market's reputation, and a good one brings more caravans, a bad one keeps them away
+
+Any stall can also sell your own goods. With Hospitality or Hotels and Recreation, guests buy from the stalls too. Beds can be rented out as an inn, slaver caravans auction their slaves at an auction post, and the marker can announce a Great Fair.
+
+It works for a medieval village or a modern town: stalls built from wood or from steel decorate the fair differently.
+
+The Guide button on the marker shows what your market still needs and why no caravan came yet
+
+Requires Harmony only. Works with Hospitality, Hotels and Recreation, Trading Control, Rim War, RimToll and more.
+
+Credits: market stall art by Tomson Johnson. Auction post texture by Gerrymon, from Misc Props: Dungeon, used with permission. The steel pillar variant (with Vanilla Expanded Framework) reuses his chains.
+BenFD</description>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Orion.Hospitality</li>
+		<li>forti.rimtoll</li>
+		<li>TradingControl.Tad.Rimworld.Core</li>
+	</loadAfter>
+</ModMetaData>
