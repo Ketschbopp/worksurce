@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>ED x FT Compatibility Patch</name>
+	<author>kupa_</author>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>kupa.EDandFTCompatPatch</packageId>
+	<description>A compatibility patch to make Faction Territories and Vassalage work with Economics &amp; Demography.
+
+&lt;size=24&gt;Features&lt;/size&gt;
+
+- Faction Territories and Vassalage now accounts for population and wealth from Economics &amp; Demography when deciding if a faction can expand.
+- When Faction Territories and Vassalage starts building a new settlement, the appropriate amount of wealth is consumed by the faction.
+- Settlements being built don't count towards goods production. This means that destroying an in-progress settlement can deal a heavy blow to that factions economy as the initial investment will be wasted.
+- Economics &amp; Demography expansion is forced disabled as it's features and checks are now rolled in to Faction Territories and Vassalage expansion system.
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>jaeger972.factionterritories</packageId>
+			<displayName>Faction Territories and Vassalage</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3626725895</steamWorkshopUrl>
+		</li>
+		<li>
+		<packageId>helldan.economicsdemography</packageId>
+		<displayName>Economics $ Demography</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3692156692</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Odyssey</li>
+		<li>jaeger972.factionterritories</li>
+		<li>helldan.economicsdemography</li>
+	</loadAfter>
+</ModMetaData>
