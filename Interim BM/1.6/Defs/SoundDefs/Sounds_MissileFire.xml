@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Viking 点火音效系列 (随机选择) -->
+  <SoundDef>
+    <defName>IRBM_Sound_Viking_Ignition</defName>
+    <context>MapOnly</context>
+    <maxVoices>15</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>false</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MissileFire/Viking_FighterAttackLaunch0</clipPath>
+          </li>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MissileFire/Viking_FighterAttackLaunch1</clipPath>
+          </li>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MissileFire/Viking_FighterAttackLaunch2</clipPath>
+          </li>
+        </grains>
+        <volumeRange>45~45</volumeRange>
+        <pitchRange>0.95~1.05</pitchRange>
+        <distRange>20~100</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- 发射报警音效 -->
+  <SoundDef>
+    <defName>IRBM_Sound_MissileFireAlarm</defName>
+    <context>MapOnly</context>
+    <maxVoices>15</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MissileFire/MissileFireAlarm</clipPath>
+          </li>
+        </grains>
+        <volumeRange>50~50</volumeRange>
+        <distRange>30~150</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- Ghost 核弹点火音效 -->
+  <SoundDef>
+    <defName>IRBM_Sound_GhostNuclear_Ignition</defName>
+    <context>MapOnly</context>
+    <maxVoices>15</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MissileFire/Ghost_NuclearStrikeLaunch0</clipPath>
+          </li>
+        </grains>
+        <volumeRange>55~55</volumeRange>
+        <distRange>40~200</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- Probe 发射音效 -->
+  <SoundDef>
+    <defName>IRBM_Sound_ProtossBuildingPlacementSmall</defName>
+    <context>Any</context>
+    <maxVoices>15</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>true</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MissileFire/Protoss_BuildingPlacementSmall0</clipPath>
+          </li>
+        </grains>
+        <volumeRange>90~90</volumeRange>
+        <distRange>40~200</distRange>
+        <pitchRange>0.95~1.05</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- Protoss 折跃点火音效 -->
+  <SoundDef>
+    <defName>IRBM_Sound_ProtossWarpStart</defName>
+    <context>MapOnly</context>
+    <maxVoices>15</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MissileFire/Protoss_BuildingWarpStart1</clipPath>
+          </li>
+        </grains>
+        <volumeRange>65~65</volumeRange>
+        <distRange>40~200</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>IRBM_Explosion_Acid</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Explosion/Baneling_Suicide6</clipPath>
+          </li>
+        </grains>
+        <volumeRange>80~80</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

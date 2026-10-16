@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <IRBM_PostNuclearWar.label>Post-Nuclear War</IRBM_PostNuclearWar.label>
+  <IRBM_PostNuclearWar.description>The world as you knew it ended in a flash of blinding light. Decades of tension finally snapped, and the silos opened. You are among the few who survived in deep underground bunkers, preserved by the very missile technology that destroyed the surface. Now, as the initial firestorms subside into a freezing nuclear winter, it is time to resurface and reclaim the wasteland.</IRBM_PostNuclearWar.description>
+  <IRBM_PostNuclearWar.scenario.name>Post-Nuclear War</IRBM_PostNuclearWar.scenario.name>
+  <IRBM_PostNuclearWar.scenario.summary>Three survivors from a strategic missile command center. Starts with advanced technology and a decade-long nuclear winter.</IRBM_PostNuclearWar.scenario.summary>
+  <IRBM_PostNuclearWar.scenario.description>The world as you knew it ended in a flash of blinding light. Decades of tension finally snapped, and the silos opened. You are among the few who survived in deep underground bunkers, preserved by the very missile technology that destroyed the surface. Now, as the initial firestorms subside into a freezing nuclear winter, it is time to resurface and reclaim the wasteland.</IRBM_PostNuclearWar.scenario.description>
+
+</LanguageData>

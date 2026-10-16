@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Alert -->
+  <IRBM.AlertHostileReconSatellite>Hostile reconnaissance satellite</IRBM.AlertHostileReconSatellite>
+  <IRBM.AlertHostileReconSatelliteDesc>{0} has deployed a reconnaissance satellite that may be observing our colony.</IRBM.AlertHostileReconSatelliteDesc>
+  <IRBM.AlertHostileReconSatellitesDesc>There are {0} hostile reconnaissance satellites in orbit.</IRBM.AlertHostileReconSatellitesDesc>
+
+  <!-- Letter -->
+  <IRBM.LetterLabelReconSatelliteDeployed>Reconnaissance Satellite Deployed</IRBM.LetterLabelReconSatelliteDeployed>
+  <IRBM.LetterTextReconSatelliteDeployed>Our sensors have detected that {0} has deployed a reconnaissance satellite above {1}.\n\nThis satellite may be used to gather intelligence and coordinate strikes against targets.</IRBM.LetterTextReconSatelliteDeployed>
+
+  <!-- Radar -->
+  <IRBM.RadarRange>Detection Range: {0} tiles</IRBM.RadarRange>
+  <IRBM.RadarLevel>Detection Level: {0}</IRBM.RadarLevel>
+  <IRBM.CIWSRange>Interception Range: {0} tiles</IRBM.CIWSRange>
+  <IRBM.CIWSEfficiency>Interception Efficiency: {0} Per Tick</IRBM.CIWSEfficiency>
+  <IRBM.CIWSBlockedByRoof>Cannot intercept: Blocked by roof</IRBM.CIWSBlockedByRoof>
+  <IRBM.CIWSNoFuel>Cannot intercept: Out of ammunition</IRBM.CIWSNoFuel>
+  <IRBM.CIWSLowPower>Cannot intercept: Insufficient grid power</IRBM.CIWSLowPower>
+  <IRBM.MessageMissileInterceptedByCIWS>A missile from {0} has been intercepted by our point defense facilities.</IRBM.MessageMissileInterceptedByCIWS>
+  <IRBM.ShowPassingMissiles>Notify passing missiles</IRBM.ShowPassingMissiles>
+  <IRBM.ShowPassingMissilesDesc>Whether to show a white alert when the radar detects a passing missile that is not targeting the player.</IRBM.ShowPassingMissilesDesc>
+  
+  <IRBM.AlertMissileIncoming>Vampire! Vampire!</IRBM.AlertMissileIncoming>
+  <IRBM.AlertMissileIncomingDesc>Missile has been detected flying towards us!</IRBM.AlertMissileIncomingDesc>
+  <MessageCriticalAlert>Critical alert: {0}</MessageCriticalAlert>
+  <IRBM.AlertMissilePassingBy>Missile Passing By</IRBM.AlertMissilePassingBy>
+  <IRBM.AlertMissilePassingByDesc>One or more missiles has been detected passing through the defense zone, its target is not us.</IRBM.AlertMissilePassingByDesc>
+
+  <!-- Anti-Satellite -->
+  <IRBM.LetterLabelSatelliteDestroyed>Satellite Destroyed</IRBM.LetterLabelSatelliteDestroyed>
+  <IRBM.LetterTextSatelliteDestroyed>One of our satellites has been destroyed by a missile from {0}.</IRBM.LetterTextSatelliteDestroyed>
+
+  <!-- Settlement Destruction -->
+  <IRBM.LetterLabelSettlementVaporized>Hit by Strategic Strike</IRBM.LetterLabelSettlementVaporized>
+  <IRBM.LetterTextSettlementVaporizedAllDead>A strategic missile from {0} impacted our {1}.\n\nThe entire region has sustained severe damage.</IRBM.LetterTextSettlementVaporizedAllDead>
+
+  <!-- Tactical Missile Impact -->
+  <IRBM.LetterLabelTacticalMissileImpact>Hit by Tactical Strike</IRBM.LetterLabelTacticalMissileImpact>
+  <IRBM.LetterTextTacticalMissileImpact>A tactical missile from {0} has impacted our {1}.</IRBM.LetterTextTacticalMissileImpact>
+
+  <!-- Recon Satellite Gizmos -->
+  <IRBM.GizmoDestroySatellite>Destroy</IRBM.GizmoDestroySatellite>
+  <IRBM.GizmoDestroySatelliteDesc>Decommission and destroy this satellite.</IRBM.GizmoDestroySatelliteDesc>
+  <IRBM.GizmoObserve>Observe</IRBM.GizmoObserve>
+  <IRBM.GizmoObserveDesc>Select a target tile or world object to maintain continuous observation (force-load map).</IRBM.GizmoObserveDesc>
+  <IRBM.GizmoStopObservation>Stop Observation</IRBM.GizmoStopObservation>
+  <IRBM.GizmoStopObservationDesc>Stop observing tile {0}. The map will return to normal loading/unloading flow.</IRBM.GizmoStopObservationDesc>
+  <IRBM.SelectToObserve>Select to observe this location.</IRBM.SelectToObserve>
+  <IRBM.ObservingTile>Observing: Tile {0}</IRBM.ObservingTile>
+  <IRBM.SatelliteStatusIdle>Status: Idle (No target selected)</IRBM.SatelliteStatusIdle>
+
+</LanguageData>

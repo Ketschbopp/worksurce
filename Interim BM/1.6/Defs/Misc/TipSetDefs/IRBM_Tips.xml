@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <TipSetDef>
+    <defName>IRBM_Tips</defName>
+    <tips>
+      <li TKey="IRBM_Tip_DefenseResponsibility" />
+      <li TKey="IRBM_Tip_AntiSatelliteStrategy" />
+      <li TKey="IRBM_Tip_HighTechFactionWarning" />
+      <li TKey="IRBM_Tip_OverloadDefense" />
+      <li TKey="IRBM_Tip_ReconSatelliteUsage" />
+      <li TKey="IRBM_Tip_MissileTargetingLogic" />
+    </tips>
+  </TipSetDef>
+</Defs>

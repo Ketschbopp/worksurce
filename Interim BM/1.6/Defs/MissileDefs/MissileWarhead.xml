@@ -1,0 +1,1454 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 战术类弹头 (Tactical) -->
+
+  <!-- 战术高爆弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Tactical_HE</defName>
+    <label>Tactical HE Warhead</label>
+    <description>A tactical high-explosive warhead utilizing repurposed mortar shells. It delivers a reliable explosive force to the target area.</description>
+    <category>Tactical</category>
+    <techLevel>Spacer</techLevel>
+    <researchPrerequisites>
+      <li>IRBM_EarlyWarheads</li>
+    </researchPrerequisites>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_HE</uiIconPath>
+    <clusterScatterRange>6</clusterScatterRange>
+    <clusterCount>2</clusterCount>
+    <costList>
+      <Shell_HighExplosive>2</Shell_HighExplosive>
+      <Steel>80</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>14.9</explosionRadius>
+        <damageDef>Bomb</damageDef>
+        <damageAmount>150</damageAmount>
+        <armorPenetration>1.5</armorPenetration>
+        <chanceToStartFire>0.1</chanceToStartFire>
+        <damageFalloff>true</damageFalloff>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战术集束弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Tactical_Cluster</defName>
+    <label>Tactical Cluster Warhead</label>
+    <description>A tactical high-explosive warhead with cluster shells. It delivers a reliable explosive force to a wide area.</description>
+    <category>Tactical</category>
+    <techLevel>Spacer</techLevel>
+    <researchPrerequisites>
+      <li>IRBM_EarlyWarheads</li>
+    </researchPrerequisites>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_Cluster</uiIconPath>
+    <clusterScatterRange>20</clusterScatterRange>
+    <clusterCount>25</clusterCount>
+    <costList>
+      <Shell_HighExplosive>2</Shell_HighExplosive>
+      <Steel>80</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>7.9</explosionRadius>
+        <damageDef>Bomb</damageDef>
+        <damageAmount>50</damageAmount>
+        <armorPenetration>0.8</armorPenetration>
+        <chanceToStartFire>0.1</chanceToStartFire>
+        <damageFalloff>true</damageFalloff>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战术地狱火弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Tactical_Inferno</defName>
+    <label>Tactical Inferno Warhead</label>
+    <description>A devastating incendiary warhead that uses standard incendiary shells as its core. It creates a massive area of intense heat and fire upon impact.</description>
+    <category>Tactical</category>
+    <techLevel>Spacer</techLevel>
+    <researchPrerequisites>
+      <li>IRBM_EarlyWarheads</li>
+    </researchPrerequisites>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_Inferno</uiIconPath>
+    <clusterScatterRange>20</clusterScatterRange>
+    <clusterCount>10</clusterCount>
+    <costList>
+      <Shell_Incendiary>2</Shell_Incendiary>
+      <Steel>80</Steel>
+      <Chemfuel>50</Chemfuel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>9.9</explosionRadius>
+        <damageDef>Flame</damageDef>
+        <damageAmount>80</damageAmount>
+        <armorPenetration>1.0</armorPenetration>
+        <chanceToStartFire>1.0</chanceToStartFire>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战术强酸腐蚀弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Tactical_Acid</defName>
+    <label>Tactical Corrosive Warhead</label>
+    <description>A specialized warhead that disperses highly corrosive chemical agents. It is extremely effective at melting through thick armor and fortified structures without the indiscriminate fire risk of incendiary payloads.</description>
+    <category>Tactical</category>
+    <techLevel>Ultra</techLevel>
+    <researchPrerequisites>
+      <li>IRBM_SpecializedPayloads</li>
+    </researchPrerequisites>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_Acid</uiIconPath>
+    <clusterScatterRange>16</clusterScatterRange>
+    <clusterCount>10</clusterCount>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <Neutroamine>10</Neutroamine>
+      <Hyperweave>5</Hyperweave>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>14.9</explosionRadius>
+        <damageDef>AcidBurn</damageDef>
+        <damageAmount>80</damageAmount>
+        <explosionEffect>Impact_Toxic</explosionEffect>
+        <explosionSound>IRBM_Explosion_Acid</explosionSound>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战术超低温冷冻弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Tactical_Cryo</defName>
+    <label>Tactical Cryogenic Warhead</label>
+    <description>A high-tech warhead that triggers a rapid endothermic reaction, plunging the impact zone into absolute zero. It inflicts severe frostbite on biological targets and can shatter delicate mechanisms, all while leaving the local environment and structures relatively intact.</description>
+    <category>Tactical</category>
+    <techLevel>Ultra</techLevel>
+    <researchPrerequisites>
+      <li>IRBM_SpecializedPayloads</li>
+    </researchPrerequisites>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_Cryo</uiIconPath>
+    <clusterScatterRange>16</clusterScatterRange>
+    <clusterCount>10</clusterCount>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <Silver>100</Silver>
+      <MedicineUltratech>2</MedicineUltratech>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>14.9</explosionRadius>
+        <damageDef>Frostbite</damageDef>
+        <damageAmount>80</damageAmount>
+        <explosionSound>Explosion_Vaporize</explosionSound>
+        <explosionEffect>GiantExplosion</explosionEffect>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战术心灵冲击弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Tactical_Neural</defName>
+    <label>Tactical Psychic Shock Warhead</label>
+    <description>An advanced non-lethal (or lethal, depending on intensity) payload that releases a focused burst of neuro-active impulses. It bypasses physical armor to attack the nervous system directly, causing immediate paralysis or neural collapse in organic life forms. Mechanical threats are completely unaffected.</description>
+    <category>Tactical</category>
+    <techLevel>Ultra</techLevel>
+    <researchPrerequisites>
+      <li>IRBM_SpecializedPayloads</li>
+    </researchPrerequisites>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_Neural</uiIconPath>
+    <clusterScatterRange>16</clusterScatterRange>
+    <clusterCount>10</clusterCount>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <Gold>10</Gold>
+      <PsychicSoothePulser>1</PsychicSoothePulser>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>24.9</explosionRadius>
+        <damageDef>Stun</damageDef>
+        <damageAmount>80</damageAmount>
+        <explosionSound>PsychicShockLanceCast</explosionSound>
+        <hediffs>
+          <li>
+            <hediffDef>PsychicShock</hediffDef>
+            <severity>1.0</severity>
+          </li>
+        </hediffs>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战术温压弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Tactical_Thermobaric</defName>
+    <label>Tactical Thermobaric Warhead</label>
+    <description>A highly advanced aerosol-dispersal warhead. It releases a cloud of fuel that is subsequently ignited, creating a massive, long-duration pressure wave and high-intensity heat. The extreme conditions are capable of vaporizing biological tissues and collapsing even the most reinforced structures.</description>
+    <category>Tactical</category>
+    <techLevel>Ultra</techLevel>
+    <researchPrerequisites>
+      <li>IRBM_SpecializedPayloads</li>
+    </researchPrerequisites>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_Thermobaric</uiIconPath>
+    <clusterScatterRange>16</clusterScatterRange>
+    <clusterCount>10</clusterCount>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <Chemfuel>200</Chemfuel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>20.9</explosionRadius>
+        <damageDef>Vaporize</damageDef>
+        <damageAmount>80</damageAmount>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战术裂解弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Tactical_Fission</defName>
+    <label>Tactical Molecular Fission Warhead</label>
+    <description>An advanced tactical warhead that utilizes the principle of material resonance to trigger a high-frequency molecular bond breaking chain reaction. It can sustain an incredibly deep chain reaction in dense areas.</description>
+    <category>Tactical</category>
+    <techLevel>Archotech</techLevel>
+    <aiCanUse>false</aiCanUse>
+    <maxChainDepth>5</maxChainDepth>
+    <researchPrerequisites>
+      <li>IRBM_AtomicAnnihilation</li>
+    </researchPrerequisites>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_Fission</uiIconPath>
+    <costList>
+      <Luciferium>3</Luciferium>
+      <Uranium>10</Uranium>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>12.9</explosionRadius>
+        <damageDef>BombSuper</damageDef>
+        <damageAmount>200</damageAmount>
+        <armorPenetration>75.0</armorPenetration>
+        <chanceToStartFire>0.1</chanceToStartFire>
+        <explosionSound>Explosion_GiantBomb</explosionSound>
+        <explosionEffect>GiantExplosion</explosionEffect>
+        <damageFalloff>false</damageFalloff>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战术反粒子弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Tactical_Antigrain</defName>
+    <label>Tactical Antimatter Disintegration Warhead</label>
+    <description>The ultimate tactical payload, converting a rare antigrain warhead into a missile-delivered weapon. It will cause a chain reaction of annihilation, destroying everything within the blast radius.</description>
+    <category>Tactical</category>
+    <techLevel>Archotech</techLevel>
+    <aiCanUse>false</aiCanUse>
+    <researchPrerequisites>
+      <li>IRBM_AtomicAnnihilation</li>
+    </researchPrerequisites>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_Antigrain</uiIconPath>
+    <clusterScatterRange>10</clusterScatterRange>
+    <clusterCount>3</clusterCount>
+    <maxChainDepth>2</maxChainDepth>
+    <costList>
+      <Shell_AntigrainWarhead>1</Shell_AntigrainWarhead>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>24.9</explosionRadius>
+        <damageDef>BombSuper</damageDef>
+        <damageAmount>600</damageAmount>
+        <armorPenetration>75.0</armorPenetration>
+        <explosionSound>Explosion_GiantBomb</explosionSound>
+        <explosionEffect>GiantExplosion</explosionEffect>
+        <ignoreDamageMultipliers>true</ignoreDamageMultipliers>
+        <damageFalloff>false</damageFalloff>
+      </li>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>35.9</explosionRadius>
+        <damageDef>EMP</damageDef>
+        <damageAmount>180</damageAmount>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战术震爆压制弹头 (Stun + EMP 复合) -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Tactical_Suppression</defName>
+    <label>Tactical Suppression Warhead</label>
+    <description>A specialized hybrid warhead designed for mass crowd control. It releases a massive concussive wave combined with an electromagnetic pulse, capable of neutralizing both organic infantry and mechanical threats over a vast area.</description>
+    <category>Tactical</category>
+    <techLevel>Ultra</techLevel>
+    <researchPrerequisites>
+      <li>IRBM_SpecializedPayloads</li>
+    </researchPrerequisites>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_Suppression</uiIconPath>
+    <clusterScatterRange>20</clusterScatterRange>
+    <clusterCount>5</clusterCount>
+    <costList>
+      <Shell_EMP>2</Shell_EMP>
+      <Plasteel>40</Plasteel>
+      <Gold>20</Gold>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>20.9</explosionRadius>
+        <damageDef>Stun</damageDef>
+        <damageAmount>240</damageAmount>
+        <explosionSound>Explosion_GiantBomb</explosionSound>
+        <explosionEffect>GiantExplosion</explosionEffect>
+      </li>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>20.9</explosionRadius>
+        <damageDef>EMP</damageDef>
+        <damageAmount>240</damageAmount>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战术小型核弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Tactical_MiniNuke</defName>
+    <label>Tactical Mini-Nuke Warhead</label>
+    <description>A compact high-intensity nuclear device. While it lacks the scale of strategic ICBM payloads, it provides unparalleled tactical destruction within the combat zone without world-map contamination.</description>
+    <category>Tactical</category>
+    <techLevel>Ultra</techLevel>
+    <clusterScatterRange>10</clusterScatterRange>
+    <clusterCount>3</clusterCount>
+    <researchPrerequisites>
+      <li>IRBM_SpecializedPayloads</li>
+    </researchPrerequisites>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_MiniNuke</uiIconPath>
+    <costList>
+      <Uranium>30</Uranium>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>26.9</explosionRadius>
+        <damageDef>BombSuper</damageDef>
+        <damageAmount>800</damageAmount>
+        <armorPenetration>60.0</armorPenetration>
+        <explosionSound>Explosion_GiantBomb</explosionSound>
+        <explosionEffect>GiantExplosion</explosionEffect>
+        <chanceToStartFire>0.8</chanceToStartFire>
+      </li>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>31.9</explosionRadius>
+        <damageDef>EMP</damageDef>
+        <damageAmount>120</damageAmount>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战术钻地穿甲弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Tactical_BunkerBuster</defName>
+    <label>Bunker Buster AP Warhead</label>
+    <description>Combining drill-down tech with AP munitions, this warhead is designed to penetrate underground structures. Lethal against fortified positions.\nWhile using this warhead, you can click the top bar to switch maps and aim at the underground map or the pocket space.</description>
+    <category>Tactical</category>
+    <techLevel>Ultra</techLevel>
+    <drill>true</drill>
+    <researchPrerequisites>
+      <li>IRBM_BunkerBusterTech</li>
+    </researchPrerequisites>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_BunkerBuster</uiIconPath>
+    <costList>
+      <Luciferium>5</Luciferium>
+      <Uranium>20</Uranium>
+      <Plasteel>60</Plasteel>
+      <Gold>100</Gold>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>5.9</explosionRadius>
+        <damageDef>BombSuper</damageDef>
+        <damageAmount>1500</damageAmount>
+        <armorPenetration>800.0</armorPenetration>
+        <explosionSound>Explosion_GiantBomb</explosionSound>
+        <explosionEffect>GiantExplosion</explosionEffect>
+        <damageFalloff>false</damageFalloff>
+        <ignoreDamageMultipliers>true</ignoreDamageMultipliers>
+        <isPenetrating>true</isPenetrating>
+        <removeGoodHediffs>true</removeGoodHediffs>
+        <restoreGoodHediffs>true</restoreGoodHediffs>
+        <postExplosionSpawnSingleThingDef>CraterMedium</postExplosionSpawnSingleThingDef>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 防空类弹头 (AntiAir) -->
+
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_AntiAir_Standard</defName>
+    <label>AA Fragmentation Interceptor</label>
+    <description>A fragmentation interceptor designed for anti-aircraft defense. Not very effective against missiles.</description>
+    <category>AntiAir</category>
+    <techLevel>Spacer</techLevel>
+    <researchPrerequisites>
+      <li>IRBM_EarlyWarning</li>
+    </researchPrerequisites>
+    <uiIconPath>UI/Icons/IRBM_AAMissile</uiIconPath>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_AntiAirPayload">
+        <interceptionEfficiency>0.5</interceptionEfficiency>
+        <visionRange>12</visionRange>
+        <lockBreakAngle>165</lockBreakAngle>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_AntiAir_Kinetic</defName>
+    <label>AA Kinetic Interceptor</label>
+    <description>An kinetic interceptor designed for anti-missile defense. Needs precise timing and high-speed interception.</description>
+    <category>AntiAir</category>
+    <techLevel>Ultra</techLevel>
+    <researchPrerequisites>
+      <li>IRBM_KineticInterception</li>
+    </researchPrerequisites>
+    <uiIconPath>UI/Icons/IRBM_AAMissile</uiIconPath>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_AntiAirPayload">
+        <interceptionEfficiency>1.0</interceptionEfficiency>
+        <visionRange>30</visionRange>
+        <lockBreakAngle>175</lockBreakAngle>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_AntiAir_Quantum</defName>
+    <label>AA Quantum Seeker</label>
+    <description>An ultra-tech interceptor with quantum-entangled sensors, providing superior tracking and extremely low lock-break risk.</description>
+    <category>AntiAir</category>
+    <techLevel>Archotech</techLevel>
+    <aiCanUse>false</aiCanUse>
+    <researchPrerequisites>
+      <li>IRBM_AdvancedInterception</li>
+    </researchPrerequisites>
+    <uiIconPath>UI/Icons/IRBM_AAMissile</uiIconPath>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <Gold>10</Gold>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_AntiAirPayload">
+        <interceptionEfficiency>3.0</interceptionEfficiency>
+        <visionRange>50</visionRange>
+        <lockBreakAngle>180</lockBreakAngle>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战略类弹头 (Strategic) -->
+
+  <!-- 1. 标准战略核弹头：有污染 + 推进末日 (基准型号) -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Strategic_Standard</defName>
+    <label>Extinction-Class Strategic Nuclear Warhead</label>
+    <description>A traditional ultimate deterrent. It vaporizes entire maps through a massive thermonuclear reaction. Its high yield comes at the cost of global radioactive fallout and direct escalation of the doomsday clock.</description>
+    <category>Strategic</category>
+    <techLevel>Spacer</techLevel>
+    <researchPrerequisites>
+      <li>IRBM_NuclearDeterrence</li>
+    </researchPrerequisites>
+    <doomsdayAdvanceMinutes>60</doomsdayAdvanceMinutes>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Strategic_Standard</uiIconPath>
+    <costList>
+      <Uranium>100</Uranium>
+      <Plasteel>80</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_StrategicPayload">
+        <destroyWorldObjects>true</destroyWorldObjects>
+        <damageDef>Bomb</damageDef>
+        <damageAmount>10000</damageAmount>
+        <armorPenetration>200</armorPenetration>
+        <damageTimes>1</damageTimes>
+        <pollutionAmount>1.0</pollutionAmount>
+        <tileRadius>6</tileRadius>
+        <fireChance>0.2</fireChance>
+        <scanCategories>
+          <li>Pawn</li>
+          <li>Building</li>
+          <li>Item</li>
+          <li>Plant</li>
+        </scanCategories>
+        <gameConditionConfigs>
+          <li>
+            <conditionDef>IRBM_NuclearWinter</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+        </gameConditionConfigs>
+        <penetrateThickRoof>false</penetrateThickRoof>
+        <!-- 视觉表现 -->
+        <visualType>MushroomCloud</visualType>
+        <visualColor>(1, 0.9, 0.8)</visualColor>
+        <visualScale>3.2</visualScale>
+        <shakeIntensity>5</shakeIntensity>
+        <shakeDurationTicks>600</shakeDurationTicks>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 2. 战略中子弹头：无污染 + 推进末日 (低装药+精密材料) -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Strategic_Clean</defName>
+    <label>Scavenger Clean Strategic Warhead</label>
+    <description>Utilizes radiation-enhancement technology to vaporize matter structures without leaving long-term physical pollutants. The reduction in nuclear material is offset by high-purity focusers. Its use is still recognized as total nuclear war by monitoring systems.</description>
+    <category>Strategic</category>
+    <techLevel>Ultra</techLevel>
+    <researchPrerequisites>
+      <li>IRBM_AtomicAnnihilation</li>
+    </researchPrerequisites>
+    <doomsdayAdvanceMinutes>15</doomsdayAdvanceMinutes>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Strategic_Clean</uiIconPath>
+    <costList>
+      <Uranium>50</Uranium>
+      <Gold>150</Gold>
+      <Plasteel>80</Plasteel>
+      <ComponentSpacer>10</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_StrategicPayload">
+        <destroyWorldObjects>true</destroyWorldObjects>
+        <damageDef>Beam</damageDef>
+        <damageAmount>500</damageAmount>
+        <armorPenetration>200</armorPenetration>
+        <damageTimes>10</damageTimes>
+        <lockCorePart>false</lockCorePart>
+        <pollutionAmount>0</pollutionAmount>
+        <tileRadius>5</tileRadius>
+        <scanCategories>
+          <li>Pawn</li>
+          <li>Plant</li>
+        </scanCategories>
+        <penetrateThickRoof>false</penetrateThickRoof>
+        <fireChance>0</fireChance>
+        <!-- 视觉表现 -->
+        <visualType>MushroomCloud</visualType>
+        <visualColor>(0.9, 1.0, 1.0)</visualColor>
+        <visualScale>2.4</visualScale>
+        <shakeIntensity>3</shakeIntensity>
+        <shakeDurationTicks>600</shakeDurationTicks>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 3. 定向束能战略弹头：有污染 + 不推进末日 (极高精密造价，用于规避政治后果) -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Strategic_Surgical</defName>
+    <label>Silent Surgical Strategic Warhead</label>
+    <description>Vaporizes targets with localized fallout using minimal nuclear material. Its energy signature is masked by extremely expensive signal-dampening hulls, allowing it to evade doomsday alert protocols. The immense cost reflects the complexity of hiding a strategic strike from the global doomsday clock.</description>
+    <category>Strategic</category>
+    <techLevel>Ultra</techLevel>
+    <researchPrerequisites>
+      <li>IRBM_AtomicAnnihilation</li>
+    </researchPrerequisites>
+    <doomsdayAdvanceMinutes>0</doomsdayAdvanceMinutes>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Strategic_Surgical</uiIconPath>
+    <costList>
+      <AIPersonaCore>1</AIPersonaCore>
+      <Uranium>40</Uranium>
+      <Gold>300</Gold>
+      <Plasteel>80</Plasteel>
+      <ComponentSpacer>10</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_StrategicPayload">
+        <explosionSound>IRBM_Sound_Helios</explosionSound>
+        <destroyWorldObjects>true</destroyWorldObjects>
+        <damageDef>Vaporize</damageDef>
+        <damageAmount>3000</damageAmount>
+        <armorPenetration>200</armorPenetration>
+        <damageTimes>10</damageTimes>
+        <pollutionAmount>0.8</pollutionAmount>
+        <tileRadius>3</tileRadius>
+        <scanCategories>
+          <li>Pawn</li>
+          <li>Building</li>
+          <li>Item</li>
+          <li>Plant</li>
+        </scanCategories>
+        <gameConditionConfigs>
+          <li>
+            <conditionDef>IRBM_NuclearWinter</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+        </gameConditionConfigs>
+        <penetrateThickRoof>false</penetrateThickRoof>
+        <fireChance>0.1</fireChance>
+        <!-- 视觉表现 -->
+        <visualType>GammaSource</visualType>
+        <visualColor>(1.0, 0.5, 0.2)</visualColor>
+        <visualScale>3.6</visualScale>
+        <shakeIntensity>3</shakeIntensity>
+        <shakeDurationTicks>600</shakeDurationTicks>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 4. 战略引力奇点裂解弹头：无污染 + 不推进末日 (超凡科技) -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Strategic_Collapse</defName>
+    <label>Strategic Gravitational Singularity Fission Warhead</label>
+    <description>An archotech singularity device controlled by a persona core. It creates a temporary gravitational anomaly that swallows entire maps, and can even dig the whole deepest underground facilities out. Structures within the anomaly's reach will be torn apart by the distorted gravitational forces, leaving behind only the raw materials that composed them.</description>
+    <category>Strategic</category>
+    <techLevel>Archotech</techLevel>
+    <researchPrerequisites>
+      <li>IRBM_ZeroPointCollapse</li>
+    </researchPrerequisites>
+    <doomsdayAdvanceMinutes>0</doomsdayAdvanceMinutes>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Strategic_Collapse</uiIconPath>
+    <costList>
+      <AIPersonaCore>3</AIPersonaCore>
+      <Gold>300</Gold>
+      <Plasteel>80</Plasteel>
+      <ComponentSpacer>10</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_StrategicPayload">
+        <explosionSound>IRBM_Sound_BlackHole</explosionSound>
+        <destroyWorldObjects>true</destroyWorldObjects>
+        <damageDef>Vaporize</damageDef>
+        <damageAmount>2000</damageAmount>
+        <armorPenetration>200</armorPenetration>
+        <damageTimes>30</damageTimes>
+        <lockCorePart>false</lockCorePart>
+        <pollutionAmount>0</pollutionAmount>
+        <tileRadius>4</tileRadius>
+        <removeThickRoof>true</removeThickRoof>
+        <completeDismantle>true</completeDismantle>
+        <scanCategories>
+          <li>Pawn</li>
+          <li>Building</li>
+          <li>Item</li>
+          <li>Plant</li>
+        </scanCategories>
+        <penetrateThickRoof>true</penetrateThickRoof>
+        <fireChance>0</fireChance>
+        <!-- 视觉表现 -->
+        <visualType>AtmosphericRupture</visualType>
+        <visualColor>(0.0, 0.0, 0.0)</visualColor>
+        <visualScale>2.4</visualScale>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 5. 战略伽马射线暴弹头：仅杀生物 + 穿透 + 不推进末日 (超凡科技) -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Strategic_GammaRay</defName>
+    <label>Gamma-Ray Burst Strategic Warhead</label>
+    <description>A highly advanced weapon that unleashes a focused burst of high-energy gamma radiation. It is designed to sweep the surface and penetrate the deepest bunkers, instantly neutralizing all biological life signs without damaging structures or causing long-term environmental fallout. It bypasses doomsday detection due to its clean energy signature.</description>
+    <category>Strategic</category>
+    <techLevel>Archotech</techLevel>
+    <researchPrerequisites>
+      <li>IRBM_ZeroPointCollapse</li>
+    </researchPrerequisites>
+    <doomsdayAdvanceMinutes>0</doomsdayAdvanceMinutes>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Strategic_GammaRay</uiIconPath>
+    <costList>
+      <AIPersonaCore>2</AIPersonaCore>
+      <Gold>300</Gold>
+      <Plasteel>80</Plasteel>
+      <ComponentSpacer>10</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_StrategicPayload">
+        <explosionSound>IRBM_Sound_AB_Beam</explosionSound>
+        <destroyWorldObjects>true</destroyWorldObjects>
+        <damageDef>Decayed</damageDef>
+        <damageAmount>100</damageAmount>
+        <armorPenetration>200</armorPenetration>
+        <damageTimes>300</damageTimes>
+        <lockCorePart>false</lockCorePart>
+        <pollutionAmount>0</pollutionAmount>
+        <tileRadius>4</tileRadius>
+        <scanCategories>
+          <li>Pawn</li>
+          <li>Plant</li>
+        </scanCategories>
+        <penetrateThickRoof>true</penetrateThickRoof>
+        <fireChance>0</fireChance>
+        <!-- 视觉表现 -->
+        <visualType>GammaSource</visualType>
+        <visualColor>(0.8, 0.2, 1.0)</visualColor>
+        <visualScale>3.0</visualScale>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战术死灵尘弹头 (Anomaly DLC) -->
+  <IRBM.MissileWarheadDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>IRBM_Warhead_Tactical_Deadlife</defName>
+    <label>Tactical Deadlife Warhead</label>
+    <description>A specialized warhead that disperses Deadlife dust upon detonation. This dust will reanimate any corpses in the area as friendly shamblers to attack enemies. Requires Anomaly research and bioferrite for production.</description>
+    <category>Tactical</category>
+    <techLevel>Ultra</techLevel>
+    <researchPrerequisites>
+      <li>IRBM_SpecializedPayloads</li>
+    </researchPrerequisites>
+    <uiIconPath>UI/CodexEntries/DeathPall_Silhouette</uiIconPath>
+    <costList>
+      <Bioferrite MayRequire="Ludeon.RimWorld.Anomaly">30</Bioferrite>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>35.9</explosionRadius>
+        <damageDef>Stun</damageDef>
+        <damageAmount>20</damageAmount>
+        <explosionSound>Explosion_Smoke</explosionSound>
+        <postExplosionGasType>DeadlifeDust</postExplosionGasType>
+        <postExplosionGasAmount>255</postExplosionGasAmount>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战术大范围烟幕弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Tactical_Smoke</defName>
+    <label>Tactical Aerosol Smoke Warhead</label>
+    <description>A non-lethal tactical warhead designed to saturate a massive area with vision-blocking smoke. Ideal for masking friendly movement or neutralizing enemy turret fire over large defensive lines.</description>
+    <category>Tactical</category>
+    <techLevel>Spacer</techLevel>
+    <researchPrerequisites>
+      <li>IRBM_EarlyWarheads</li>
+    </researchPrerequisites>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_Smoke</uiIconPath>
+    <costList>
+      <Shell_Smoke>2</Shell_Smoke>
+      <Steel>80</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>35.9</explosionRadius>
+        <damageDef>Smoke</damageDef>
+        <damageAmount>20</damageAmount>
+        <explosionSound>Explosion_Smoke</explosionSound>
+        <postExplosionGasType>BlindSmoke</postExplosionGasType>
+        <postExplosionGasAmount>255</postExplosionGasAmount>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战术钻地毒气弹头 (Biotech DLC) -->
+  <IRBM.MissileWarheadDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>IRBM_Warhead_Tactical_Tox</defName>
+    <label>Tactical Tox-Cloud Warhead</label>
+    <description>A chemical warhead designed to release a persistent, high-density toxic cloud over a wide area. It inflicts rapid toxic buildup on any biological life within the cloud. Requires Biotech research and tox shells for production.</description>
+    <category>Tactical</category>
+    <techLevel>Ultra</techLevel>
+    <drill>true</drill>
+    <researchPrerequisites>
+      <li>IRBM_BunkerBusterTech</li>
+    </researchPrerequisites>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_Tox</uiIconPath>
+    <costList>
+      <Shell_Toxic>2</Shell_Toxic>
+      <Luciferium>2</Luciferium>
+      <Plasteel>60</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>35.9</explosionRadius>
+        <damageDef>Stun</damageDef>
+        <damageAmount>20</damageAmount>
+        <explosionSound>Explosion_Smoke</explosionSound>
+        <postExplosionGasType>ToxGas</postExplosionGasType>
+        <postExplosionGasAmount>255</postExplosionGasAmount>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战术大范围钻地布雷弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Tactical_Mine</defName>
+    <label>Tactical Drilling Mine Distributor Warhead</label>
+    <description>A tactical warhead designed to distribute mines over a wide area.</description>
+    <category>Tactical</category>
+    <techLevel>Archotech</techLevel>
+    <aiCanUse>false</aiCanUse>
+    <researchPrerequisites>
+      <li>IRBM_BunkerBusterTech</li>
+    </researchPrerequisites>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_Mine</uiIconPath>
+    <clusterScatterRange>25</clusterScatterRange>
+    <clusterCount>75</clusterCount>
+    <drill>true</drill>
+    <costList>
+      <Luciferium>3</Luciferium>
+      <Shell_HighExplosive>5</Shell_HighExplosive>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>3.9</explosionRadius>
+        <damageDef>Smoke</damageDef>
+        <damageAmount>20</damageAmount>
+        <explosionSound>Explosion_Smoke</explosionSound>
+        <postExplosionGasType>BlindSmoke</postExplosionGasType>
+        <postExplosionGasAmount>255</postExplosionGasAmount>
+        <postExplosionSpawnSingleThingDef>IRBM_TrapIED_Antigrain_NonRemovable</postExplosionSpawnSingleThingDef>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战术钻地魔鬼素弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Tactical_Luciferium</defName>
+    <label>Tactical Drilling Luciferium Warhead</label>
+    <description>A tactical warhead designed to drill through armor and release Luciferium over a wide area.</description>
+    <category>Tactical</category>
+    <techLevel>Archotech</techLevel>
+    <aiCanUse>false</aiCanUse>
+    <researchPrerequisites>
+      <li>IRBM_BunkerBusterTech</li>
+    </researchPrerequisites>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_Luciferium</uiIconPath>
+    <drill>true</drill>
+    <costList>
+      <Luciferium>20</Luciferium>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>24.9</explosionRadius>
+        <damageDef>Smoke</damageDef>
+        <damageAmount>20</damageAmount>
+        <explosionSound>Explosion_Smoke</explosionSound>
+        <postExplosionGasType>RotStink</postExplosionGasType>
+        <postExplosionGasAmount>255</postExplosionGasAmount>
+        <hediffs>
+          <li>
+            <hediffDef>LuciferiumAddiction</hediffDef>
+            <severity>1.0</severity>
+          </li>
+          <li>
+            <hediffDef>DrugOverdose</hediffDef>
+            <severity>0.51</severity>
+          </li>
+        </hediffs>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 侦察弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Recon</defName>
+    <label>Recon Satellite</label>
+    <category>Satellite</category>
+    <techLevel>Spacer</techLevel>
+    <researchPrerequisites>
+      <li>IRBM_OrbitalRecon</li>
+    </researchPrerequisites>
+    <uiIconPath>UI/Icons/IRBM_ReconSatellite</uiIconPath>
+    <description>A reconnaissance satellite powered by a small fusion core. Upon launch, it enters orbit to provide continuous observation of a target location.</description>
+    <costList>
+      <Plasteel>100</Plasteel>
+      <Uranium>20</Uranium>
+      <ComponentSpacer>10</ComponentSpacer>
+      <ComponentIndustrial>30</ComponentIndustrial>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_SatellitePayload">
+        <satelliteWorldObjectDef>IRBM_ReconSatellite_Object</satelliteWorldObjectDef>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 轨道能量束卫星弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_EnergyBeamSatellite</defName>
+    <label>Orbital Energy Beam Satellite</label>
+    <category>Satellite</category>
+    <techLevel>Archotech</techLevel>
+    <aiCanUse>false</aiCanUse>
+    <researchPrerequisites>
+      <li>IRBM_OrbitalStrike</li>
+    </researchPrerequisites>
+    <uiIconPath>UI/Icons/IRBM_EnergyBeamSatellite</uiIconPath>
+    <description>A specialized satellite equipped with a high-intensity orbital energy beam projector. Once deployed into orbit, it can be commanded to fire a devastating beam of energy at a surface target. The satellite requires significant downtime between shots to recharge its capacitors.</description>
+    <costList>
+      <Plasteel>150</Plasteel>
+      <Uranium>30</Uranium>
+      <ComponentSpacer>15</ComponentSpacer>
+      <AIPersonaCore>1</AIPersonaCore>
+      <OrbitalTargeterPowerBeam>1</OrbitalTargeterPowerBeam>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_SatellitePayload">
+        <satelliteWorldObjectDef>IRBM_EnergyBeamSatellite_Object</satelliteWorldObjectDef>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战略耀斑弹头 (EMP + 太阳耀斑) -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Strategic_SolarFlare</defName>
+    <label>Strategic Solar Flare Warhead</label>
+    <description>A high-tech strategic payload designed to trigger a localized solar flare effect through high-altitude EMP bursts. It completely disables electronics and causes localized atmospheric disturbances without advancing the global doomsday clock.</description>
+    <category>Strategic</category>
+    <techLevel>Archotech</techLevel>
+    <aiCanUse>false</aiCanUse>
+    <researchPrerequisites>
+      <li>IRBM_WeatherControl</li>
+    </researchPrerequisites>
+    <doomsdayAdvanceMinutes>0</doomsdayAdvanceMinutes>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Strategic_SolarFlare</uiIconPath>
+    <costList>
+      <Shell_EMP>10</Shell_EMP>
+      <Gold>100</Gold>
+      <Plasteel>80</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_StrategicPayload">
+        <damageDef>EMP</damageDef>
+        <damageAmount>1200</damageAmount>
+        <armorPenetration>200</armorPenetration>
+        <damageTimes>20</damageTimes>
+        <pollutionAmount>0</pollutionAmount>
+        <tileRadius>5</tileRadius>
+        <destroyWorldObjects>false</destroyWorldObjects>
+        <explosionSound>IRBM_Sound_EMP_Thunder</explosionSound>
+        <penetrateThickRoof>true</penetrateThickRoof>
+        <scanCategories>
+          <li>Pawn</li>
+          <li>Building</li>
+        </scanCategories>
+        <gameConditionConfigs>
+          <li>
+            <conditionDef>SolarFlare</conditionDef>
+            <durationTicks>60000</durationTicks>
+          </li>
+        </gameConditionConfigs>
+        <fireChance>0</fireChance>
+        <!-- 视觉表现 -->
+        <visualType>GlobalStorm</visualType>
+        <visualColor>(1.0, 0.6, 0.2)</visualColor>
+        <visualScale>2.5</visualScale>
+        <shakeIntensity>1</shakeIntensity>
+        <shakeDurationTicks>600</shakeDurationTicks>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战略人工降雨弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Strategic_CloudSeeding</defName>
+    <label>Strategic Cloud-Seeding Warhead</label>
+    <description>A strategic weather-modification payload. Instead of delivering destructive force, it disperses localized cooling agents and nucleation seeds into the upper atmosphere to trigger immediate rainfall. It has no offensive capabilities and does not escalate the global doomsday clock.</description>
+    <category>Strategic</category>
+    <techLevel>Archotech</techLevel>
+    <aiCanUse>false</aiCanUse>
+    <researchPrerequisites>
+      <li>IRBM_WeatherControl</li>
+    </researchPrerequisites>
+    <doomsdayAdvanceMinutes>0</doomsdayAdvanceMinutes>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Strategic_CloudSeeding</uiIconPath>
+    <costList>
+      <Plasteel>80</Plasteel>
+      <Silver>500</Silver>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_StrategicPayload">
+        <forcedWeather>Rain</forcedWeather>
+        <destroyWorldObjects>false</destroyWorldObjects>
+        <explosionSound>IRBM_Sound_Thunder</explosionSound>
+        <tileRadius>3</tileRadius>
+        <fireChance>0</fireChance>
+        <!-- 视觉表现 -->
+        <visualType>GlobalStorm</visualType>
+        <visualColor>(0.6, 0.8, 1.0)</visualColor>
+        <visualScale>2.0</visualScale>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战略雷暴弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Strategic_Thunderstorm</defName>
+    <label>Strategic Thunderstorm Warhead</label>
+    <description>A strategic payload designed to destabilize the local ionosphere. Upon impact, it triggers a massive dry thunderstorm accompanied by intense lightning strikes. It inflicts minor concussive damage to surface targets and creates long-term atmospheric instability.</description>
+    <category>Strategic</category>
+    <techLevel>Archotech</techLevel>
+    <aiCanUse>false</aiCanUse>
+    <researchPrerequisites>
+      <li>IRBM_WeatherControl</li>
+    </researchPrerequisites>
+    <doomsdayAdvanceMinutes>0</doomsdayAdvanceMinutes>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_Suppression</uiIconPath>
+    <costList>
+      <Shell_EMP>5</Shell_EMP>
+      <Plasteel>80</Plasteel>
+      <Gold>200</Gold>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_StrategicPayload">
+        <damageDef>Stun</damageDef>
+        <damageAmount>1200</damageAmount>
+        <armorPenetration>200</armorPenetration>
+        <damageTimes>20</damageTimes>
+        <forcedWeather>DryThunderstorm</forcedWeather>
+        <penetrateThickRoof>true</penetrateThickRoof>
+        <!-- 视觉表现 -->
+        <visualType>GlobalStorm</visualType>
+        <visualColor>(0.6, 0.8, 1.0)</visualColor>
+        <visualScale>3.0</visualScale>
+        <shakeIntensity>1</shakeIntensity>
+        <shakeDurationTicks>600</shakeDurationTicks>
+        <scanCategories>
+          <li>Pawn</li>
+        </scanCategories>
+        <gameConditionConfigs>
+          <li>
+            <conditionDef>IRBM_StrategicThunderstorm</conditionDef>
+            <durationTicks>7500</durationTicks>
+          </li>
+        </gameConditionConfigs>
+        <destroyWorldObjects>false</destroyWorldObjects>
+        <explosionSound>IRBM_Sound_SharpThunder</explosionSound>
+        <tileRadius>4</tileRadius>
+        <fireChance>0</fireChance>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战略零度弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Strategic_DeepFreeze</defName>
+    <label>Strategic Deep Freeze Warhead</label>
+    <description>An advanced endothermic payload that rapidly absorbs thermal energy from the environment. It triggers an immediate, severe cold snap and heavy snowfall, plunging the target area into a localized mini-ice age.</description>
+    <category>Strategic</category>
+    <techLevel>Archotech</techLevel>
+    <aiCanUse>false</aiCanUse>
+    <researchPrerequisites>
+      <li>IRBM_WeatherControl</li>
+    </researchPrerequisites>
+    <doomsdayAdvanceMinutes>0</doomsdayAdvanceMinutes>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_Cryo</uiIconPath>
+    <costList>
+      <Plasteel>80</Plasteel>
+      <MedicineUltratech>15</MedicineUltratech>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_StrategicPayload">
+        <explosionSound>IRBM_Sound_Helios</explosionSound>
+        <damageDef>Frostbite</damageDef>
+        <damageAmount>5</damageAmount>
+        <armorPenetration>2</armorPenetration>
+        <damageTimes>120</damageTimes>
+        <lockCorePart>false</lockCorePart>
+        <forcedWeather>SnowHard</forcedWeather>
+        <!-- 视觉表现 -->
+        <visualType>GammaSource</visualType>
+        <visualColor>(1.0, 1.0, 1.0)</visualColor>
+        <visualScale>3.0</visualScale>
+        <shakeIntensity>0.8</shakeIntensity>
+        <shakeDurationTicks>600</shakeDurationTicks>
+        <scanCategories>
+          <li>Plant</li>
+          <li>Pawn</li>
+        </scanCategories>
+        <gameConditionConfigs>
+          <li>
+            <conditionDef>ColdSnap</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>ColdSnap</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>ColdSnap</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>ColdSnap</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>ColdSnap</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>ColdSnap</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>ColdSnap</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>ColdSnap</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>ColdSnap</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>ColdSnap</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>ColdSnap</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>ColdSnap</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+        </gameConditionConfigs>
+        <destroyWorldObjects>false</destroyWorldObjects>
+        <tileRadius>5</tileRadius>
+        <fireChance>0</fireChance>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战略血怒之雨弹头 -->
+  <IRBM.MissileWarheadDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>IRBM_Warhead_Strategic_BloodRain</defName>
+    <label>Strategic Blood Rain Warhead</label>
+    <description>A dark-tech payload that utilizes forbidden archotech resonance to condense blood-like fluid in the clouds. The falling ichor drives biological organisms into a berserk frenzy. Requires Anomaly-level synchronization.</description>
+    <category>Strategic</category>
+    <techLevel>Archotech</techLevel>
+    <aiCanUse>false</aiCanUse>
+    <researchPrerequisites>
+      <li>IRBM_WeatherControl</li>
+    </researchPrerequisites>
+    <doomsdayAdvanceMinutes>0</doomsdayAdvanceMinutes>
+    <uiIconPath>UI/CodexEntries/BloodRain</uiIconPath>
+    <costList>
+      <Plasteel>80</Plasteel>
+      <Bioferrite MayRequire="Ludeon.RimWorld.Anomaly">70</Bioferrite>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_StrategicPayload">
+        <explosionSound>IRBM_Sound_Thunder</explosionSound>
+        <gameConditionConfigs>
+          <li>
+            <conditionDef>BloodRain</conditionDef>
+            <durationTicks>120000</durationTicks>
+          </li>
+        </gameConditionConfigs>
+        <destroyWorldObjects>false</destroyWorldObjects>
+        <tileRadius>4</tileRadius>
+        <fireChance>0</fireChance>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战略火山弹头 -->
+  <IRBM.MissileWarheadDef MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>IRBM_Warhead_Strategic_Lava</defName>
+    <label>Strategic Volcanic Warhead</label>
+    <description>A tectonic-disruption payload that triggers localized volcanic activity. It causes a rain of molten debris to shower the target area, igniting everything it touches.</description>
+    <category>Strategic</category>
+    <techLevel>Archotech</techLevel>
+    <aiCanUse>false</aiCanUse>
+    <researchPrerequisites>
+      <li>IRBM_WeatherControl</li>
+    </researchPrerequisites>
+    <doomsdayAdvanceMinutes>0</doomsdayAdvanceMinutes>
+    <uiIconPath>World/Landmarks/LavaLake</uiIconPath>
+    <costList>
+      <Plasteel>80</Plasteel>
+      <Obsidian MayRequire="Ludeon.RimWorld.Odyssey">50</Obsidian>
+      <BlocksVacstone MayRequire="Ludeon.RimWorld.Odyssey">100</BlocksVacstone>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_StrategicPayload">
+        <explosionSound>IRBM_Sound_CordiumExplosion</explosionSound>
+        <damageDef>Flame</damageDef>
+        <damageAmount>5</damageAmount>
+        <armorPenetration>2</armorPenetration>
+        <damageTimes>120</damageTimes>
+        <gameConditionConfigs>
+          <li>
+            <conditionDef>HeatWave</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>HeatWave</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>HeatWave</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>HeatWave</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>HeatWave</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>HeatWave</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>HeatWave</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>HeatWave</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>HeatWave</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>HeatWave</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>HeatWave</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li>
+            <conditionDef>HeatWave</conditionDef>
+            <durationTicks>180000</durationTicks>
+          </li>
+          <li MayRequire="Ludeon.RimWorld.Odyssey">
+            <conditionDef>IRBM_StrategicVolcano</conditionDef>
+            <durationTicks>7500</durationTicks>
+          </li>
+        </gameConditionConfigs>
+        <!-- 视觉表现 -->
+        <visualType>MushroomCloud</visualType>
+        <visualColor>(1, 0.9, 0.8)</visualColor>
+        <visualScale>3.2</visualScale>
+        <shakeIntensity>5</shakeIntensity>
+        <shakeDurationTicks>600</shakeDurationTicks>
+        <destroyWorldObjects>false</destroyWorldObjects>
+        <tileRadius>5</tileRadius>
+        <fireChance>0</fireChance>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 战略真空弹头 -->
+  <IRBM.MissileWarheadDef MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>IRBM_Warhead_Strategic_Vacuum</defName>
+    <label>Strategic Vacuum Warhead</label>
+    <description>A highly advanced payload that temporarily rips a hole in the atmosphere, exposing the surface to the void of space. This triggers a localized orbital environment effect.</description>
+    <category>Strategic</category>
+    <techLevel>Archotech</techLevel>
+    <aiCanUse>false</aiCanUse>
+    <researchPrerequisites>
+      <li>IRBM_WeatherControl</li>
+    </researchPrerequisites>
+    <doomsdayAdvanceMinutes>0</doomsdayAdvanceMinutes>
+    <uiIconPath>UI/Issues/SpaceHabitat</uiIconPath>
+    <costList>
+      <Gravcore MayRequire="Ludeon.RimWorld.Odyssey">1</Gravcore>
+      <GravlitePanel MayRequire="Ludeon.RimWorld.Odyssey">80</GravlitePanel>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_StrategicPayload">
+        <explosionSound>IRBM_Sound_ForceField</explosionSound>
+        <forcedWeather MayRequire="Ludeon.RimWorld.Odyssey">Orbit</forcedWeather>
+        <gameConditionConfigs>
+          <li>
+            <conditionDef>IRBM_AtmosphericRupture</conditionDef>
+            <durationTicks>60000</durationTicks>
+          </li>
+        </gameConditionConfigs>
+        <destroyWorldObjects>false</destroyWorldObjects>
+        <tileRadius>4</tileRadius>
+        <fireChance>0</fireChance>
+        <!-- 视觉表现 -->
+        <visualType>AtmosphericRupture</visualType>
+        <visualColor>(0.2, 0.4, 1.0)</visualColor>
+        <visualScale>2.5</visualScale>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 轨道轰炸卫星弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_BombardmentSatellite</defName>
+    <label>Orbital Bombardment Satellite</label>
+    <category>Satellite</category>
+    <techLevel>Archotech</techLevel>
+    <aiCanUse>false</aiCanUse>
+    <researchPrerequisites>
+      <li>IRBM_OrbitalStrike</li>
+    </researchPrerequisites>
+    <uiIconPath>UI/Icons/IRBM_BombardmentSatellite</uiIconPath>
+    <description>A specialized satellite equipped with a rapid-fire kinetic impactor magazine. Once deployed into orbit, it can be commanded to saturate a target area with multiple kinetic strikes over a short duration.</description>
+    <costList>
+      <Plasteel>150</Plasteel>
+      <Uranium>30</Uranium>
+      <ComponentSpacer>15</ComponentSpacer>
+      <AIPersonaCore>1</AIPersonaCore>
+      <OrbitalTargeterBombardment>1</OrbitalTargeterBombardment>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_SatellitePayload">
+        <satelliteWorldObjectDef>IRBM_BombardmentSatellite_Object</satelliteWorldObjectDef>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 量子纠缠牵引卫星弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_TractorSatellite</defName>
+    <label>Quantum Entanglement Tractor Satellite</label>
+    <category>Satellite</category>
+    <techLevel>Archotech</techLevel>
+    <aiCanUse>false</aiCanUse>
+    <researchPrerequisites>
+      <li>IRBM_QuantumEntanglement</li>
+    </researchPrerequisites>
+    <uiIconPath>UI/Icons/IRBM_TractorSatellite</uiIconPath>
+    <description>A specialized satellite equipped with high-energy quantum entanglement projectors. Once deployed into orbit, it can create a momentary link between two distant points in space-time, allowing for the instantaneous mass transport of all items from one map to a specific location on another.</description>
+    <costList>
+      <Plasteel>150</Plasteel>
+      <Uranium>30</Uranium>
+      <ComponentSpacer>15</ComponentSpacer>
+      <AIPersonaCore>1</AIPersonaCore>
+      <Luciferium>50</Luciferium>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_SatellitePayload">
+        <satelliteWorldObjectDef>IRBM_TractorSatellite_Object</satelliteWorldObjectDef>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 巨石阵专用动能炮弹弹头 -->
+  <IRBM.MissileWarheadDef>
+    <defName>IRBM_Warhead_Tactical_Stonehenge</defName>
+    <label>Kinetic AP Warhead</label>
+    <description>An advanced kinetic warhead for railgun shells, designed for maximum penetration and destructive power.</description>
+    <category>Tactical</category>
+    <aiCanUse>false</aiCanUse>
+    <techLevel>Archotech</techLevel>
+    <drill>true</drill>
+    <clusterCount>1</clusterCount>
+    <clusterScatterRange>1</clusterScatterRange>
+    <maxChainDepth>1</maxChainDepth>
+    <uiIconPath>MissileWarhead/IRBM_Warhead_Tactical_BunkerBuster</uiIconPath>
+    <costList>
+      <Uranium>60</Uranium>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>15.9</explosionRadius>
+        <damageDef>BombSuper</damageDef>
+        <damageAmount>1200</damageAmount>
+        <armorPenetration>800.0</armorPenetration>
+        <explosionSound>Explosion_GiantBomb</explosionSound>
+        <explosionEffect>GiantExplosion</explosionEffect>
+        <damageFalloff>false</damageFalloff>
+        <ignoreDamageMultipliers>true</ignoreDamageMultipliers>
+        <isPenetrating>true</isPenetrating>
+        <removeGoodHediffs>true</removeGoodHediffs>
+        <restoreGoodHediffs>true</restoreGoodHediffs>
+        <postExplosionSpawnSingleThingDef>CraterLarge</postExplosionSpawnSingleThingDef>
+      </li>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>35.9</explosionRadius>
+        <damageDef>Stun</damageDef>
+        <damageAmount>240</damageAmount>
+        <damageFalloff>false</damageFalloff>
+        <explosionSound>Explosion_GiantBomb</explosionSound>
+        <explosionEffect>GiantExplosion</explosionEffect>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+  <!-- 联动系列 -->
+  <!-- 米莉拉 战术等离子电浆弹头 -->
+  <IRBM.MissileWarheadDef MayRequire="ancot.milirarace">
+    <defName>IRBM_Warhead_Tactical_Milira_Plasma</defName>
+    <label>Tactical Plasma Warhead</label>
+    <description>A specialized tactical warhead that fires a cluster of superheated plasma.</description>
+    <category>Tactical</category>
+    <techLevel>Ultra</techLevel>
+    <factionsCanUse>
+      <li>Milira_Faction</li>
+      <li MayRequire="ariandel.miliraimperium">Milira_Imperium</li>
+      <li MayRequire="ariandel.miliraimperium">Milira_Pirate_Faction</li>
+    </factionsCanUse>
+    <researchPrerequisites>
+      <li>IRBM_SpecializedPayloads</li>
+      <li MayRequire="ancot.milirarace">Milira_SunBlastFurnace_Build</li>
+    </researchPrerequisites>
+    <uiIconPath>Milira/UI/ArcPointDefense</uiIconPath>
+    <clusterScatterRange>16</clusterScatterRange>
+    <clusterCount>10</clusterCount>
+    <costList>
+      <Milira_SunPlateSteel>20</Milira_SunPlateSteel>
+      <Milira_SolarCrystal>3</Milira_SolarCrystal>
+      <Milira_SunLightFuel>50</Milira_SunLightFuel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <payloadComps>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>15.9</explosionRadius>
+        <damageDef>Milira_PlasmaBombBig</damageDef>
+        <damageAmount>120</damageAmount>
+        <explosionSound>Milira_Explosion_Plasma</explosionSound>
+        <hediffs>
+          <li>
+            <hediffDef>Milira_PlasmaMeltdown</hediffDef>
+            <severity>1.0</severity>
+          </li>
+        </hediffs>
+      </li>
+      <li Class="IRBM.WorldObjectCompProperties_TacticalPayload">
+        <explosionRadius>19.9</explosionRadius>
+        <damageDef>EMP</damageDef>
+        <damageAmount>120</damageAmount>
+      </li>
+    </payloadComps>
+  </IRBM.MissileWarheadDef>
+
+</Defs>

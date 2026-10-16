@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WeatherDef>
+    <defName>IRBM_NuclearWinter_Weather</defName>
+    <label>nuclear winter</label>
+    <description>A combination of volcanic ash, acidic smog, and radioactive fallout. The sky is dark, and the air is lethal.</description>
+    <isBad>true</isBad>
+    <temperatureRange>-999~-0.5</temperatureRange>
+    <snowRate>0</snowRate>
+    <repeatable>true</repeatable>
+    <favorability>VeryBad</favorability>
+    <perceivePriority>0</perceivePriority>
+    <windSpeedFactor>2.0</windSpeedFactor>
+    <moveSpeedMultiplier>0.7</moveSpeedMultiplier>
+    <accuracyMultiplier>0.4</accuracyMultiplier>
+    <ambientSounds>
+      <li>Ambient_Wind_Storm</li>
+    </ambientSounds>
+    <overlayClasses>
+      <li>WeatherOverlay_SnowHard</li>
+      <li>WeatherOverlay_Fog</li>
+    </overlayClasses>
+    <skyColorsDay>
+      <sky>(0.8,0.8,0.8)</sky>
+      <shadow>(0.2,0.2,0.2)</shadow>
+      <overlay>(0.7,0.7,0.7)</overlay>
+      <saturation>0.4</saturation>
+    </skyColorsDay>
+    <skyColorsDusk>
+      <sky>(0.6,0.6,0.6)</sky>
+      <shadow>(0.2,0.2,0.2)</shadow>
+      <overlay>(0.6,0.6,0.6)</overlay>
+      <saturation>0.4</saturation>
+    </skyColorsDusk>
+    <skyColorsNightEdge>
+      <sky>(0.6,0.6,0.6)</sky>
+      <shadow>(0.2,0.2,0.2)</shadow>
+      <overlay>(0.6,0.6,0.6)</overlay>
+      <saturation>0.4</saturation>
+    </skyColorsNightEdge>
+    <skyColorsNightMid>
+      <sky>(0.4,0.4,0.4)</sky>
+      <shadow>(0.2,0.2,0.2)</shadow>
+      <overlay>(0.5,0.5,0.5)</overlay>
+      <saturation>0.4</saturation>
+    </skyColorsNightMid>
+  </WeatherDef>
+
+</Defs>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- AI派系战术导弹袭击事件 -->
+  <IncidentDef>
+    <defName>IRBM_AIFactionTacticalMissileStrike</defName>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+      <li>Map_TempIncident</li>
+      <li>Map_Misc</li>
+      <li>Caravan</li>
+    </targetTags>
+    <workerClass>IRBM.IncidentWorker_AIFactionTacticalMissile</workerClass>
+    <baseChance>0.2</baseChance>
+    <minRefireDays>1</minRefireDays>
+    <earliestDay>30</earliestDay>
+    <minThreatPoints>500</minThreatPoints>
+    <hidden>true</hidden>
+  </IncidentDef>
+
+  <!-- AI派系战略导弹袭击事件 -->
+  <IncidentDef>
+    <defName>IRBM_AIFactionStrategicMissileStrike</defName>
+    <category>Misc</category>
+    <targetTags>
+      <li>World</li>
+    </targetTags>
+    <workerClass>IRBM.IncidentWorker_AIFactionStrategicMissile</workerClass>
+    <baseChance>0.5</baseChance>
+    <minRefireDays>5</minRefireDays>
+    <earliestDay>60</earliestDay>
+    <hidden>true</hidden>
+  </IncidentDef>
+
+  <!-- AI派系侦察卫星发射事件 -->
+  <IncidentDef>
+    <defName>IRBM_AIFactionReconSatelliteLaunch</defName>
+    <category>Misc</category>
+    <targetTags>
+      <li>World</li>
+    </targetTags>
+    <workerClass>IRBM.IncidentWorker_AIFactionReconSatellite</workerClass>
+    <baseChance>0.2</baseChance>
+    <minRefireDays>7</minRefireDays>
+    <earliestDay>30</earliestDay>
+    <letterLabel>Enemy reconnaissance satellite deployed</letterLabel>
+    <letterText>Our sensors have detected that {0} has deployed a reconnaissance satellite above {1}.\n\nThis satellite may be used to gather intelligence and coordinate strikes against targets.</letterText>
+    <letterDef>NeutralEvent</letterDef>
+  </IncidentDef>
+
+  <!-- AI派系反卫星导弹袭击事件 -->
+  <IncidentDef>
+    <defName>IRBM_AIFactionSatelliteStrike</defName>
+    <category>Misc</category>
+    <targetTags>
+      <li>World</li>
+    </targetTags>
+    <workerClass>IRBM.IncidentWorker_AIFactionSatelliteStrike</workerClass>
+    <baseChance>0.2</baseChance>
+    <minRefireDays>5</minRefireDays>
+    <earliestDay>45</earliestDay>
+    <hidden>true</hidden>
+  </IncidentDef>
+
+</Defs>

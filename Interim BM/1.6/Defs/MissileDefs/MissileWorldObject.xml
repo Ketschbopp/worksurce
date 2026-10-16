@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 统一的导弹世界物体定义 -->
+  <!-- 所有的导弹实体都使用这个 Def 作为容器，具体的表现由关联的 MissileBodyDef 决定 -->
+  <WorldObjectDef>
+    <defName>IRBM_Missile_Object</defName>
+    <label>missile</label>
+    <worldObjectClass>IRBM.WorldObject_Missile</worldObjectClass>
+    <selectable>True</selectable>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>UI/Icons/IRBM_Dot</expandingIconTexture>
+    <expandingIconPriority>100</expandingIconPriority>
+    <texture>UI/Icons/IRBM_Dot</texture>
+    <comps>
+      <li Class="IRBM.WorldObjectCompProperties_Missile" />
+    </comps>
+  </WorldObjectDef>
+
+  <!-- 侦察卫星世界物体定义 -->
+  <WorldObjectDef>
+    <defName>IRBM_ReconSatellite_Object</defName>
+    <label>recon satellite</label>
+    <description>An orbital reconnaissance satellite deployed via missile. It can maintain high-altitude observation over a target location, keeping the map loaded.</description>
+    <worldObjectClass>IRBM.WorldObject_Satellite</worldObjectClass>
+    <selectable>True</selectable>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>UI/Icons/IRBM_ReconSatellite</expandingIconTexture>
+    <expandingIconPriority>110</expandingIconPriority>
+    <texture>UI/Icons/IRBM_ReconSatellite</texture>
+    <drawAltitudeOffset>40</drawAltitudeOffset>
+  </WorldObjectDef>
+
+  <!-- 轨道能量束卫星世界物体定义 -->
+  <WorldObjectDef>
+    <defName>IRBM_EnergyBeamSatellite_Object</defName>
+    <label>orbital energy beam satellite</label>
+    <description>An orbital platform equipped with a high-power microwave emitter. It can focus a massive column of electromagnetic energy onto a target location on the surface.</description>
+    <worldObjectClass>IRBM.WorldObject_Satellite</worldObjectClass>
+    <selectable>True</selectable>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>UI/Icons/IRBM_EnergyBeamSatellite</expandingIconTexture>
+    <expandingIconPriority>110</expandingIconPriority>
+    <texture>UI/Icons/IRBM_EnergyBeamSatellite</texture>
+    <drawAltitudeOffset>60</drawAltitudeOffset>
+  </WorldObjectDef>
+
+  <!-- 轨道轰炸卫星世界物体定义 -->
+  <WorldObjectDef>
+    <defName>IRBM_BombardmentSatellite_Object</defName>
+    <label>orbital bombardment satellite</label>
+    <description>An orbital platform designed for precision saturation strikes. It is equipped with a magazine of kinetic impactors that can be dropped onto target coordinates.</description>
+    <worldObjectClass>IRBM.WorldObject_Satellite</worldObjectClass>
+    <selectable>True</selectable>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>UI/Icons/IRBM_BombardmentSatellite</expandingIconTexture>
+    <expandingIconPriority>110</expandingIconPriority>
+    <texture>UI/Icons/IRBM_BombardmentSatellite</texture>
+    <drawAltitudeOffset>60</drawAltitudeOffset>
+  </WorldObjectDef>
+
+  <!-- 量子纠缠牵引卫星世界物体定义 -->
+  <WorldObjectDef>
+    <defName>IRBM_TractorSatellite_Object</defName>
+    <label>quantum entanglement tractor satellite</label>
+    <description>A specialized orbital platform equipped with high-energy quantum entanglement projectors. It can create a momentary link between two distant points in space-time, allowing for the instantaneous mass transport of all items from one map to a specific location on another. This process is non-destructive and preserves all physical properties of the transported objects.</description>
+    <worldObjectClass>IRBM.WorldObject_Satellite</worldObjectClass>
+    <selectable>True</selectable>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>UI/Icons/IRBM_TractorSatellite</expandingIconTexture>
+    <expandingIconPriority>110</expandingIconPriority>
+    <texture>UI/Icons/IRBM_TractorSatellite</texture>
+    <drawAltitudeOffset>60</drawAltitudeOffset>
+  </WorldObjectDef>
+
+</Defs>

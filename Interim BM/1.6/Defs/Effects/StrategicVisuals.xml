@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- 战略打击核心视觉容器 -->
+    <ThingDef ParentName="MoteBase">
+        <defName>IRBM_Mote_StrategicVisual</defName>
+        <thingClass>IRBM.IRBM_StrategicMote</thingClass>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <drawOffscreen>true</drawOffscreen>
+        <seeThroughFog>true</seeThroughFog>
+        <mote>
+            <fadeInTime>0.1</fadeInTime>
+            <solidTime>30</solidTime>
+            <fadeOutTime>5</fadeOutTime>
+        </mote>
+        <graphicData>
+            <texPath>Things/Mote/Smoke</texPath> <!-- 基础纹理，实际渲染由类控制 -->
+            <shaderType>Transparent</shaderType>
+        </graphicData>
+    </ThingDef>
+
+    <!-- 近防系统脉冲特效 Mote (1s+5s 生命周期) -->
+    <ThingDef ParentName="MoteBase">
+        <defName>IRBM_Mote_PulseMachRings</defName>
+        <thingClass>IRBM.IRBM_StrategicMote</thingClass>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <drawOffscreen>true</drawOffscreen>
+        <seeThroughFog>true</seeThroughFog>
+        <mote>
+            <fadeInTime>0</fadeInTime>
+            <solidTime>1</solidTime>
+            <fadeOutTime>5</fadeOutTime>
+        </mote>
+        <graphicData>
+            <texPath>Things/Mote/Smoke</texPath>
+            <shaderType>Transparent</shaderType>
+        </graphicData>
+    </ThingDef>
+</Defs>

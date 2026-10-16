@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <AbilityDef>
+    <defName>IRBM_Ability_QuantumTacticalStrike</defName>
+    <label>量子战术打击</label>
+    <description>自选一枚任意战术弹头，并瞬间将其投射到本地图任意位置触发，这只需要她的一个念头……没错，做梦也算。\n\n玲奈酱知道边缘世界并不太平，作为善意超凡智能化身的她，要是不长点本事会被欺负的……至于这本领本身是否“善意”，那你别管~\n\n别用得太没节制，回满充能要一年呢。</description>
+    <abilityClass>IRBM.Ability_QuantumTacticalStrike</abilityClass>
+    <iconPath>MissileBody/IRBM_Heisenberg</iconPath>
+    <cooldownTicksRange>300000</cooldownTicksRange>
+    <charges>12</charges>
+    <cooldownPerCharge>true</cooldownPerCharge>
+    <targetRequired>true</targetRequired>
+    <hostile>true</hostile>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <uiOrder>10</uiOrder>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>99999</range>
+      <requireLineOfSight>false</requireLineOfSight>
+      <targetable>true</targetable>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>true</canTargetBuildings>
+        <canTargetFires>true</canTargetFires>
+        <canTargetItems>true</canTargetItems>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+
+</Defs>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>IRBM_NuclearWinter</defName>
+    <workerClass>IRBM.ThoughtWorker_NuclearWinter</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>Nuclear Winter</label>
+        <description>The world is cold, dark, and dying. There is no hope left under this black sun.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

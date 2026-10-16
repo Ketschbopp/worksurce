@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <WorldObjectDef>
+        <defName>IRBM_ObservedArea</defName>
+        <label>observed area</label>
+        <description>An area currently under satellite surveillance.</description>
+        <worldObjectClass>IRBM.WorldObject_ObservedArea</worldObjectClass>
+        <texture>World/WorldObjects/DefaultSettlement</texture>
+        <expandingIcon>true</expandingIcon>
+        <expandingIconTexture>World/WorldObjects/DefaultSettlement</expandingIconTexture>
+        <expandingIconPriority>50</expandingIconPriority>
+        <selectable>true</selectable>
+    </WorldObjectDef>
+</Defs>

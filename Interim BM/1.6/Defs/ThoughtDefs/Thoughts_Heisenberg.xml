@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>IRBM_HeisenbergUncertaintyThought</defName>
+    <workerClass>IRBM.ThoughtWorker_HeisenbergUncertainty</workerClass>
+    <stages>
+      <li>
+        <label>不确定性状态</label>
+        <description>这种感觉……就像我既在这里，又不在这里。</description>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible> <!-- 隐藏此心情，仅用于逻辑驱动 -->
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

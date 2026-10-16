@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorldObjectDef>
+    <defName>IRBM_HeisenbergRelay</defName>
+    <label>Heisenberg relay station</label>
+    <description>A highly advanced, automated signal relay station. It is directing the Heisenberg Protocol strikes against your colony. Destroying all such stations is the only way to terminate the protocol.</description>
+    <worldObjectClass>IRBM.WorldObject_HeisenbergRelay</worldObjectClass>
+    <!-- 彻底移除贴图定义，依靠C#层的null返回来阻断材质生成 -->
+    <texture />
+    <expandingIcon>false</expandingIcon>
+    <selectable>false</selectable>
+    <canHaveFaction>true</canHaveFaction>
+  </WorldObjectDef>
+
+</Defs>

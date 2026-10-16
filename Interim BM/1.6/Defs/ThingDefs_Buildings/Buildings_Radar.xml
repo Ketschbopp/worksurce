@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 基础型反导雷达 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>IRBM_AntiMissileRadar_Basic</defName>
+    <label>Doppler Anti-Missile Radar</label>
+    <description>A long-range Doppler radar for monitoring suborbital objects. Capable of detecting the position, speed, and flight progress of missiles entering the defense zone. Due to limited signal processing power, it cannot identify unknown missile models.</description>
+    <thingClass>IRBM.Building_AntiMissileRadar</thingClass>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Things/Building/IRBM_AntiMissileRadar_Basic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(5.24, 5.82)</drawSize>
+      <drawOffset>(-0.12, 0, 0.41)</drawOffset>
+      <shadowData>
+        <volume>(4.6, 1.2, 4.6)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>15000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+      <Beauty>-10</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(5,5)</size>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>300</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <modExtensions>
+      <li Class="IRBM.RadarExtension">
+        <detectionRange>120</detectionRange>
+        <detectionLevel>1</detectionLevel>
+      </li>
+    </modExtensions>
+    <designationCategory>IRBM</designationCategory>
+    <uiOrder>2100</uiOrder>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>IRBM_EarlyWarning</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 先进型反导雷达 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>IRBM_AntiMissileRadar_Advanced</defName>
+    <label>Phased Array Anti-Missile Radar</label>
+    <description>An advanced radar equipped with a high-frequency phased array antenna and supercomputing analysis array. In addition to an extremely wide detection range, it can identify the exact model of hostile missiles by analyzing Radar Cross Section (RCS).</description>
+    <thingClass>IRBM.Building_AntiMissileRadar</thingClass>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Things/Building/IRBM_AntiMissileRadar_Advanced</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(5,5)</drawSize>
+      <shadowData>
+        <volume>(4.6, 0.8, 4.6)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <blockWind>true</blockWind>
+    <fillPercent>0.6</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>30000</WorkToBuild>
+      <Flammability>0.3</Flammability>
+      <Beauty>-15</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(5,5)</size>
+    <costList>
+      <Steel>250</Steel>
+      <Plasteel>50</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>800</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <modExtensions>
+      <li Class="IRBM.RadarExtension">
+        <detectionRange>300</detectionRange>
+        <detectionLevel>2</detectionLevel>
+      </li>
+    </modExtensions>
+    <designationCategory>IRBM</designationCategory>
+    <uiOrder>2101</uiOrder>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>IRBM_AdvancedInterception</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

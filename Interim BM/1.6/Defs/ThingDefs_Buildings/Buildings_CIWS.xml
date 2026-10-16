@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 机炮近防炮 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>IRBM_CIWS_Guns</defName>
+    <label>CIWS (Guns)</label>
+    <description>A short-range defense system using high-speed cannons to intercept incoming missiles. It fires at an extremely high rate, creating a dense wall of lead, but is less reliable at intercepting endgame missiles. Requires anti-missile radar data to function.</description>
+    <thingClass>IRBM.Building_CIWS</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <uiIconPath>Things/Building/IRBM_CIWS_Guns</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/IRBM_MissileSilo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(2.8,0.4,2.8)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>2400</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <WorkToBuild>20000</WorkToBuild>
+      <Beauty>0</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(3,3)</size>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <costList>
+      <Steel>200</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>IRBM</designationCategory>
+    <uiOrder>2110</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>600</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelCapacity>1800.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <initialFuelPercent>0</initialFuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <drawFuelGaugeInMap>true</drawFuelGaugeInMap>
+        <autoRefuelPercent>1.0</autoRefuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="IRBM.CIWSExtension">
+        <requiresFuel>true</requiresFuel>
+        <fuelConsumptionPerTick>0.5</fuelConsumptionPerTick>
+        <interceptionRange>24.0</interceptionRange>
+        <interceptionEfficiency>0.005</interceptionEfficiency>
+        <muzzleFlashFleck>IRBM_IgnitionFlash</muzzleFlashFleck>
+        <tracerFleck>IRBM_CIWS_Tracer</tracerFleck>
+        <firingSound>IRBM_Sound_CIWS_Guns_Loop</firingSound>
+        <fleckInterval>1</fleckInterval>
+        <turretTexPath>Things/Building/IRBM_CIWS_Guns</turretTexPath>
+        <muzzleOffsetRatio>1.0</muzzleOffsetRatio>
+        <turretSize>(3,3)</turretSize>
+        <groundDamageType>Bullet</groundDamageType>
+        <groundDamageAmount>18</groundDamageAmount>
+        <groundDamageArmorPenetration>2.0</groundDamageArmorPenetration>
+        <groundDamageAngle>3</groundDamageAngle>
+        <groundDamageInterval>3</groundDamageInterval>
+        <groundMaxRange>75</groundMaxRange>
+        <groundDamageFalloffRange>120</groundDamageFalloffRange>
+      </li>
+    </modExtensions>
+    <researchPrerequisites>
+      <li>IRBM_KineticInterception</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 激光近防炮 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>IRBM_CIWS_Laser</defName>
+    <label>CIWS (Laser)</label>
+    <description>An advanced interception system that uses high-energy laser beams to instantly vaporize incoming missiles. Compared to guns, it has a longer interception range and higher precision, but is also more energy-intensive. Requires anti-missile radar data to function.</description>
+    <thingClass>IRBM.Building_CIWS</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <uiIconPath>Things/Building/IRBM_CIWS_Laser</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/IRBM_MissileSilo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(1.9,0.4,1.9)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>3200</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <WorkToBuild>20000</WorkToBuild>
+      <Beauty>0</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(2,2)</size>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <costList>
+      <Plasteel>100</Plasteel>
+      <Gold>20</Gold>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>IRBM</designationCategory>
+    <uiOrder>2111</uiOrder>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <modExtensions>
+      <li Class="IRBM.CIWSExtension">
+        <interceptionRange>30.0</interceptionRange>
+        <interceptionEfficiency>0.005</interceptionEfficiency>
+        <muzzleFlashFleck>IRBM_IgnitionFlash</muzzleFlashFleck>
+        <tracerFleck>IRBM_CIWS_LaserBeam</tracerFleck>
+        <shotSounds>
+          <li>IRBM_Sound_CIWS_Laser_Shot</li>
+        </shotSounds>
+        <fleckInterval>10</fleckInterval>
+        <turretTexPath>Things/Building/IRBM_CIWS_Laser</turretTexPath>
+        <muzzleOffsetRatio>0.8</muzzleOffsetRatio>
+        <turretSize>(2,2)</turretSize>
+        <visualMode>Laser</visualMode>
+        <laserLength>120.0</laserLength>
+        <burstPowerConsumption>1.0</burstPowerConsumption>
+        <groundDamageType>Beam</groundDamageType>
+        <groundDamageAmount>64</groundDamageAmount>
+        <groundDamageArmorPenetration>2.0</groundDamageArmorPenetration>
+        <groundDamageAngle>1</groundDamageAngle>
+        <groundDamageInterval>10</groundDamageInterval>
+        <groundMaxRange>75</groundMaxRange>
+        <groundDamageFalloffRange>150</groundDamageFalloffRange>
+      </li>
+    </modExtensions>
+    <researchPrerequisites>
+      <li>IRBM_AdvancedInterception</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 行星防御炮 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>IRBM_CIWS_Stonehenge</defName>
+    <label>Stonehenge Planetary Defense Railgun</label>
+    <description>A massive railgun defense system from Strangereal, designed by the Federation of Central Usea for planetary security. Now, it has come to the RimWorld for unknown reasons.</description>
+    <thingClass>IRBM.Building_CIWS_Planetary</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <uiIconPath>Things/Building/IRBM_Stonehenge_Turret</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/IRBM_MissileSilo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(15,15)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(14.3,0.4,14.1)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>120000</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>250000</WorkToBuild>
+      <Beauty>10</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(15,15)</size>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <costList>
+      <Plasteel>3000</Plasteel>
+      <Uranium>1000</Uranium>
+      <Gold>1500</Gold>
+      <ComponentSpacer>50</ComponentSpacer>
+      <AIPersonaCore>1</AIPersonaCore>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>IRBM</designationCategory>
+    <uiOrder>2112</uiOrder>
+    <constructionSkillPrerequisite>16</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>12000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelCapacity>5000.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <initialFuelPercent>0</initialFuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <drawFuelGaugeInMap>true</drawFuelGaugeInMap>
+        <autoRefuelPercent>1.0</autoRefuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="IRBM.CIWSExtension">
+        <isPulseCannon>true</isPulseCannon>
+        <pulseInterval>600</pulseInterval>
+        <pulseFuelConsumption>150.0</pulseFuelConsumption>
+        <pulsePowerConsumption>5000</pulsePowerConsumption>
+        <rotationSpeed>0.15</rotationSpeed>
+        <turretScale>1.6</turretScale>
+        <interceptionRange>250.0</interceptionRange>
+        <interceptionEfficiency>0.98</interceptionEfficiency>
+        <muzzleFlashFleck>IRBM_IgnitionFlash</muzzleFlashFleck>
+        <shotSounds>
+          <li>IRBM_Sound_Stonehenge_Fire2</li>
+        </shotSounds>
+        <fleckInterval>1</fleckInterval>
+        <turretTexPath>Things/Building/IRBM_Stonehenge_Turret</turretTexPath>
+        <barrelTexPath>Things/Building/IRBM_Stonehenge_Barrel</barrelTexPath>
+        <barrelRecoilDistance>2.4</barrelRecoilDistance>
+        <barrelRecoilHoldTicks>180</barrelRecoilHoldTicks>
+        <barrelReturnTicks>360</barrelReturnTicks>
+        <reloadSound>IRBM_Sound_Stonehenge_Reload</reloadSound>
+        <muzzleOffsetRatio>1.6</muzzleOffsetRatio>
+        <turretSize>(15,15)</turretSize>
+        <visualMode>Pulse</visualMode>
+        <groundDamageType>BombSuper</groundDamageType>
+        <groundDamageAmount>3000</groundDamageAmount>
+        <groundDamageArmorPenetration>800</groundDamageArmorPenetration>
+        <groundRectWidth>6.0</groundRectWidth>
+        <groundMaxRange>500</groundMaxRange>
+        <pulseMachRingScale>1.0</pulseMachRingScale>
+        <lockCorePart>false</lockCorePart>
+        <ignoreDamageMultipliers>true</ignoreDamageMultipliers>
+        <isPenetrating>true</isPenetrating>
+        <removeGoodHediffs>true</removeGoodHediffs>
+        <restoreGoodHediffs>true</restoreGoodHediffs>
+        <enableForceAttack>true</enableForceAttack>
+        <canCrossfire>true</canCrossfire>
+        <crossfireBody>IRBM_Stonehenge_Shell</crossfireBody>
+        <crossfireWarhead>IRBM_Warhead_Tactical_Stonehenge</crossfireWarhead>
+      </li>
+    </modExtensions>
+    <researchPrerequisites>
+      <li>IRBM_ZeroPointCollapse</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

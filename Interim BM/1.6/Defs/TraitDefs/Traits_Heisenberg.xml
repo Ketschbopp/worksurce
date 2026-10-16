@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TraitDef>
+    <defName>IRBM_HeisenbergUncertaintyTrait</defName>
+    <commonality>0</commonality>
+    <degreeDatas>
+      <li>
+        <label>海森堡不确定性体质</label>
+        <description>玲奈天生具备一种极端的“不确定性”。这是海森堡家族一个非常罕见的、可追溯到公元15世纪的良性遗传特性。家族传说里，他们的祖先是一位总能奇迹般躲过所有危险的炼金术士。这种奇迹被一路传承了下来，直到变成现在的她。\n\n在他人眼中，她就像一个处于叠加态的概率云，难以被精确观测。</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+</Defs>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- 尺寸 1 火箭尾焰 -->
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>IRBM_RocketExhaust_Size1</defName>
+        <graphicData>
+            <texPath>Things/Mote/BrightFlash</texPath>
+            <shaderType>MoteGlow</shaderType>
+            <color>(255, 180, 50, 180)</color>
+            <drawSize>(0.7, 0.7)</drawSize>
+        </graphicData>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.02</fadeInTime>
+        <solidTime>0.04</solidTime>
+        <fadeOutTime>0.12</fadeOutTime>
+    </FleckDef>
+
+    <!-- 尺寸 2 火箭尾焰 -->
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>IRBM_RocketExhaust_Size2</defName>
+        <graphicData>
+            <texPath>Things/Mote/BrightFlash</texPath>
+            <shaderType>MoteGlow</shaderType>
+            <color>(255, 180, 50, 200)</color>
+            <drawSize>(1.2, 1.2)</drawSize>
+        </graphicData>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.02</fadeInTime>
+        <solidTime>0.05</solidTime>
+        <fadeOutTime>0.15</fadeOutTime>
+    </FleckDef>
+
+    <!-- 尺寸 3 火箭尾焰 -->
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>IRBM_RocketExhaust_Size3</defName>
+        <graphicData>
+            <texPath>Things/Mote/BrightFlash</texPath>
+            <shaderType>MoteGlow</shaderType>
+            <color>(255, 185, 60, 220)</color>
+            <drawSize>(2.0, 2.0)</drawSize>
+        </graphicData>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.02</fadeInTime>
+        <solidTime>0.06</solidTime>
+        <fadeOutTime>0.20</fadeOutTime>
+    </FleckDef>
+
+    <!-- 分叉式/液体火箭专用尾焰 (略带淡蓝色高温感) -->
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>IRBM_RocketExhaust_Quad</defName>
+        <graphicData>
+            <texPath>Things/Mote/BrightFlash</texPath>
+            <shaderType>MoteGlow</shaderType>
+            <color>(180, 210, 255, 180)</color>
+            <drawSize>(0.5, 0.9)</drawSize>
+        </graphicData>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.02</fadeInTime>
+        <solidTime>0.06</solidTime>
+        <fadeOutTime>0.20</fadeOutTime>
+    </FleckDef>
+
+    <!-- 核心火光 (极短促，高亮) -->
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>IRBM_IgnitionFlash</defName>
+        <graphicData>
+            <texPath>Things/Mote/ShotFlash</texPath>
+            <shaderType>MoteGlow</shaderType>
+            <color>(255, 220, 100, 255)</color>
+            <drawSize>(2.5, 2.5)</drawSize>
+        </graphicData>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.03</fadeInTime>
+        <solidTime>0.02</solidTime>
+        <fadeOutTime>0.03</fadeOutTime>
+    </FleckDef>
+
+    <!-- CIWS 曳光弹特效 -->
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>IRBM_CIWS_Tracer</defName>
+        <graphicData>
+            <texPath>Things/Mote/BrightFlash</texPath>
+            <shaderType>MoteGlow</shaderType>
+            <color>(255, 215, 0, 255)</color> <!-- 纯正金黄色 -->
+            <drawSize>(0.05, 0.8)</drawSize>
+        </graphicData>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.01</fadeInTime>
+        <solidTime>0.5</solidTime> <!-- 延长存活时间，确保飞出屏幕 -->
+        <fadeOutTime>0.1</fadeOutTime>
+    </FleckDef>
+
+    <!-- CIWS 激光束特效 -->
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>IRBM_CIWS_LaserBeam</defName>
+        <graphicData>
+            <texPath>Things/Mote/BrightFlash</texPath>
+            <shaderType>MoteGlow</shaderType>
+            <color>(255, 50, 50, 255)</color> <!-- 红色激光 -->
+            <drawSize>(0.8, 120.0)</drawSize>
+        </graphicData>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.2</fadeInTime>
+        <solidTime>0.1</solidTime>
+        <fadeOutTime>0.2</fadeOutTime>
+    </FleckDef>
+
+    <!-- 空间扭曲波 -->
+    <FleckDef ParentName="FleckBase">
+        <defName>IRBM_BigWaveFleck</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.04</fadeInTime>
+        <solidTime>0</solidTime>
+        <fadeOutTime>0.8</fadeOutTime>
+        <growthRate>45.0</growthRate>
+        <graphicData>
+            <graphicClass>Graphic_FleckPulse</graphicClass>
+            <texPath>Things/Mote/Black</texPath>
+            <shaderType>MoteLargeDistortionWave</shaderType>
+            <shaderParameters>
+                <_DistortionTex>/Things/Mote/PsychicDistortionCurrents</_DistortionTex>
+                <_NoiseTex>/Things/Mote/PsycastNoise</_NoiseTex>
+                <_distortionIntensity>0.25</_distortionIntensity>
+                <_brightnessMultiplier>1.5</_brightnessMultiplier>
+                <_noiseIntensity>10</_noiseIntensity>
+                <_ageToNoiseRatio>0</_ageToNoiseRatio>
+            </shaderParameters>
+            <drawSize>3.0</drawSize>
+        </graphicData>
+    </FleckDef>
+</Defs>

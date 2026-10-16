@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>IRBM_AssembleMissile</defName>
+    <driverClass>IRBM.JobDriver_AssembleMissile</driverClass>
+    <reportString>assembling missile.</reportString>
+  </JobDef>
+
+  <JobDef>
+    <defName>IRBM_BringMissileMaterials</defName>
+    <driverClass>IRBM.JobDriver_BringMissileMaterials</driverClass>
+    <reportString>bringing materials to missile silo.</reportString>
+  </JobDef>
+
+  <WorkGiverDef>
+    <defName>IRBM_BringMissileMaterials</defName>
+    <label>bring missile materials</label>
+    <giverClass>IRBM.WorkGiver_BringMissileMaterials</giverClass>
+    <workType>Hauling</workType>
+    <priorityInType>100</priorityInType>
+    <verb>bring materials</verb>
+    <gerund>bringing materials</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>IRBM_AssembleMissile</defName>
+    <label>assemble missiles</label>
+    <giverClass>IRBM.WorkGiver_AssembleMissile</giverClass>
+    <workType>Construction</workType>
+    <priorityInType>150</priorityInType>
+    <verb>assemble</verb>
+    <gerund>assembling</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+</Defs>

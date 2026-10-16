@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 机炮循环音效 (Sustainer) -->
+  <SoundDef>
+    <defName>IRBM_Sound_CIWS_Guns_Loop</defName>
+    <sustain>True</sustain>
+    <context>MapOnly</context>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>CIWS/CIWS_Guns</clipPath>
+          </li>
+        </grains>
+        <volumeRange>60~60</volumeRange>
+        <pitchRange>0.98~1.02</pitchRange>
+        <distRange>20~90</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- 激光击发音效 (碎片化模式：随机选择三个音效之一) -->
+  <SoundDef>
+    <defName>IRBM_Sound_CIWS_Laser_Shot</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>6</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>false</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>CIWS/Battlecruiser_AttackLaunch0</clipPath>
+          </li>
+          <li Class="AudioGrain_Clip">
+            <clipPath>CIWS/Battlecruiser_AttackLaunch1</clipPath>
+          </li>
+          <li Class="AudioGrain_Clip">
+            <clipPath>CIWS/Battlecruiser_AttackLaunch2</clipPath>
+          </li>
+        </grains>
+        <volumeRange>60~60</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
+        <distRange>20~90</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- 巨石阵击发音效 -->
+  <SoundDef>
+    <defName>IRBM_Sound_Stonehenge_Fire</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>CIWS/CIWS_Railgun</clipPath>
+          </li>
+        </grains>
+        <volumeRange>100~100</volumeRange>
+        <pitchRange>0.95~1.05</pitchRange>
+        <distRange>30~300</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- 巨石阵击发音效变体 -->
+  <SoundDef>
+    <defName>IRBM_Sound_Stonehenge_Fire2</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>CIWS/510mmIJN</clipPath>
+          </li>
+        </grains>
+        <volumeRange>100~100</volumeRange>
+        <pitchRange>0.95~1.05</pitchRange>
+        <distRange>30~300</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- 巨石阵装填/复位音效 -->
+  <SoundDef>
+    <defName>IRBM_Sound_Stonehenge_Reload</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>CIWS/CommandCenter_UpgradeToPlanetaryFortress</clipPath>
+          </li>
+        </grains>
+        <volumeRange>80~80</volumeRange>
+        <distRange>10~150</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

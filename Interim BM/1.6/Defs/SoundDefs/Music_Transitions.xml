@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 核战争音乐序列：负责定义播放行为（循环、淡入淡出、不可打断） -->
+  <MusicSequenceDef>
+    <defName>IRBM_NuclearWar_Sequence</defName>
+    <canBeInterrupted>false</canBeInterrupted>
+    <loop>true</loop>
+    <fadeoutLastSongDuration>2</fadeoutLastSongDuration>
+    <fadeInDuration>2</fadeInDuration>
+    <overrideFadeout>3</overrideFadeout>
+    <song>IRBM_NuclearWar_Song</song>
+    <loopFadeout>true</loopFadeout>
+    <pausedVolumeFactor>0.5</pausedVolumeFactor>
+  </MusicSequenceDef>
+
+  <!-- 核战争音乐过渡：负责定义触发逻辑 -->
+  <MusicTransitionDef>
+    <defName>IRBM_NuclearWar_Transition</defName>
+    <workerType>IRBM.MusicTransition_NuclearWar</workerType>
+    <sequence>IRBM_NuclearWar_Sequence</sequence>
+    <overridesInterruptions>true</overridesInterruptions>
+    <priority>500</priority>
+  </MusicTransitionDef>
+
+  <!-- 挑战任务音乐序列 -->
+  <MusicSequenceDef>
+    <defName>IRBM_HeisenbergChallenge_Sequence</defName>
+    <canBeInterrupted>false</canBeInterrupted>
+    <loop>true</loop>
+    <fadeoutLastSongDuration>2</fadeoutLastSongDuration>
+    <fadeInDuration>1</fadeInDuration>
+    <overrideFadeout>3</overrideFadeout>
+    <song>IRBM_HeisenbergChallenge_Song</song>
+    <loopFadeout>true</loopFadeout>
+  </MusicSequenceDef>
+
+  <!-- 挑战任务音乐过渡 -->
+  <MusicTransitionDef>
+    <defName>IRBM_HeisenbergChallenge_Transition</defName>
+    <workerType>IRBM.MusicTransition_HeisenbergChallenge</workerType>
+    <sequence>IRBM_HeisenbergChallenge_Sequence</sequence>
+    <overridesInterruptions>true</overridesInterruptions>
+    <priority>1000</priority> <!-- 优先级设为极高 -->
+  </MusicTransitionDef>
+
+</Defs>

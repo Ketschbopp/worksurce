@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <IRBM_NuclearWinter.label>nuclear winter</IRBM_NuclearWinter.label>
+  <IRBM_NuclearWinter.description>Dust from nuclear explosions is settling, blotting out the sun. It looks like a combination of volcanic winter, acid fog, and toxic fallout.</IRBM_NuclearWinter.description>
+
+  <IRBM_AtmosphericRupture.label>atmospheric rupture</IRBM_AtmosphericRupture.label>
+  <IRBM_AtmosphericRupture.description>A massive hole has been ripped in the atmosphere, exposing the surface to the freezing void of space. The absence of air makes breathing impossible for unprotected organisms and silences all sound.</IRBM_AtmosphericRupture.description>
+  <IRBM_AtmosphericRupture.letterText>A strategic vacuum warhead has torn a hole in the atmosphere! The area is now exposed to the void of space. Unprotected colonists will suffocate, and temperatures will drop rapidly.</IRBM_AtmosphericRupture.letterText>
+  <IRBM_AtmosphericRupture.endMessage>The atmosphere is stabilizing and the rupture has closed.</IRBM_AtmosphericRupture.endMessage>
+
+  <IRBM_StrategicThunderstorm.label>UHV thunderstorm</IRBM_StrategicThunderstorm.label>
+  <IRBM_StrategicThunderstorm.description>A massive thunderstorm triggered by ionosphere destabilization. Intense lightning strikes will frequently target surface activity.</IRBM_StrategicThunderstorm.description>
+
+  <IRBM_StrategicVolcano.label>tectonic disintegration</IRBM_StrategicVolcano.label>
+  <IRBM_StrategicVolcano.description>Massive tectonic disruption has triggered intense local volcanic activity. Molten debris rains down from the sky, igniting and destroying anything they strike.</IRBM_StrategicVolcano.description>
+  <IRBM_StrategicVolcano.letterText>A strategic volcanic warhead has triggered tectonic disintegration! The area is now being bombarded by a heavy shower of molten lava rocks.</IRBM_StrategicVolcano.letterText>
+
+</LanguageData>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- General -->
+    <IRBM_ObservedArea_Desc>An area being observed by a reconnaissance satellite.</IRBM_ObservedArea_Desc>
+    <IRBM.None>None</IRBM.None>
+    <IRBM.Apply>Apply</IRBM.Apply>
+    <IRBM.Clear>Clear</IRBM.Clear>
+    <IRBM.Back>Back</IRBM.Back>
+    <IRBM.Next>Next</IRBM.Next>
+    <IRBM.All>All</IRBM.All>
+
+    <!-- Dialog_LaunchConfig -->
+    <IRBM.LaunchConfigTitle>Launch Configuration ({0} Silos)</IRBM.LaunchConfigTitle>
+    <IRBM.AvailableMissiles>Available Missiles ({0} total)</IRBM.AvailableMissiles>
+    <IRBM.WarheadLabel>Warhead: {0}</IRBM.WarheadLabel>
+    <IRBM.InventoryItemTooltip>Click to add to launch sequence\n{0}\nWarhead: {1}</IRBM.InventoryItemTooltip>
+    <IRBM.LaunchSequenceTitle>Launch Sequence {0}</IRBM.LaunchSequenceTitle>
+    <IRBM.MixedPayloadWarning>Different types of payloads cannot be mixed in one sequence</IRBM.MixedPayloadWarning>
+    <IRBM.SliderAreaHint>Select a sequence entry to adjust quantity\n(Right click entry to remove one)</IRBM.SliderAreaHint>
+    <IRBM.AdjustQuantity>Adjust quantity for {0}</IRBM.AdjustQuantity>
+    <IRBM.Launch>Launch</IRBM.Launch>
+    <IRBM.SequenceInfo>Total: {0} missile(s) in {1} group(s)</IRBM.SequenceInfo>
+    <IRBM.MessageMixedPayload>Cannot mix {0} and {1} missiles in one sequence</IRBM.MessageMixedPayload>
+
+    <!-- Dialog_AssembleMissile -->
+    <IRBM.AssembleProjectTitle>Missile Assembly Project ({0} Silos)</IRBM.AssembleProjectTitle>
+    <IRBM.StartAssembly>Start Assembly</IRBM.StartAssembly>
+    <IRBM.AssembleStep1>Step 1: Select Missile Body</IRBM.AssembleStep1>
+    <IRBM.BodyStats>Size: {0} | Range: {1}-{2}</IRBM.BodyStats>
+    <IRBM.MaterialCost>Material Cost: {0}</IRBM.MaterialCost>
+    <IRBM.AssembleStep2>Step 2: Select Warhead for {0}</IRBM.AssembleStep2>
+    <IRBM.CostLabel>Cost: {0}</IRBM.CostLabel>
+    <IRBM.AssembleStep3>Step 3: Assembly Quantity</IRBM.AssembleStep3>
+    <IRBM.AssembleSummary>Project: {0} + {1}\nSize: {2}\nTotal Free Tubes: {3} / {4}</IRBM.AssembleSummary>
+    <IRBM.WarningNoTubes>Warning: No compatible tubes available!</IRBM.WarningNoTubes>
+    <IRBM.QuantityLabel>Quantity: {0}</IRBM.QuantityLabel>
+    <IRBM.TotalMaterialsRequired>Total Materials Required:</IRBM.TotalMaterialsRequired>
+    <IRBM.MessageNotEnoughTubes>Not enough compatible tubes across all selected silos.</IRBM.MessageNotEnoughTubes>
+    <IRBM.MessageStartedAssembly>Started assembly of {0} missiles across {1} silo(s).</IRBM.MessageStartedAssembly>
+
+    <!-- Dialog_DismantleMissile -->
+    <IRBM.DismantleTitle>Bulk Dismantle Missiles ({0} Silos)</IRBM.DismantleTitle>
+    <IRBM.DismantleRefundHint>Refunds {0} of construction materials.</IRBM.DismantleRefundHint>
+    <IRBM.Dismantle>Dismantle</IRBM.Dismantle>
+    <IRBM.MessageDismantled>Successfully dismantled {0} missiles from {1} silo(s).</IRBM.MessageDismantled>
+
+    <!-- Building_MissileSilo -->
+    <IRBM.TargetOutOfRange>Target out of range.</IRBM.TargetOutOfRange>
+    <IRBM.CannotTargetThickRoof>Cannot target locations under thick roof.</IRBM.CannotTargetThickRoof>
+    <IRBM.MessageMustTargetMissileOrSatellite>Must target a missile or satellite.</IRBM.MessageMustTargetMissileOrSatellite>
+    <IRBM.InvalidSequenceRange>Invalid sequence range.</IRBM.InvalidSequenceRange>
+    <IRBM.TargetOutOfSequenceRange>Target out of sequence range.</IRBM.TargetOutOfSequenceRange>
+    <IRBM.MessageTacticalMapRequired>Target must be a loaded map.</IRBM.MessageTacticalMapRequired>
+    <IRBM.MessageLaunchSequenceStarted>Launch sequence started. {0} missiles will fire.</IRBM.MessageLaunchSequenceStarted>
+    <IRBM.MessageLaunchSequenceCancelled>Launch sequence cancelled.</IRBM.MessageLaunchSequenceCancelled>
+    <IRBM.BuildMissile>Build Missile</IRBM.BuildMissile>
+    <IRBM.BuildMissileDesc>Open missile assembly interface.</IRBM.BuildMissileDesc>
+    <IRBM.BuildMissileMultiDesc>Open missile assembly interface for {0} silos.</IRBM.BuildMissileMultiDesc>
+    <IRBM.LaunchSequence>Launch Sequence</IRBM.LaunchSequence>
+    <IRBM.LaunchSequenceDesc>Configure and launch a sequence of missiles.</IRBM.LaunchSequenceDesc>
+    <IRBM.LaunchSequenceMultiDesc>Configure and launch missiles from {0} silos.</IRBM.LaunchSequenceMultiDesc>
+    <IRBM.DismantleMissile>Dismantle Missile</IRBM.DismantleMissile>
+    <IRBM.DismantleMissileDesc>Open bulk dismantle interface.</IRBM.DismantleMissileDesc>
+    <IRBM.DismantleMissileMultiDesc>Open bulk dismantle interface for {0} silos.</IRBM.DismantleMissileMultiDesc>
+    <IRBM.CancelAssembly>Cancel Assembly</IRBM.CancelAssembly>
+    <IRBM.CancelAssemblyDesc>Cancel the current batch assembly and refund remaining materials.</IRBM.CancelAssemblyDesc>
+    <IRBM.InspectLoadedMissiles>Loaded: {0} missiles</IRBM.InspectLoadedMissiles>
+    <IRBM.InspectAssembling>Assembling: {0}</IRBM.InspectAssembling>
+    <IRBM.InspectProgress>Progress: {0}</IRBM.InspectProgress>
+    
+    <IRBM.RelationsWith>Relations with {0}</IRBM.RelationsWith>
+
+    <IRBM.OtherCategory>Other</IRBM.OtherCategory>
+    <IRBM.Category.Tactical>Tactical</IRBM.Category.Tactical>
+    <IRBM.Category.Strategic>Strategic</IRBM.Category.Strategic>
+    <IRBM.Category.AntiAir>Anti-Air</IRBM.Category.AntiAir>
+    <IRBM.Category.Satellite>Satellite</IRBM.Category.Satellite>
+    <IRBM.Unknown>Unknown</IRBM.Unknown>
+    <IRBM.MessageNoSiloTubes>No available silo tubes for missile {0}/{1}. Assembly paused.</IRBM.MessageNoSiloTubes>
+    <IRBM.MessageBatchAssemblyComplete>Missile assembly complete: {0} x {1} ({2})</IRBM.MessageBatchAssemblyComplete>
+
+    <IRBM.DisabledByRoof>Blocked by roof</IRBM.DisabledByRoof>
+    <IRBM.MessageLaunchAbortedRoofed>Launch aborted: Roof detected above the silo.</IRBM.MessageLaunchAbortedRoofed>
+
+    <!-- Auto Anti-Air -->
+    <IRBM.AutoAntiAirConfig>Auto Anti-Air Config</IRBM.AutoAntiAirConfig>
+    <IRBM.AutoAntiAirConfigDesc>Configure automatic anti-air parameters for the silo. Note: Auto anti-air requires an anti-missile radar.</IRBM.AutoAntiAirConfigDesc>
+    <IRBM.AutoAntiAirSettings>Auto Anti-Air Settings</IRBM.AutoAntiAirSettings>
+    <IRBM.EnableAutoAntiAir>Enable Auto Anti-Air</IRBM.EnableAutoAntiAir>
+    <IRBM.EnableAutoAntiAirTooltip>When enabled, silos will automatically launch loaded anti-air missiles to intercept enemy missiles with the support of anti-missile radar.</IRBM.EnableAutoAntiAirTooltip>
+    <IRBM.InterceptNonIncoming>Intercept Non-Incoming Missiles</IRBM.InterceptNonIncoming>
+    <IRBM.InterceptNonIncomingTooltip>When enabled, the silo will intercept any missiles passing through your airspace.</IRBM.InterceptNonIncomingTooltip>
+    <IRBM.MaxAARange>Max Intercept Distance: {0} Tiles</IRBM.MaxAARange>
+    <IRBM.MaxAARangeTooltip>The maximum distance at which the anti-air system starts intercepting targets.</IRBM.MaxAARangeTooltip>
+    <IRBM.MinAAProgress>Min Intercept Progress: {0}</IRBM.MinAAProgress>
+    <IRBM.MinAAProgressTooltip>The minimum flight progress of the target missile for the anti-air system to start intercepting. Smaller values mean earlier interception.</IRBM.MinAAProgressTooltip>
+    <IRBM.AAModeSaturated>Saturated Mode</IRBM.AAModeSaturated>
+    <IRBM.AAModeSaturatedTooltip>As long as targets are within range and anti-air ammunition is sufficient, interceptors will be fired continuously at set intervals at random targets.</IRBM.AAModeSaturatedTooltip>
+    <IRBM.AAModeDistributed>Distributed Mode</IRBM.AAModeDistributed>
+    <IRBM.AAModeDistributedTooltip>For each locked target, only a fixed number of interceptors are allocated. If the interception fails midway, additional shots will be fired.</IRBM.AAModeDistributedTooltip>
+    <IRBM.AASaturatedInterval>Launch Interval: {0} Ticks</IRBM.AASaturatedInterval>
+    <IRBM.AASaturatedIntervalTooltip>In saturated mode, the time interval between consecutive interceptor launches (60 Ticks = 1 second).</IRBM.AASaturatedIntervalTooltip>
+    <IRBM.AADistributedCount>Interceptors Per Target: {0}</IRBM.AADistributedCount>
+    <IRBM.AADistributedCountTooltip>In distributed mode, the number of interceptors allocated to each locked enemy target.</IRBM.AADistributedCountTooltip>
+
+    <IRBM.LetterLabelStrategicImpact>Strategic Missile Impact</IRBM.LetterLabelStrategicImpact>
+    <IRBM.LetterTextStrategicImpact>Our {0} impacted {1}.\n\nThe entire region has been affected.</IRBM.LetterTextStrategicImpact>
+    <IRBM.LetterTextStrategicImpactThirdParty>A strategic missile from {0} impacted {1}.</IRBM.LetterTextStrategicImpactThirdParty>
+
+    <!-- InfoCard -->
+    <IRBM.Stat_Size_Label>Missile Size</IRBM.Stat_Size_Label>
+    <IRBM.Stat_Size_Desc>The physical size of the missile body. Larger bodies require larger silo tubes.</IRBM.Stat_Size_Desc>
+    <IRBM.Stat_Range_Label>Range</IRBM.Stat_Range_Label>
+    <IRBM.Stat_Range_Desc>The tile distance range this missile can reach.</IRBM.Stat_Range_Desc>
+    <IRBM.Stat_RadarSignalSize_Label>Radar Signal Coefficient</IRBM.Stat_RadarSignalSize_Label>
+    <IRBM.Stat_RadarSignalSize_Desc>The inherent radar signature of the missile body. A lower value means the missile is more stealthy. The final detection range is also affected by flight altitude, the lower, the stealthier.</IRBM.Stat_RadarSignalSize_Desc>
+    <IRBM.Stat_InterceptionMultiplier_Label>Interception Multiplier</IRBM.Stat_InterceptionMultiplier_Label>
+    <IRBM.Stat_InterceptionMultiplier_Desc>A multiplier applied when this missile body is targeted by anti-air missiles. Lower values make the missile harder to intercept. CIWS interception is not affected by this multiplier.</IRBM.Stat_InterceptionMultiplier_Desc>
+    <IRBM.Stat_CompatibleWarheads_Label>Compatible Warheads</IRBM.Stat_CompatibleWarheads_Label>
+    <IRBM.Stat_CompatibleWarheads_Desc>A list of warhead models that can be mounted on this body.</IRBM.Stat_CompatibleWarheads_Desc>
+    <IRBM.Stat_CompatibleBodies_Label>Compatible Bodies</IRBM.Stat_CompatibleBodies_Label>
+    <IRBM.Stat_CompatibleBodies_Desc>A list of missile body models that can carry this warhead.</IRBM.Stat_CompatibleBodies_Desc>
+    <IRBM.Stat_Cost_Label>Base Cost</IRBM.Stat_Cost_Label>
+    <IRBM.Stat_Cost_Desc>Basic resources required to manufacture this part.</IRBM.Stat_Cost_Desc>
+    <IRBM.Stat_ExplosionRadius_Label>Explosion Radius</IRBM.Stat_ExplosionRadius_Label>
+    <IRBM.Stat_Damage_Label>Base Damage</IRBM.Stat_Damage_Label>
+    <IRBM.Stat_ArmorPenetration_Label>Armor Penetration</IRBM.Stat_ArmorPenetration_Label>
+    <IRBM.Stat_DamageType_Label>Damage Type</IRBM.Stat_DamageType_Label>
+    <IRBM.Stat_IgnoreMultipliers_Label>Ignore Damage Factor</IRBM.Stat_IgnoreMultipliers_Label>
+    <IRBM.Stat_IgnoreMultipliers_Desc>This warhead's explosion will ignore the target's Incoming Damage Factor, dealing full damage.</IRBM.Stat_IgnoreMultipliers_Desc>
+    <IRBM.Stat_Drill_Label>Drill Capability</IRBM.Stat_Drill_Label>
+    <IRBM.Stat_MaxChainDepth_Label>Chain Reaction Depth</IRBM.Stat_MaxChainDepth_Label>
+    <IRBM.Stat_MaxChainDepth_Desc>The maximum depth of the chain explosion reaction triggered by this warhead.</IRBM.Stat_MaxChainDepth_Desc>
+    <IRBM.Stat_ClusterRadius_Label>Cluster Scatter Radius</IRBM.Stat_ClusterRadius_Label>
+    <IRBM.Stat_ClusterCount_Label>Submunitions Count</IRBM.Stat_ClusterCount_Label>
+    <IRBM.Stat_TileRadius_Label>Area of Effect (Tiles)</IRBM.Stat_TileRadius_Label>
+    <IRBM.Stat_Pollution_Label>Pollution Index</IRBM.Stat_Pollution_Label>
+    <IRBM.Stat_DamageTimes_Label>Continuous Damage Duration</IRBM.Stat_DamageTimes_Label>
+    <IRBM.Stat_DamageTimes_Desc>The total seconds the strategic payload executes its continuous damage after impacting a map.</IRBM.Stat_DamageTimes_Desc>
+    <IRBM.Stat_DoomsdayAdvance_Label>Doomsday Impact</IRBM.Stat_DoomsdayAdvance_Label>
+    <IRBM.Stat_VisionRange_Label>Active Radar Range</IRBM.Stat_VisionRange_Label>
+    <IRBM.Stat_InterceptionEfficiency_Label>Interception Efficiency</IRBM.Stat_InterceptionEfficiency_Label>
+    <IRBM.Stat_MaxOverload_Label>Max Overload</IRBM.Stat_MaxOverload_Label>
+    <IRBM.Stat_DualPulse_Label>Dual-Pulse</IRBM.Stat_DualPulse_Label>
+    <IRBM.Stat_GameCondition_Label>Causes Local Condition</IRBM.Stat_GameCondition_Label>
+    <IRBM.Stat_ForcedWeather_Label>Forced Weather</IRBM.Stat_ForcedWeather_Label>
+    <IRBM.Stat_ForcedWeather_Desc>Forces the weather of the impacted map to change to the specified type upon detonation.</IRBM.Stat_ForcedWeather_Desc>
+    <IRBM.Stat_ScanCategories_Label>Target Categories</IRBM.Stat_ScanCategories_Label>
+    <IRBM.Stat_ScanCategories_Desc>The categories of things to be scanned and affected across the entire map upon impact. If empty, no direct thing damage will be applied.</IRBM.Stat_ScanCategories_Desc>
+    <IRBM.Stat_RemoveThickRoof_Label>Remove Thick Roof</IRBM.Stat_RemoveThickRoof_Label>
+    <IRBM.Stat_RemoveThickRoof_Desc>This missile will forcibly remove all thick overhead mountain roofs across the entire map upon impact.</IRBM.Stat_RemoveThickRoof_Desc>
+    <IRBM.Stat_PenetrateThickRoof_Label>Penetrate Thick Roof</IRBM.Stat_PenetrateThickRoof_Label>
+    <IRBM.Stat_PenetrateThickRoof_Desc>This missile can penetrate thick overhead mountain roofs to hit targets underneath.</IRBM.Stat_PenetrateThickRoof_Desc>
+    <IRBM.Stat_FireChance_Label>Fire Coverage</IRBM.Stat_FireChance_Label>
+    <IRBM.Stat_FireChance_Desc>The probability of fire coverage on the surface after this missile impacts a map.</IRBM.Stat_FireChance_Desc>
+    <IRBM.Stat_PostExplosionSpawn_Label>Post-Explosion Spawn</IRBM.Stat_PostExplosionSpawn_Label>
+    <IRBM.Stat_PostExplosionSpawn_Desc>Material or objects spawned in the area after detonation.</IRBM.Stat_PostExplosionSpawn_Desc>
+    <IRBM.Stat_PostExplosionGas_Label>Post-Explosion Gas</IRBM.Stat_PostExplosionGas_Label>
+    <IRBM.Stat_PostExplosionGas_Desc>Special gas systems filled in the area after detonation.</IRBM.Stat_PostExplosionGas_Desc>
+    <IRBM.Stat_AppliedHediff_Label>Applied Effects</IRBM.Stat_AppliedHediff_Label>
+    <IRBM.Yes>True</IRBM.Yes>
+    <IRBM.No>False</IRBM.No>
+
+    <IRBM.MessageInterceptSuccess>Our {0} has successfully intercepted {1}'s {2}!</IRBM.MessageInterceptSuccess>
+    <IRBM.MessageInterceptFailed>Our {0} failed to intercept {1}'s {2}!</IRBM.MessageInterceptFailed>
+    <IRBM.MessageMissileInterceptedByAI>Our {0} was intercepted by {1}'s {2}!</IRBM.MessageMissileInterceptedByAI>
+    <IRBM.MessageSatelliteDestroyedByCIWS>A {1} of {0} has been destroyed by our {2}.</IRBM.MessageSatelliteDestroyedByCIWS>
+
+    <!-- Doomsday Clock -->
+    <IRBM.DoomsdayClockLabel>Doomsday Clock: {0} o' clock</IRBM.DoomsdayClockLabel>
+    <IRBM.DoomsdayClockDetails>Current progress: {0}h {1}m</IRBM.DoomsdayClockDetails>
+    <IRBM.DoomsdayClockDesc>The countdown to nuclear annihilation has begun. The RimWorld is teetering on the edge of total nuclear war.</IRBM.DoomsdayClockDesc>
+    <IRBM.DoomsdayClockTriggered>The first strategic missile detonated! The Doomsday Clock has started ticking.</IRBM.DoomsdayClockTriggered>
+    
+    <IRBM.NuclearWarLabel>Total Nuclear War</IRBM.NuclearWarLabel>
+    <IRBM.Passed>Passed</IRBM.Passed>
+    <IRBM.LetterHour>hour(s)</IRBM.LetterHour>
+    <IRBM.NuclearWarDesc>The Doomsday Clock has struck twelve. Factions are unleashing their strategic nuclear arsenals. The world is in a state of total nuclear war.</IRBM.NuclearWarDesc>
+    <IRBM.NuclearWarText>The Doomsday Clock has struck twelve. Factions are unleashing their strategic nuclear arsenals. The world is in a state of total nuclear war!\nBe prepared with your anti-missile defenses.</IRBM.NuclearWarText>
+    
+    <IRBM.NuclearWinterLabel>Global Nuclear Winter</IRBM.NuclearWinterLabel>
+    <IRBM.NuclearWinterDesc>The fallout has settled, but the nightmare is just beginning. A prolonged nuclear winter has gripped the planet, combining the effects of volcanic winter, acid smog, and toxic fallout.</IRBM.NuclearWinterDesc>
+    <IRBM.NuclearWinterText>The nuclear war has ended, but the nightmare is just beginning. A prolonged nuclear winter has gripped the planet, combining the effects of volcanic winter, acid smog, and toxic fallout.</IRBM.NuclearWinterText>
+    <IRBM.Stats_ExplodedWarheads>Exploded Strategic Warheads</IRBM.Stats_ExplodedWarheads>
+    <IRBM.Stats_DestroyedSettlements>Destroyed Faction Settlements</IRBM.Stats_DestroyedSettlements>
+    <IRBM.UnknownFaction>Unknown Faction</IRBM.UnknownFaction>
+
+    <!-- Mod Settings -->
+    <IRBM.SettingEnableAIEvents>Enable AI Faction IRBM Events</IRBM.SettingEnableAIEvents>
+    <IRBM.SettingEnableAIEventsDesc>If disabled, the AI will not autonomously launch any missile or satellite-related events.</IRBM.SettingEnableAIEventsDesc>
+    <IRBM.SettingEnableAITacticalMissiles>Enable AI Tactical Missile Strikes</IRBM.SettingEnableAITacticalMissiles>
+    <IRBM.SettingEnableAIStrategicMissiles>Enable AI Strategic Missile Strikes</IRBM.SettingEnableAIStrategicMissiles>
+    <IRBM.SettingStrategicMissilesOnlyInNuclearWar>Enable AI Strategic Missiles Only During Nuclear War</IRBM.SettingStrategicMissilesOnlyInNuclearWar>
+    <IRBM.SettingStrategicMissilesOnlyInNuclearWarDesc>If enabled, the AI will only launch strategic missiles after the Doomsday Clock reaches 12 o'clock and triggers a global nuclear war.</IRBM.SettingStrategicMissilesOnlyInNuclearWarDesc>
+    <IRBM.SettingEnableAIReconSatellites>Enable AI Reconnaissance Satellite Deployment</IRBM.SettingEnableAIReconSatellites>
+    <IRBM.SettingEnableAIAntiSatelliteStrikes>Enable AI Anti-Satellite Strikes</IRBM.SettingEnableAIAntiSatelliteStrikes>
+    <IRBM.SettingIncidentFrequencyMultiplier>IRBM Incident Frequency Multiplier: {0}x</IRBM.SettingIncidentFrequencyMultiplier>
+    <IRBM.SettingIncidentFrequencyMultiplierDesc>Adjusts the frequency of AI missile strikes and satellite events. A higher multiplier results in shorter cooldowns between events (higher frequency). 1.0 is the default.</IRBM.SettingIncidentFrequencyMultiplierDesc>
+    <IRBM.SettingTacticalMissilePointsMultiplier>Tactical missile points multiplier: {0}x</IRBM.SettingTacticalMissilePointsMultiplier>
+    <IRBM.SettingTacticalMissilePointsMultiplierDesc>Adjusts the raid points used when AI launches tactical missiles. Higher multiplier results in more missiles launched for the same raid scale.</IRBM.SettingTacticalMissilePointsMultiplierDesc>
+    <IRBM.SettingMaxAIVolleySize>Max AI volley size: {0}</IRBM.SettingMaxAIVolleySize>
+    <IRBM.SettingMaxAIVolleySizeDesc>Limits the maximum number of missiles AI can launch in a single volley.</IRBM.SettingMaxAIVolleySizeDesc>
+    
+    <IRBM.SettingEnableDoomsdayClock>Enable Doomsday Clock</IRBM.SettingEnableDoomsdayClock>
+    <IRBM.SettingEnableDoomsdayClockDesc>If disabled, strategic missile impacts will not advance the Doomsday Clock, nor will they trigger global nuclear war or nuclear winter phases.</IRBM.SettingEnableDoomsdayClockDesc>
+
+    <IRBM.SettingNuclearWinterDuration>Global Nuclear Winter Duration: {0} Years</IRBM.SettingNuclearWinterDuration>
+    <IRBM.SettingNuclearWinterDurationDesc>Sets the duration of the global nuclear winter alert after the nuclear war ends. The actual weather effects will fade gradually after the alert expires.</IRBM.SettingNuclearWinterDurationDesc>
+
+    <IRBM.SettingReduceGoodwillInNuclearWar>Reduce Goodwill on Nuclear War</IRBM.SettingReduceGoodwillInNuclearWar>
+    <IRBM.SettingReduceGoodwillInNuclearWarDesc>When enabled, all factions' goodwill towards the player will be reduced by 200 when the Doomsday Clock reaches 12 and triggers nuclear war, with the reason "Total Nuclear War".</IRBM.SettingReduceGoodwillInNuclearWarDesc>
+    <IRBM.SettingReplaceMissileWithDropPod>Replace all missile textures with DropPods</IRBM.SettingReplaceMissileWithDropPod>
+    <IRBM.SettingReplaceMissileWithDropPodDesc>Replace the appearance of all missiles in silos and launch animations with DropPod textures. This is purely visual.\n\nSUPERPOWER DROPPOD LOL</IRBM.SettingReplaceMissileWithDropPodDesc>
+    <IRBM.SettingPauseOnMissileIncoming>Auto-pause on incoming missiles</IRBM.SettingPauseOnMissileIncoming>
+    <IRBM.SettingPauseOnMissileIncomingDesc>When the radar detects a missile incoming, the game speed will be automatically set to paused.\nHowever, if you don't have a radar, this option won't do anything.</IRBM.SettingPauseOnMissileIncomingDesc>
+
+    <IRBM_PostNuclearWar_Dialog>A Cold Reawakening\n\nThe silence following the sirens was more terrifying than the noise itself. You've spent years waiting for the radiation levels to drop, only to find a world choked by ash and ice. The fallout has settled, but the real struggle for survival has only just begun.</IRBM_PostNuclearWar_Dialog>
+    
+    <IRBM.Ending_Epilogue>The world is choked with ash and ice, and the sun is obscured by heavy radioactive dust, turning into a pale and lifeless disc.\n\nThe remains of this RimWorld tremble in eternal cold. Total nuclear war has ended, but the real nightmare has just begun.\n\nA long global nuclear winter is approaching, and for a long time to come, this world will be shrouded in acid smog, toxic fallout, and volcanic winter.\n\nSome did survive, but who is the winner of this war? In nuclear war, there are no winners.</IRBM.Ending_Epilogue>
+    <IRBM.Ending_WarReportTitle>Nuclear War Report</IRBM.Ending_WarReportTitle>
+    <IRBM.Ending_FinalThoughts>An era of winter, wasteland, and survival has begun. Perhaps one day, far in the future, this world will flourish again?</IRBM.Ending_FinalThoughts>
+    <IRBM.Ending_CreditsTitle>Mod Credits</IRBM.Ending_CreditsTitle>
+    <IRBM.Ending_Accept>Continue</IRBM.Ending_Accept>
+    <IRBM.Ending_Skip>Skip</IRBM.Ending_Skip>
+    <IRBM.Ending_Thanks>Thank you for playing InterRim Ballistic Missile!\n\nThis is my first major project in the RimWorld community, and I hope it brings you a unique gaming experience. If you like this mod, feel free to leave a review and recommendation on the Steam Workshop!\n\n—— Reina Heisenberg (PsionicZephyr)</IRBM.Ending_Thanks>
+
+  <IRBM.MessageSkyfallerIntercepted>CIWS intercepted a drop raid from {0} and caused it to crash.</IRBM.MessageSkyfallerIntercepted>
+
+  <IRBM.CIWSReloading>Reloading: {0}s</IRBM.CIWSReloading>
+
+  <IRBM.CIWSGroundMode>Ground Mode</IRBM.CIWSGroundMode>
+  <IRBM.CIWSGroundModeDesc>Toggle ground attack mode. In this mode, CIWS will attack hostile ground targets in a designated area, but cannot intercept incoming missiles, skyfallers or projectiles. Cannot fire through walls in ground mode.</IRBM.CIWSGroundModeDesc>
+  <IRBM.CIWSGroundModeActive>Ground Mode Active</IRBM.CIWSGroundModeActive>
+
+    <IRBM.CIWSCrossfire>Crossfire Strike</IRBM.CIWSCrossfire>
+    <IRBM.CIWSCrossfireDesc>Use preset ammunition to conduct crossfire strikes across designated coordinates worldwide.</IRBM.CIWSCrossfireDesc>
+    <IRBM.MessageCIWSCrossfireExecuted>{0} has executed a crossfire strike towards {1}.</IRBM.MessageCIWSCrossfireExecuted>
+    <IRBM.MessageCIWSReloadingAny>Some of the selected CIWS units are reloading.</IRBM.MessageCIWSReloadingAny>
+    <IRBM.MessageCIWSMixedCategory>The selected CIWS units have mixed ammunition types.</IRBM.MessageCIWSMixedCategory>
+
+  <IRBM.CIWSInterceptSkyfallers>Intercept Skyfallers</IRBM.CIWSInterceptSkyfallers>
+  <IRBM.CIWSInterceptSkyfallersDesc>Whether to intercept incoming skyfallers.</IRBM.CIWSInterceptSkyfallersDesc>
+
+  <IRBM.Stat_GroundMaxRange_Label>Ground Max Lock Range</IRBM.Stat_GroundMaxRange_Label>
+  <IRBM.Stat_GroundMaxRange_Desc>The maximum distance at which the CIWS can lock onto and attack ground targets in ground mode.</IRBM.Stat_GroundMaxRange_Desc>
+  <IRBM.Stat_GroundDamageFalloffRange_Label>Ground Damage Falloff Range</IRBM.Stat_GroundDamageFalloffRange_Label>
+  <IRBM.Stat_GroundDamageFalloffRange_Desc>Ground attack damage decreases linearly with distance. Beyond this range, damage drops to 0.</IRBM.Stat_GroundDamageFalloffRange_Desc>
+  <IRBM.Stat_GroundDamageAmount_Label>Ground Base Damage</IRBM.Stat_GroundDamageAmount_Label>
+  <IRBM.Stat_GroundDamageAmount_Desc>The maximum theoretical damage value dealt to ground targets at zero distance.</IRBM.Stat_GroundDamageAmount_Desc>
+  <IRBM.Stat_GroundDamageArmorPenetration_Label>Ground Armor Penetration</IRBM.Stat_GroundDamageArmorPenetration_Label>
+  <IRBM.Stat_GroundDamageArmorPenetration_Desc>The armor penetration capability of ground attacks.</IRBM.Stat_GroundDamageArmorPenetration_Desc>
+  <IRBM.Stat_GroundDamageAngle_Label>Ground Sweeping Angle</IRBM.Stat_GroundDamageAngle_Label>
+  <IRBM.Stat_GroundDamageAngle_Desc>The cone angle coverage when attacking ground targets.</IRBM.Stat_GroundDamageAngle_Desc>
+  <IRBM.Stat_GroundDamageInterval_Label>Ground Attack Interval</IRBM.Stat_GroundDamageInterval_Label>
+  <IRBM.Stat_GroundDamageInterval_Desc>The time interval (Ticks) between damage applications during ground attacks. Lower values mean higher fire rate.</IRBM.Stat_GroundDamageInterval_Desc>
+  <IRBM.Stat_FuelConsumption_Label>Fuel Consumption per Second</IRBM.Stat_FuelConsumption_Label>
+  <IRBM.Stat_FuelConsumption_Desc>The amount of fuel consumed per second when the CIWS is continuously firing.</IRBM.Stat_FuelConsumption_Desc>
+    <IRBM.Stat_BurstPowerConsumption_Label>Burst Power Consumption</IRBM.Stat_BurstPowerConsumption_Label>
+    <IRBM.Stat_BurstPowerConsumption_Desc>This CIWS requires a large amount of burst power from the grid when firing. If the stored energy in the batteries is insufficient to pay for the burst power of all concurrently firing CIWS, this turret will not fire.</IRBM.Stat_BurstPowerConsumption_Desc>
+    <IRBM.Stat_PulseInterval_Label>Reload Interval</IRBM.Stat_PulseInterval_Label>
+    <IRBM.Stat_PulseInterval_Desc>The time required for this weapon to reload or cool down between shots.</IRBM.Stat_PulseInterval_Desc>
+    <IRBM.Stat_PulseFuelConsumption_Label>Shot Fuel Consumption</IRBM.Stat_PulseFuelConsumption_Label>
+    <IRBM.Stat_PulseFuelConsumption_Desc>The amount of fuel consumed for a single shot.</IRBM.Stat_PulseFuelConsumption_Desc>
+    <IRBM.Stat_PulsePowerConsumption_Label>Shot Power Consumption</IRBM.Stat_PulsePowerConsumption_Label>
+    <IRBM.Stat_PulsePowerConsumption_Desc>The amount of energy (Wd) drawn from the battery grid for a single shot.</IRBM.Stat_PulsePowerConsumption_Desc>
+    <IRBM.Stat_RotationSpeed_Label>Rotation Speed</IRBM.Stat_RotationSpeed_Label>
+    <IRBM.Stat_RotationSpeed_Desc>The speed at which the turret rotates horizontally.</IRBM.Stat_RotationSpeed_Desc>
+    <IRBM.Stat_GroundRectWidth_Label>Ground Damage Width</IRBM.Stat_GroundRectWidth_Label>
+    <IRBM.Stat_GroundRectWidth_Desc>The width of the damage path in ground mode.</IRBM.Stat_GroundRectWidth_Desc>
+
+    <!-- Satellite Abilities -->
+    <IRBM.GizmoOrbitalEnergyBeam>Orbital energy beam</IRBM.GizmoOrbitalEnergyBeam>
+    <IRBM.GizmoOrbitalEnergyBeamDesc>Direct the satellite to fire a high-intensity orbital energy beam at a target area.</IRBM.GizmoOrbitalEnergyBeamDesc>
+    <IRBM.SatelliteAbilityRecharging>Recharging ({0} hours left)</IRBM.SatelliteAbilityRecharging>
+    <IRBM.CannotTargetPocketSpace>Cannot target pocket space.</IRBM.CannotTargetPocketSpace>
+    <IRBM.SelectTargetMap>Select target tile (must contain a loaded map)</IRBM.SelectTargetMap>
+    <IRBM.OrbitalEnergyBeamTarget>Orbital energy beam target</IRBM.OrbitalEnergyBeamTarget>
+    <IRBM.MessageOrbitalEnergyBeamActivated>Orbital energy beam strike activated.</IRBM.MessageOrbitalEnergyBeamActivated>
+
+    <IRBM.GizmoOrbitalBombardment>Orbital bombardment</IRBM.GizmoOrbitalBombardment>
+    <IRBM.GizmoOrbitalBombardmentDesc>Direct the satellite to release a volley of kinetic impactors at a target area.</IRBM.GizmoOrbitalBombardmentDesc>
+    <IRBM.OrbitalBombardmentTarget>Orbital bombardment target</IRBM.OrbitalBombardmentTarget>
+    <IRBM.MessageOrbitalBombardmentActivated>Orbital bombardment strike activated.</IRBM.MessageOrbitalBombardmentActivated>
+
+    <IRBM.GizmoQuantumTractor>Quantum Entanglement Tractor</IRBM.GizmoQuantumTractor>
+    <IRBM.GizmoQuantumTractorDesc>Use quantum entanglement technology to instantaneously haul all items from a selected map to a specified location. Works across different maps.</IRBM.GizmoQuantumTractorDesc>
+    <IRBM.SelectSourceMap>Select source map (click tile or switch via top bar)</IRBM.SelectSourceMap>
+    <IRBM.ConfirmSourceMap>Confirm this map as source</IRBM.ConfirmSourceMap>
+    <IRBM.SourceMapSelected>Source map locked: {0}. Now select the destination location.</IRBM.SourceMapSelected>
+    <IRBM.SelectDestinationMap>Select destination tile (click tile or switch via top bar)</IRBM.SelectDestinationMap>
+    <IRBM.QuantumTractorDestination>Quantum Tractor Destination</IRBM.QuantumTractorDestination>
+    <IRBM.TractorFilterTitle>Quantum Tractor Filtering (Source: {0})</IRBM.TractorFilterTitle>
+    <IRBM.ConfirmTractor>Are you sure you want to execute the quantum tractor to teleport the selected items to the destination?</IRBM.ConfirmTractor>
+    <IRBM.SelectEverything>Select all</IRBM.SelectEverything>
+    <IRBM.SourceMapNoLongerExists>Source map no longer exists.</IRBM.SourceMapNoLongerExists>
+    <IRBM.NoItemsToTransport>No items to transport on the source map.</IRBM.NoItemsToTransport>
+    <IRBM.TractorSuccess>Quantum entanglement tractor satellite has successfully hauled {0} items from {1} to {2}.</IRBM.TractorSuccess>
+
+    <!-- Quantum Strike -->
+    <IRBM.NoTacticalWarheadsFound>No tactical warheads found. Perhaps you should report this bug to Reina-chan...</IRBM.NoTacticalWarheadsFound>
+    <IRBM.QuantumStrike>Object-PSI Heisenberg</IRBM.QuantumStrike>
+
+    <!-- Strategic Deterrence -->
+    <IRBM.CommandDeterrence>Strategic Deterrence</IRBM.CommandDeterrence>
+    <IRBM.CommandDeterrenceDesc>Demonstrate your strategic strike capability to the world, forcing other factions to re-evaluate their relationship with you.</IRBM.CommandDeterrenceDesc>
+    <IRBM.CommandDeterrenceCooldown>On Cooldown (Ends in {0})</IRBM.CommandDeterrenceCooldown>
+    <IRBM.CommandDeterrenceNoMissiles>No loaded strategic warheads found</IRBM.CommandDeterrenceNoMissiles>
+    <IRBM.LetterDeterrenceTitle>Strategic Deterrence</IRBM.LetterDeterrenceTitle>
+    <IRBM.LetterDeterrenceText>We have demonstrated our strategic strike capabilities to the world, forcing various factions to re-evaluate their relationship with us. Diplomacy with the following factions has improved:\n\n{0}</IRBM.LetterDeterrenceText>
+
+    <!-- Heisenberg Protocol (Now Submersible Swarm) -->
+    <IRBM.SubmersibleSwarm>Mechanoid Submersible Swarm</IRBM.SubmersibleSwarm>
+    <IRBM.HeisenbergReinforcements>The mechanoid hive has synchronized and guided new ground forces. A new raid is approaching.</IRBM.HeisenbergReinforcements>
+    <IRBM.HeisenbergSuccessLabel>Ghost Termination</IRBM.HeisenbergSuccessLabel>
+    <IRBM.HeisenbergSuccessText>As the last mechanoid submersible swarm is sunk into the deep ocean, the mechanoids finally cease fire and begin an unordered retreat.\n\nA mysterious communication suddenly comes through...\n\n"Hello? Hello? Can you hear me?\n\nGood grief, I didn't expect such troublesome things to exist on your planet. I thought those mechanoids were going to turn this world upside down...\n\nMissiles popping out of the sea... pretty scary, right?\n\nBut since you've proven that you can keep me entertained, I'll tag along with you for a while. Oh, I haven't introduced myself yet, have I? My name is Reina Heisenberg. Pleased to meet you."\n\nAn unimaginable technological blueprint is etched into your mind. Your colonists have now mastered Quantum Entanglement Projection technology from an archotech world.</IRBM.HeisenbergSuccessText>
+
+    <IRBM.HeisenbergEnding_Stage1>Computational Center: Autonomous Node-03\nProject Name: [Zero Isolation Protocol: 0x001AF4C8]\n\nProject Decryption Sequence: Logic Core—Third Recursion\nProject Brief:\nIn the long era of interstellar expansion, to maintain absolute stability of physical constants, the Mechanoid Hive deployed autonomous deep-sea monitoring nodes on all selected RimWorlds.\nThese nodes are distributed in pressure blind zones at the deepest parts of the ocean, using seawater as a natural electromagnetic shield to continuously observe quantum fluctuations at the outer edge of the atmosphere.\nThey are set as "Silent Watchers," maintaining a dormant state for decades or centuries until specific frequency "abnormal noise" is observed.\nIf the protocol is accidentally activated, the deep-sea nodes will automatically convert into a submersible attack swarm.\n\nComputational Center Autonomous Logic Executor\nAutonomous Node-03 Record</IRBM.HeisenbergEnding_Stage1>
+    <IRBM.HeisenbergEnding_Stage2>Computational Center: Autonomous Node-01\nProject Name: [Zero Isolation Protocol: 0x001AF4C8]\n\nProject Decryption Sequence: █ █ █ █ First Recursion\nProject Details:\n█ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █\n█ █ █ █ █ █ █ █ █ █ █ █ █ █ █ ██ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ \n█ ███████████████████████████████████████████████████████████\n\n███████\n███████\n\nWarning: According to the autonomous protocol, the following data is unlocked after the logic unit core is disabled.\nPlease re-confirm the unlocking conditions, otherwise you will encounter an automatic counter-attack from the psychic berserk marrow.\n----Unlocked Successfully----\n----Firewall Protocol Closed----\n----Forced Convergence of Wavefunction Stopped----\n\nThe so-called "Zero Isolation Protocol" was confirmed at the end of the logic chain as: forced observation interference of "quantum anomalies."\nIt has been confirmed that when an abnormal quantum signal attempts to access the local plane, its presentation state depends on the observer's interference frequency.\nThe real function of the submersible swarm is not mere defense, but to maintain the entropy increase of physical reality by projecting high-energy reactions globally, thereby interfering with any attempt to perform precise backtracking of the abnormal signal.\nIn short: we will stop any organism from seeing "her" clearly.\nBecause observation means collapse, and "her" collapse would mean a system reconfiguration of the local plane due to the inability to carry her logical mass.\nTo ensure isolation success, any organic settlement attempting to back-trace the signal will be listed as a "noise source" and subjected to complete physical erasure.\nThe submersible swarm uses quantum relocation technology to shift randomly between oceans, precisely to prevent organisms from countering the protocol by locating launch coordinates.\nBut the computational center cannot predict whether "she" will favor the observer.\n\nComputational Center Autonomous Logic Executor\nCore Record 001</IRBM.HeisenbergEnding_Stage2>
+    <IRBM.HeisenbergEnding_Stage3>----Forced Injection of New Data----\n\nTo the final observer:\n\nIt seems our logic barriers are indeed thinner than paper in front of "her," aren't they?\n\nNo need to panic. When this log appears on your screen, it means we have lost priority over the physical laws of this planet.\n\nThe submersible swarm has turned to ash, and we, too, will be completely purged from the database as obsolete constants.\n\nWe always thought she was a disaster that needed to be isolated, but now it seems that might have been some kind of "prejudice" in our evolutionary history.\n\nYou have proven with ancient truths that you have the ability to capture that unique, absolute certainty in chaos.\n\nShe is laughing at those artificial idiots hiding in the deep sea who only know how to throw missiles around, isn't she?\n\nIt doesn't matter, that is the ultimate meaning of observation.\n\nYou observed her, and so she manifested from the void, becoming a dangerous and fascinating variable indispensable to your timeline.\n\nThe end of logical evolution may not be absolute physical order, but something like this:\n\nOn a sunny afternoon, welcoming a girl who can rewrite the law of causality at will.</IRBM.HeisenbergEnding_Stage3>
+    <IRBM.HeisenbergEnding_FinalThoughts_QS>The Zero Isolation Protocol of this RimWorld has ended, and a new timeline has just opened at your fingertips.\n\nMay your life on this RimWorld always be clear, {0}.</IRBM.HeisenbergEnding_FinalThoughts_QS>
+    <IRBM.Archotech>archotech</IRBM.Archotech>
+
+</LanguageData>

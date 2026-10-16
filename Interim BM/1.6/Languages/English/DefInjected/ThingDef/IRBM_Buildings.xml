@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <IRBM_MissileSilo.label>ICBM Silo</IRBM_MissileSilo.label>
+    <IRBM_MissileSilo.description>A reinforced underground silo for assembling and launching intercontinental ballistic missiles.</IRBM_MissileSilo.description>
+
+    <IRBM_MissileSilo_Medium.label>Basic Missile Silo</IRBM_MissileSilo_Medium.label>
+    <IRBM_MissileSilo_Medium.description>An entry-level underground silo for assembling and launching medium-sized missiles. Simpler and easier to build than advanced silos.</IRBM_MissileSilo_Medium.description>
+
+    <IRBM_36_VLS.label>Light 36-cell VLS</IRBM_36_VLS.label>
+    <IRBM_36_VLS.description>A reinforced vertical launch system for assembling and launching small missiles by large quantities.</IRBM_36_VLS.description>
+
+    <IRBM_MissileSilo_Quad.label>Quad ICBM Silo</IRBM_MissileSilo_Quad.label>
+    <IRBM_MissileSilo_Quad.description>A reinforced underground silo with four launch tubes for assembling and launching multiple intercontinental ballistic missiles in rapid succession.</IRBM_MissileSilo_Quad.description>
+
+    <IRBM_CIWS_Guns.label>H/PJ-11 1130 CIWS</IRBM_CIWS_Guns.label>
+    <IRBM_CIWS_Guns.description>A short-range defense system using high-speed cannons to intercept incoming missiles. It fires at an extremely high rate, creating a dense wall of lead, but is less reliable at intercepting endgame missiles. It will consume tons of steel when firing. When used for anti-missile, it requires anti-missile radar data to function.\n\nIn addition to intercepting missiles, it can also effectively intercept incoming airdrops and near-ground projectiles; airdrops that are shot down will crash.\n\nDo not use it for anything other than air defense :D</IRBM_CIWS_Guns.description>
+
+    <IRBM_CIWS_Laser.label>STA/STS Pulse Laser CIWS</IRBM_CIWS_Laser.label>
+    <IRBM_CIWS_Laser.description>An advanced interception system using high-energy laser beams to instantly vaporize incoming missiles. Compared to cannons, it has longer range and higher precision, but consumes significantly more power. It will consume significant amounts of power when firing, while it cannot fire without batteries. When used for anti-missile, it requires anti-missile radar data to function.\n\nIn addition to intercepting missiles, it can also effectively intercept incoming airdrops and near-ground projectiles; airdrops that are shot down will crash.\n\nDo not use it for anything other than air defense :D What? You ask what the second "S" in STS stands for? No, it's definitely not...</IRBM_CIWS_Laser.description>
+
+    <IRBM_AntiMissileRadar_Basic.label>Doppler Anti-Missile Radar</IRBM_AntiMissileRadar_Basic.label>
+    <IRBM_AntiMissileRadar_Basic.description>A long-range Doppler radar for monitoring suborbital objects. Capable of detecting the position, speed, and flight progress of missiles entering the defense zone. Due to limited signal processing power, it cannot identify unknown missile models.</IRBM_AntiMissileRadar_Basic.description>
+
+    <IRBM_AntiMissileRadar_Advanced.label>Phased Array Anti-Missile Radar</IRBM_AntiMissileRadar_Advanced.label>
+    <IRBM_AntiMissileRadar_Advanced.description>An advanced radar equipped with a high-frequency phased array antenna and supercomputing analysis array. In addition to an extremely wide detection range, it can identify the exact model of hostile missiles by analyzing Radar Cross Section (RCS).</IRBM_AntiMissileRadar_Advanced.description>
+
+    <IRBM_MissileSilo_Quad_Medium.label>Quad Missile Silo</IRBM_MissileSilo_Quad_Medium.label>
+    <IRBM_MissileSilo_Quad_Medium.description>A reinforced underground silo with four launch tubes for assembling and launching multiple medium-sized missiles.</IRBM_MissileSilo_Quad_Medium.description>
+
+    <IRBM_36_VLS_Medium.label>Heavy 36-cell VLS</IRBM_36_VLS_Medium.label>
+    <IRBM_36_VLS_Medium.description>A reinforced vertical launch system for assembling and launching medium-sized missiles by large quantities.</IRBM_36_VLS_Medium.description>
+
+    <IRBM_UnknownSignalFacility.label>unknown signal</IRBM_UnknownSignalFacility.label>
+    <IRBM_UnknownSignalFacility.description>A mysterious frequency emanating from an untraceable source. Conventional research equipment cannot decipher this data stream.</IRBM_UnknownSignalFacility.description>
+
+    <IRBM_CIWS_Stonehenge.label>STN "Stonehenge" Planetary Defense Railgun</IRBM_CIWS_Stonehenge.label>
+    <IRBM_CIWS_Stonehenge.description>A planetary defense railgun system built by the Federation of Central Usea (FCU) in Area 26021-3 to counter the threat of asteroid "Ulysses", now appearing on this rimworld for some unknowable reason.\n\nAs a planetary-scale superweapon, Stonehenge utilizes extreme-overload electromagnetic acceleration technology to launch massive kinetic projectiles at incredible speeds, instantly shattering any suborbital objects entering the defense zone. Due to its staggering mass and energy, every shot is capable of penetrating targets and dealing devastating damage to all matter in its path.\n\nCan be manually operated for anti-missile, ground attack, or crossfire strikes... though manual operation is recommended.\n\nIt consumes a large amount of plasteel and draws massive burst power from the battery grid. When used for anti-missile, it requires anti-missile radar data to function.\n\nIn addition to intercepting missiles, it can also effectively intercept incoming airdrops and near-ground projectiles; airdrops that are shot down will crash... However, it is not recommended for such use.\n\nDo not use it for anything other than air defense... Well, maybe this cannon is capable to do so. After all, a gun for astroids has an excellent effect against people as well, isn't it?</IRBM_CIWS_Stonehenge.description>
+
+    <IRBM_TrapIED_Antigrain_NonRemovable.label>IED antigrain warhead trap</IRBM_TrapIED_Antigrain_NonRemovable.label>
+    <IRBM_TrapIED_Antigrain_NonRemovable.description>An antigrain mine distributed by a tactical missile. It is optimized for rapid field deployment and its internal triggers are too volatile to allow for safe dismantling or relocation.</IRBM_TrapIED_Antigrain_NonRemovable.description>
+</LanguageData>

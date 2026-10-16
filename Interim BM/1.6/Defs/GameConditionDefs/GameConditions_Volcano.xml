@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GameConditionDef>
+    <defName>IRBM_StrategicVolcano</defName>
+    <conditionClass>IRBM.GameCondition_StrategicVolcano</conditionClass>
+    <label>strategic volcanic activity</label>
+    <description>A massive tectonic disruption has triggered intense local volcanic activity. Molten debris will rain down from the sky, igniting anything they strike.</description>
+    <letterText>A strategic volcanic warhead has destabilized the local crust. Expect a heavy shower of molten lava rocks.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <canBePermanent>false</canBePermanent>
+  </GameConditionDef>
+</Defs>

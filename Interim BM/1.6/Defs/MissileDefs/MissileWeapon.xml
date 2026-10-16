@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- 伪武器定义，用于在伤害记录中显示导弹全名 -->
+  <ThingDef>
+    <defName>IRBM_MissileWeapon</defName>
+    <label>missile</label>
+    <category>Item</category>
+    <thingClass>Thing</thingClass>
+    <selectable>false</selectable>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+    </statBases>
+  </ThingDef>
+</Defs>

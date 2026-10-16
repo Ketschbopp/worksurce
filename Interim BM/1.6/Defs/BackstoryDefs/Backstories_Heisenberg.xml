@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BackstoryDef>
+    <defName>IRBM_Backstory_Reina_Child</defName>
+    <identifier>IRBM_Backstory_Reina_Child</identifier>
+    <title>量子叠加态的女孩</title>
+    <titleShort>量子女孩</titleShort>
+    <description>在五岁生日会上，玲奈藏进了一个阁楼的旧箱子。直到派对结束、宾客散尽，父母才在寂静中找到睡着的她。这次经历让她意识到，只要自己“不被观测”，世界就会将她遗忘。事实也确实如此，她一路走来，能够使她“坍缩”为本征态的观测者寥寥无几。</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Intellectual>6</Intellectual>
+      <Social>-4</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>IRBM_Reina_Backstory</li>
+    </spawnCategories>
+    <forcedTraits>
+      <IRBM_HeisenbergUncertaintyTrait>0</IRBM_HeisenbergUncertaintyTrait>
+    </forcedTraits>
+    <bodyTypeGlobal>Female</bodyTypeGlobal>
+    <shuffleable>False</shuffleable>
+    <requiresSpawnCategory>True</requiresSpawnCategory>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>IRBM_Backstory_Reina_Adult</defName>
+    <identifier>IRBM_Backstory_Reina_Adult</identifier>
+    <title>测不准的海森堡同学</title>
+    <titleShort>海森堡同学</titleShort>
+    <description>柏林洪堡大学流传着一个传说：最近几年在格林兄弟中心到阿德勒斯霍夫校区之间的区域时常有人注意到一只纯白色的精灵出没，它飘忽不定，难以捉摸，目击者总是说光是看着它的背影就能被它迷住，但问起具体的长相时，却没有人真正直视过它的眼睛。\n\n有人说它是沃纳·卡尔·海森堡在显灵，但多半被当成了疯子。一个物理学家转生成白毛美少女，天底下还能有这么荒唐的事情？</description>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Intellectual>8</Intellectual>
+      <Shooting>4</Shooting>
+      <Social>-2</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>IRBM_Reina_Backstory</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Female</bodyTypeGlobal>
+    <shuffleable>False</shuffleable>
+    <requiresSpawnCategory>True</requiresSpawnCategory>
+  </BackstoryDef>
+
+</Defs>

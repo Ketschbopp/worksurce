@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HistoryEventDef>
+        <defName>IRBM_StrategicMissileAttack</defName>
+        <label>strategic missile attack</label>
+    </HistoryEventDef>
+
+    <HistoryEventDef>
+        <defName>IRBM_NuclearWar</defName>
+        <label>total nuclear war</label>
+    </HistoryEventDef>
+
+    <HistoryEventDef>
+        <defName>IRBM_StrategicDeterrence</defName>
+        <label>strategic deterrence</label>
+    </HistoryEventDef>
+</Defs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <IRBM_BringMissileMaterials.label>bring missile materials</IRBM_BringMissileMaterials.label>
+    <IRBM_BringMissileMaterials.verb>bring materials</IRBM_BringMissileMaterials.verb>
+    <IRBM_BringMissileMaterials.gerund>bringing materials</IRBM_BringMissileMaterials.gerund>
+
+    <IRBM_AssembleMissile.label>assemble missiles</IRBM_AssembleMissile.label>
+    <IRBM_AssembleMissile.verb>assemble</IRBM_AssembleMissile.verb>
+    <IRBM_AssembleMissile.gerund>assembling</IRBM_AssembleMissile.gerund>
+</LanguageData>

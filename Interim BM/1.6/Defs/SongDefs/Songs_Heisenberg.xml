@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <SongDef>
+    <defName>IRBM_HeisenbergChallenge_Song</defName>
+    <clipPath>Songs/noise_canceller</clipPath>
+    <volume>0.8</volume>
+    <commonality>0</commonality> <!-- 只有代码能触发循环播放 -->
+  </SongDef>
+
+  <SongDef>
+    <defName>IRBM_QuantumSignalEnding_Song</defName>
+    <clipPath>Songs/QuantumEnding</clipPath>
+    <volume>1.2</volume>
+    <commonality>0</commonality>
+  </SongDef>
+
+</Defs>

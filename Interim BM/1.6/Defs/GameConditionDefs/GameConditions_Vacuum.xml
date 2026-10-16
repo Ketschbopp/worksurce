@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GameConditionDef>
+    <defName>IRBM_AtmosphericRupture</defName>
+    <conditionClass>GameCondition</conditionClass>
+    <label>atmospheric rupture</label>
+    <description>A massive hole has been ripped in the atmosphere, exposing the surface to the freezing void of space. The absence of air makes breathing impossible for unprotected organisms and silences all sound.</description>
+    <endMessage>The atmosphere is stabilizing and the rupture has closed.</endMessage>
+    <letterText>A strategic vacuum warhead has torn a hole in the atmosphere! The area is now exposed to the void of space. Unprotected colonists will suffocate, and temperatures will drop rapidly.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
+</Defs>

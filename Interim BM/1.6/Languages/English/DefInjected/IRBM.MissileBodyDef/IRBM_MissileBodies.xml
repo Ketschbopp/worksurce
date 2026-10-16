@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+<!--     <IRBM_Tester_Body_Micro.label>Micro Missile Body</IRBM_Tester_Body_Micro.label>
+    <IRBM_Tester_Body_Micro.description>A very small missile body for close-range tactical support.</IRBM_Tester_Body_Micro.description>
+
+    <IRBM_Tester_Body_Cruise.label>Cruise Missile Body</IRBM_Tester_Body_Cruise.label>
+    <IRBM_Tester_Body_Cruise.description>A medium-sized cruise missile body for extended-range strikes.</IRBM_Tester_Body_Cruise.description>
+
+    <IRBM_Tester_Body_ShortRange.label>Short-range Missile Body</IRBM_Tester_Body_ShortRange.label>
+    <IRBM_Tester_Body_ShortRange.description>A basic missile body for tactical strikes.</IRBM_Tester_Body_ShortRange.description>
+
+    <IRBM_Tester_Body_ICBM.label>ICBM Body</IRBM_Tester_Body_ICBM.label>
+    <IRBM_Tester_Body_ICBM.description>A heavy intercontinental ballistic missile body.</IRBM_Tester_Body_ICBM.description>
+
+    <IRBM_Tester_Body_LiquidRocket.label>Heavy Liquid Rocket Body</IRBM_Tester_Body_LiquidRocket.label>
+    <IRBM_Tester_Body_LiquidRocket.description>A massive liquid-fueled rocket body using a quad-engine configuration. Powerful but slow to emerge.</IRBM_Tester_Body_LiquidRocket.description>
+ -->
+    <!-- US Series -->
+    <IRBM_LGM_25C.label>LGM-25C Titan II</IRBM_LGM_25C.label>
+    <IRBM_LGM_25C.description>LGM-25C Titan II intercontinental ballistic missile. A Cold War era strategic pillar, famous for its massive payload and liquid-fuel propulsion. Despite being aged technology, its sheer size remains a formidable deterrent.</IRBM_LGM_25C.description>
+
+    <IRBM_LGM_118.label>LGM-118 Peacekeeper</IRBM_LGM_118.label>
+    <IRBM_LGM_118.description>LGM-118 Peacekeeper ICBM. An advanced strategic delivery platform late in the Cold War, featuring high accuracy and MIRV potential. Represents a peak of precision defense tech in the space age.</IRBM_LGM_118.description>
+
+    <IRBM_PGM_11.label>PGM-11 Redstone</IRBM_PGM_11.label>
+    <IRBM_PGM_11.description>PGM-11 Redstone missile. An early short-range ballistic missile developed by the Von Braun team. While limited in range and technologically primitive, it is the progenitor of tactical ballistic strikes.</IRBM_PGM_11.description>
+
+    <IRBM_BGM_109.label>BGM-109 Tomahawk</IRBM_BGM_109.label>
+    <IRBM_BGM_109.description>BGM-109 Tomahawk cruise missile. A renowned all-weather low-altitude cruise strike platform. Capable of hugging the terrain with a flat trajectory to bypass long-range radar, delivering precise surgical strikes to surface targets.</IRBM_BGM_109.description>
+
+    <IRBM_SM_2.label>RIM-66 Standard Missile II</IRBM_SM_2.label>
+    <IRBM_SM_2.description>RIM-66 Standard Missile II (SM-2). A long-range anti-air missile designed for mid-to-long distance interception. Features good overload capabilities and serves as the core of regional air defense.</IRBM_SM_2.description>
+
+    <IRBM_SM_3.label>RIM-161 Standard Missile III</IRBM_SM_3.label>
+    <IRBM_SM_3.description>RIM-161 Standard Missile III (SM-3). A precision interceptor designed for exo-atmospheric and upper-atmosphere ballistic targets. Equipped with multi-stage propulsion and a high-sensitivity seeker, it is a key component of the anti-missile shield.</IRBM_SM_3.description>
+
+    <IRBM_SM_6.label>RIM-174 Standard Missile VI</IRBM_SM_6.label>
+    <IRBM_SM_6.description>RIM-174 Standard Missile VI (SM-6). An extremely advanced over-the-horizon defense weapon. Combines high overload capability with intelligent guidance algorithms, capable of intercepting both missiles and various tactical threats.</IRBM_SM_6.description>
+
+    <!-- CN Series -->
+    <IRBM_DF_5.label>DF-5</IRBM_DF_5.label>
+    <IRBM_DF_5.description>DF-5 ICBM. A heavy liquid-fuel delivery platform with a distinct industrial style. It utilizes relatively simple but extremely reliable industrial-grade tech, achieving ultra-long range and massive throw weight through enormous fuel capacity. Preferred platform for heavy recon payloads.</IRBM_DF_5.description>
+
+    <IRBM_DF_26.label>DF-26</IRBM_DF_26.label>
+    <IRBM_DF_26.description>DF-26 nuclear-conventional dual-capable intermediate-range ballistic missile. A flexible platform capable of delivering tactical nuclear weapons or hunting high-value surface targets. Features excellent response time and modern flight control systems. This body follows the Tsien trajectory curve.</IRBM_DF_26.description>
+
+    <IRBM_DF_61.label>DF-61</IRBM_DF_61.label>
+    <IRBM_DF_61.description>DF-61 Strategic Strike System. Represents the strategic deterrent of the ultra-tech era. Integrated with the most advanced materials, capable of carrying almost all strategic-grade payloads in the mod. This body follows the Tsien trajectory curve.</IRBM_DF_61.description>
+
+    <IRBM_YJ_8.label>YJ-8</IRBM_YJ_8.label>
+    <IRBM_YJ_8.description>YJ-8 anti-ship cruise missile. A classic tactical weapon known for its low cost and reliable sea-skimming performance. Suitable as a consumable force in saturation strikes.</IRBM_YJ_8.description>
+
+    <IRBM_YJ_18.label>YJ-18</IRBM_YJ_18.label>
+    <IRBM_YJ_18.description>YJ-18 cruise missile. Cruises at low consumption for most of its flight and performs a terminal supersonic dash upon entering the target area, significantly increasing interception difficulty.</IRBM_YJ_18.description>
+
+    <IRBM_YJ_20.label>YJ-20</IRBM_YJ_20.label>
+    <IRBM_YJ_20.description>YJ-20 hypersonic ballistic missile. This body can cruise at hypersonic speeds within the atmosphere. A nightmare for interception systems.</IRBM_YJ_20.description>
+
+    <IRBM_HQ_9.label>HQ-9</IRBM_HQ_9.label>
+    <IRBM_HQ_9.description>HQ-9 long-range anti-air missile. Features robust multi-target engagement capability and electronic counter-measure performance. A solid shield for airspace security.</IRBM_HQ_9.description>
+
+    <IRBM_HQ_19.label>HQ-19</IRBM_HQ_19.label>
+    <IRBM_HQ_19.description>HQ-19 strategic anti-missile interceptor. A specialized defense asset against high-speed ballistic targets. Its extreme lift-off speed and overload capability allow it to successfully intercept most incoming nuclear threats.</IRBM_HQ_19.description>
+
+    <!-- Troll Series -->
+    <IRBM_Heisenberg.label>Object-PSI Heisenberg</IRBM_Heisenberg.label>
+    <IRBM_Heisenberg.description>"Heisenberg-san wa Hakarenai!"\n\nA masterpiece of the benevolent archotech "Uncertain Heisenberg-san", Reina Heisenberg. It can hardly be called a "missile" at all; it is essentially a quantum entanglement FTL projection field. Until it is observed (impacts the target), its exact position remains inherently uncertain. Its internal structure remains a mystery to all. You are only able to manufacture it because Reina-chan wants to do an experiment in this RimWorld. Now, say "Thank you, Reina-chan!"\n\nThis missile body can instantly deliver tactical payloads to any location on the current map.</IRBM_Heisenberg.description>
+
+    <!-- Hidden Missiles -->
+    <IRBM_YJ_19.label>YJ-19</IRBM_YJ_19.label>
+    <IRBM_YJ_19.description>YJ-19 hypersonic submarine-launched anti-ship ballistic missile. Features strong penetration capability and precise strike performance, making it the preferred tactical strike weapon for attack submarines.</IRBM_YJ_19.description>
+
+    <IRBM_JL_3.label>JL-3</IRBM_JL_3.label>
+    <IRBM_JL_3.description>JL-3 submarine-launched intercontinental ballistic missile. An advanced strategic strike platform with high accuracy and strong throw capability. It is the core force of maritime strategic deterrence.</IRBM_JL_3.description>
+
+    <IRBM_HHQ_9C.label>HHQ-9C</IRBM_HHQ_9C.label>
+    <IRBM_HHQ_9C.description>HHQ-9C ship-based anti-air missile. An advanced long-range air defense weapon with strong multi-target engagement capability and electronic counter-measure performance. It is a solid shield for maritime airspace security.</IRBM_HHQ_9C.description>
+
+    <!-- Shells -->
+    <IRBM_Stonehenge_Shell.label>STN "Stonehenge" 1000mm Railgun Shell</IRBM_Stonehenge_Shell.label>
+    <IRBM_Stonehenge_Shell.description>A heavy kinetic shell designed for the planetary defense railgun "Stonehenge". Its massive mass and reinforced structure allow it to withstand extreme acceleration and maintain stability during flight, ensuring devastating impact on the target.</IRBM_Stonehenge_Shell.description>
+</LanguageData>

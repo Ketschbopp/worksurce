@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <IRBM_BasicRocketry.label>basic rocketry</IRBM_BasicRocketry.label>
+  <IRBM_BasicRocketry.description>Master the fundamentals of liquid and solid fuel propulsion to build early missile launch platforms.</IRBM_BasicRocketry.description>
+
+  <IRBM_EarlyWarheads.label>early warheads</IRBM_EarlyWarheads.label>
+  <IRBM_EarlyWarheads.description>Repurpose standard mortar shells into specialized missile payloads for tactical strikes.</IRBM_EarlyWarheads.description>
+
+  <IRBM_EarlyDelivery.label>early delivery vehicles</IRBM_EarlyDelivery.label>
+  <IRBM_EarlyDelivery.description>Develop early missile bodies like the Redstone and Tomahawk for short-to-medium range delivery.</IRBM_EarlyDelivery.description>
+
+  <IRBM_EarlyWarning.label>doppler surveillance</IRBM_EarlyWarning.label>
+  <IRBM_EarlyWarning.description>Utilize Doppler radar technology to detect high-speed suborbital objects entering local airspace.</IRBM_EarlyWarning.description>
+
+  <IRBM_AdvancedAerospace.label>advanced aerospace</IRBM_AdvancedAerospace.label>
+  <IRBM_AdvancedAerospace.description>Refine propulsion and hull materials to support larger payloads and orbital capabilities.</IRBM_AdvancedAerospace.description>
+
+  <IRBM_OrbitalRecon.label>orbital reconnaissance</IRBM_OrbitalRecon.label>
+  <IRBM_OrbitalRecon.description>Launch specialized satellites into orbit to provide persistent observation of the world map.</IRBM_OrbitalRecon.description>
+
+  <IRBM_NuclearDeterrence.label>strategic deterrence</IRBM_NuclearDeterrence.label>
+  <IRBM_NuclearDeterrence.description>Develop massive multi-stage rockets and heavy nuclear payloads to ensure total map annihilation.</IRBM_NuclearDeterrence.description>
+
+  <IRBM_KineticInterception.label>kinetic interception</IRBM_KineticInterception.label>
+  <IRBM_KineticInterception.description>Combine high-speed computation with rapid-fire cannons or agile missiles to intercept hostile projectiles.</IRBM_KineticInterception.description>
+
+  <IRBM_PrecisionPropulsion.label>precision propulsion</IRBM_PrecisionPropulsion.label>
+  <IRBM_PrecisionPropulsion.description>Implement ultra-tech guidance systems and multi-pulse engines for superior range and accuracy.</IRBM_PrecisionPropulsion.description>
+
+  <IRBM_SpecializedPayloads.label>specialized payloads</IRBM_SpecializedPayloads.label>
+  <IRBM_SpecializedPayloads.description>Create advanced tactical warheads utilizing chemical, electromagnetic, and miniature nuclear reactions.</IRBM_SpecializedPayloads.description>
+
+  <IRBM_HypersonicResearch.label>hypersonic flight</IRBM_HypersonicResearch.label>
+  <IRBM_HypersonicResearch.description>Study high-speed atmospheric gliding to develop missiles that are extremely hard to intercept.</IRBM_HypersonicResearch.description>
+
+  <IRBM_AdvancedInterception.label>advanced interception</IRBM_AdvancedInterception.label>
+  <IRBM_AdvancedInterception.description>Use phased-array radar and directed energy weapons for higher interception rates and more reliable defense.</IRBM_AdvancedInterception.description>
+
+  <IRBM_VacuumEnergy.label>vacuum energy</IRBM_VacuumEnergy.label>
+  <IRBM_VacuumEnergy.description>Harness fundamental physical constants to achieve near-instantaneous delivery and absolute destruction.</IRBM_VacuumEnergy.description>
+
+  <IRBM_OrbitalStrike.label>orbital strike</IRBM_OrbitalStrike.label>
+  <IRBM_OrbitalStrike.description>Master the technology to coordinate precision strikes from orbital platforms, enabling the deployment of offensive satellite payloads.</IRBM_OrbitalStrike.description>
+
+  <IRBM_AtomicAnnihilation.label>atomic annihilation</IRBM_AtomicAnnihilation.label>
+  <IRBM_AtomicAnnihilation.description>Develop warheads that use antimatter or advanced shielding to bypass political consequences and physical defenses.</IRBM_AtomicAnnihilation.description>
+
+  <IRBM_BunkerBusterTech.label>crust penetration</IRBM_BunkerBusterTech.label>
+  <IRBM_BunkerBusterTech.description>Combine molecular drills with heavy penetrators to strike targets deep beneath the surface.</IRBM_BunkerBusterTech.description>
+
+  <IRBM_UltimateDelivery.label>ultimate delivery platforms</IRBM_UltimateDelivery.label>
+  <IRBM_UltimateDelivery.description>Unlock the final generation of missile bodies, including hypersonic glide vehicles and heavy strategic carriers.</IRBM_UltimateDelivery.description>
+
+  <IRBM_WeatherControl.label>weather control</IRBM_WeatherControl.label>
+  <IRBM_WeatherControl.description>Master the art of precise atmospheric intervention. By dispersing specialized nucleation catalysts or stimulating high-altitude atmospheric energy, immediate reshaping of local climates can be achieved.</IRBM_WeatherControl.description>
+
+  <IRBM_ZeroPointCollapse.label>zero-point collapse</IRBM_ZeroPointCollapse.label>
+  <IRBM_ZeroPointCollapse.description>The ultimate weapon. Create a controlled singularity that swallows maps without a trace. Requires persona core regulation.</IRBM_ZeroPointCollapse.description>
+
+  <IRBM_HeisenbergAnalysis.label>Quantum signal analysis</IRBM_HeisenbergAnalysis.label>
+  <IRBM_HeisenbergAnalysis.description>Try to receive mysterious quantum entangled signals from another dimension. A dormant, automated global defense system may prevent you from accessing this information.</IRBM_HeisenbergAnalysis.description>
+
+  <IRBM_QuantumEntanglement.label>quantum entanglement projection</IRBM_QuantumEntanglement.label>
+  <IRBM_QuantumEntanglement.description>A mysterious, god-like technology derived from high-dimensional space. By utilizing quantum entanglement properties, physical matter can be projected instantaneously. This technology is encoded within a hidden signal and cannot be researched through conventional means.</IRBM_QuantumEntanglement.description>
+
+</LanguageData>

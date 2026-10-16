@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <QuestScriptDef>
+    <defName>IRBM_HeisenbergProtocol</defName>
+    <rootSelectionWeight>0</rootSelectionWeight>
+    <defaultChallengeRating>4</defaultChallengeRating>
+    <isRootSpecial>true</isRootSpecial>
+    <rootMinPoints>0</rootMinPoints>
+    <autoAccept>false</autoAccept>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Unknown Signal</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->Your long-range sensors have intercepted a highly encrypted signal with aggressive intent. This frequency is guiding an ancient protocol known as the "Mechanoid Submersible Swarm" — an automated planetary purging system triggered by your technological advancement.\n\nIf you accept and attempt to trace this signal, the mechanoids will identify you as the primary threat in this sector and initiate a global missile saturation strike.\n\nWarning: This is an ultimate challenge. The mechanoid deep-sea launch sites are completely invisible on the world map. You must observe the vapor trails during missile launches to reverse-engineer their tile coordinates, then use your own strategic weapons to conduct blind-fire counterstrikes.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <!-- 使用自定义的 C# 根节点来处理逻辑 -->
+    <root Class="IRBM.QuestNode_Root_HeisenbergProtocol" />
+  </QuestScriptDef>
+
+</Defs>

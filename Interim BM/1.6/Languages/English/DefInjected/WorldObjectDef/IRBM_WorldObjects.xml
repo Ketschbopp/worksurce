@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <IRBM_Missile_Object.label>missile</IRBM_Missile_Object.label>
+
+    <IRBM_ReconSatellite_Object.label>recon satellite</IRBM_ReconSatellite_Object.label>
+    <IRBM_ReconSatellite_Object.description>An orbital reconnaissance satellite deployed via missile. It can maintain high-altitude observation over a target location, keeping the map loaded.</IRBM_ReconSatellite_Object.description>
+
+    <IRBM_EnergyBeamSatellite_Object.label>orbital energy beam satellite</IRBM_EnergyBeamSatellite_Object.label>
+    <IRBM_EnergyBeamSatellite_Object.description>An orbital platform equipped with a high-power microwave emitter. It can focus a massive column of electromagnetic energy onto a target location on the surface.</IRBM_EnergyBeamSatellite_Object.description>
+
+    <IRBM_BombardmentSatellite_Object.label>orbital bombardment satellite</IRBM_BombardmentSatellite_Object.label>
+    <IRBM_BombardmentSatellite_Object.description>An orbital platform designed for precision saturation strikes. It is equipped with a magazine of kinetic impactors that can be dropped onto target coordinates.</IRBM_BombardmentSatellite_Object.description>
+
+    <IRBM_TractorSatellite_Object.label>quantum entanglement tractor satellite</IRBM_TractorSatellite_Object.label>
+    <IRBM_TractorSatellite_Object.description>A specialized orbital platform equipped with high-energy quantum entanglement projectors. It can create a momentary link between two distant points in space-time, allowing for the instantaneous mass transport of all items from one map to a specific location on another. This process is non-destructive and preserves all physical properties of the transported objects.</IRBM_TractorSatellite_Object.description>
+
+    <IRBM_ObservedArea.label>observed area</IRBM_ObservedArea.label>
+    <IRBM_ObservedArea.description>An area currently under satellite surveillance.</IRBM_ObservedArea.description>
+
+    <IRBM_HeisenbergRelay.label>Heisenberg relay station</IRBM_HeisenbergRelay.label>
+    <IRBM_HeisenbergRelay.description>A highly advanced, automated signal relay station. It is directing the Heisenberg Protocol strikes against your colony. Destroying all such stations is the only way to terminate the protocol.</IRBM_HeisenbergRelay.description>
+</LanguageData>

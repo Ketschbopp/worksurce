@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GameConditionDef>
+    <defName>IRBM_NuclearWinter</defName>
+    <conditionClass>IRBM.GameCondition_NuclearWinter</conditionClass>
+    <label>nuclear winter</label>
+    <description>The fallout has settled, but the nightmare is just beginning. A prolonged nuclear winter has gripped the planet, combining the effects of volcanic winter, acid smog, and toxic fallout.</description>
+    <canBePermanent>true</canBePermanent>
+    <allowUnderground>false</allowUnderground>
+    <pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
+    <preventRain>true</preventRain>
+  </GameConditionDef>
+
+  <GameConditionDef>
+    <defName>IRBM_StrategicThunderstorm</defName>
+    <conditionClass>IRBM.GameCondition_StrategicThunderstorm</conditionClass>
+    <label>UHV thunderstorm</label>
+    <description>A massive thunderstorm triggered by ionosphere destabilization. Intense lightning strikes will frequently target surface activity.</description>
+    <canBePermanent>false</canBePermanent>
+    <allowUnderground>false</allowUnderground>
+    <preventRain>true</preventRain>
+  </GameConditionDef>
+
+</Defs>

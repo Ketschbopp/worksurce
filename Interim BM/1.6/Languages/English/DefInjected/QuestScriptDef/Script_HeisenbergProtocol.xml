@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <IRBM_HeisenbergProtocol.questNameRules.rulesStrings>
+    <li>questName->Quantum Signal</li>
+  </IRBM_HeisenbergProtocol.questNameRules.rulesStrings>
+  <IRBM_HeisenbergProtocol.questDescriptionRules.rulesStrings>
+    <li>questDescription->Your prototype quantum communication sensors have intercepted an encrypted signal, suspected to originate from another dimension. However, an ancient protocol known as the "Mechanoid Submersible Swarm" has truncated it and is preventing you from accessing further information — this is a mechanoid emergency protocol accidentally triggered by the signal itself.\n\nIf you accept and attempt to trace this signal, the mechanoids will identify you as the primary threat in this sector and initiate a global missile saturation strike.\n\nThis is an ultimate challenge. The mechanoid launch sites are hidden deep within the ocean; they are invisible on the world map. You only know one thing: there are more than one, and while usually stationary, no one knows when or where they might warp. You must observe the trajectories during missile launches to reverse-engineer their tile coordinates, then use your own strategic weapons to conduct blind-fire counterstrikes.\n\n"...observation blocked... but as an archotech-level intelligence of this plane, you should be able to handle it... Be careful, their nexuses are hidden among many submarines, don't shoot the wrong one. Also, do not kill them all, they are endless. Try to hold them back. Good luck, I'll be watching."\n\n"Protocol No. 0x001AF4C8: Organics, this is your final warning. Any attempt to trace the unknown signal is strictly prohibited. You shall bear all consequences arising therefrom."</li>
+  </IRBM_HeisenbergProtocol.questDescriptionRules.rulesStrings>
+
+</LanguageData>

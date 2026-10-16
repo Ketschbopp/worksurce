@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- 继承自原生的 PositiveEvent 以获得标准的天蓝色调和动画效果，同时通过覆盖 arriveSound 彻底屏蔽原生音效 -->
+  <LetterDef ParentName="PositiveEvent">
+    <defName>IRBM_Letter_StrategicDeterrence</defName>
+    <arriveSound>IRBM_Sound_Victory</arriveSound>
+  </LetterDef>
+</Defs>

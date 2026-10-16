@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+<!--     <IRBM_Tester_Warhead_HE.label>High-Explosive Warhead</IRBM_Tester_Warhead_HE.label>
+    <IRBM_Tester_Warhead_HE.description>A conventional high-explosive warhead for tactical use.</IRBM_Tester_Warhead_HE.description>
+
+    <IRBM_Tester_Warhead_Nuclear.label>Nuclear Warhead</IRBM_Tester_Warhead_Nuclear.label>
+    <IRBM_Tester_Warhead_Nuclear.description>A strategic nuclear warhead that causes massive destruction and pollution.</IRBM_Tester_Warhead_Nuclear.description>
+
+    <IRBM_Tester_Warhead_Recon.label>Recon Satellite Warhead</IRBM_Tester_Warhead_Recon.label>
+    <IRBM_Tester_Warhead_Recon.description>A reconnaissance satellite payload. Upon launch, it enters orbit to provide continuous observation of a target location.</IRBM_Tester_Warhead_Recon.description>
+ -->
+    <!-- Tactical Warheads -->
+    <IRBM_Warhead_Tactical_HE.label>Tactical HE Warhead</IRBM_Warhead_Tactical_HE.label>
+    <IRBM_Warhead_Tactical_HE.description>A tactical high-explosive warhead utilizing repurposed mortar shells. It delivers a reliable explosive force to the target area.</IRBM_Warhead_Tactical_HE.description>
+
+    <IRBM_Warhead_Tactical_Cluster.label>Tactical Cluster Warhead</IRBM_Warhead_Tactical_Cluster.label>
+    <IRBM_Warhead_Tactical_Cluster.description>A tactical high-explosive warhead with cluster shells. It delivers a reliable explosive force to a wide area by releasing sub-munitions over the target.</IRBM_Warhead_Tactical_Cluster.description>
+
+    <IRBM_Warhead_Tactical_Inferno.label>Tactical Inferno Warhead</IRBM_Warhead_Tactical_Inferno.label>
+    <IRBM_Warhead_Tactical_Inferno.description>A devastating incendiary warhead that uses standard incendiary shells as its core. It creates a massive area of intense heat and fire upon impact.</IRBM_Warhead_Tactical_Inferno.description>
+
+    <IRBM_Warhead_Tactical_Acid.label>Tactical Corrosive Warhead</IRBM_Warhead_Tactical_Acid.label>
+    <IRBM_Warhead_Tactical_Acid.description>A specialized warhead that loaded with super-strong acid (HF·SbF5), which needs to be contained in a specialized liner. It is extremely effective at melting through thick armor without the indiscriminate fire risk of incendiary payloads.</IRBM_Warhead_Tactical_Acid.description>
+
+    <IRBM_Warhead_Tactical_Cryo.label>Tactical Cryogenic Warhead</IRBM_Warhead_Tactical_Cryo.label>
+    <IRBM_Warhead_Tactical_Cryo.description>A high-tech warhead that loaded with liquified helium, plunging the impact zone into absolute zero. It inflicts severe frostbite on biological targets and can shatter delicate mechanisms, all while leaving the local environment and structures relatively intact.</IRBM_Warhead_Tactical_Cryo.description>
+
+    <IRBM_Warhead_Tactical_Neural.label>Tactical Psychic Shock Warhead</IRBM_Warhead_Tactical_Neural.label>
+    <IRBM_Warhead_Tactical_Neural.description>An advanced neuro-active pulse payload. It uses psychic shockwaves to attack the nervous system directly, causing paralysis in live organisms.</IRBM_Warhead_Tactical_Neural.description>
+
+    <IRBM_Warhead_Tactical_Thermobaric.label>Tactical Thermobaric Warhead</IRBM_Warhead_Tactical_Thermobaric.label>
+    <IRBM_Warhead_Tactical_Thermobaric.description>A highly advanced aerosol-dispersal warhead. It releases a cloud of fuel that is subsequently ignited, creating a massive, long-duration pressure wave and high-intensity heat. The extreme conditions are capable of vaporizing biological tissues.</IRBM_Warhead_Tactical_Thermobaric.description>
+
+    <IRBM_Warhead_Tactical_Fission.label>Tactical Molecular Fission Warhead</IRBM_Warhead_Tactical_Fission.label>
+    <IRBM_Warhead_Tactical_Fission.description>An advanced tactical warhead that utilizes the principle of material resonance to trigger a high-frequency molecular bond breaking chain reaction. It can sustain an incredibly deep chain reaction in dense areas.\n\nWarning! This warhead will trigger a chain reaction, extremely dangerous. Don't be misled by the explosion radius!</IRBM_Warhead_Tactical_Fission.description>
+
+    <IRBM_Warhead_Tactical_Antigrain.label>Tactical Antimatter Disintegration Warhead</IRBM_Warhead_Tactical_Antigrain.label>
+    <IRBM_Warhead_Tactical_Antigrain.description>The ultimate tactical payload, converting a rare antigrain warhead into a missile-delivered weapon. It will cause a chain reaction of annihilation, destroying everything within the blast radius.\n\nWarning! This warhead will trigger a chain reaction, extremely dangerous. Don't be misled by the explosion radius!</IRBM_Warhead_Tactical_Antigrain.description>
+
+    <IRBM_Warhead_Tactical_Suppression.label>Tactical Suppression Warhead</IRBM_Warhead_Tactical_Suppression.label>
+    <IRBM_Warhead_Tactical_Suppression.description>A specialized low-lethal hybrid tactical warhead designed for mass crowd control. It releases a massive concussive wave combined with an electromagnetic pulse, capable of neutralizing both organic infantry and mechanical threats over a vast area.</IRBM_Warhead_Tactical_Suppression.description>
+
+    <IRBM_Warhead_Tactical_MiniNuke.label>Tactical Mini-Nuke Warhead</IRBM_Warhead_Tactical_MiniNuke.label>
+    <IRBM_Warhead_Tactical_MiniNuke.description>A compact nuclear device. While it lacks the scale of strategic ICBM payloads, it provides unparalleled tactical destruction within the combat zone without causing world-map contamination.\nDon't ask why. The uranium on the Rim is just like that. Tynan's uranium slug turrets don't leave pollution when they explode either, right?</IRBM_Warhead_Tactical_MiniNuke.description>
+
+    <IRBM_Warhead_Tactical_BunkerBuster.label>Tactical Planet Cracker Drill Warhead</IRBM_Warhead_Tactical_BunkerBuster.label>
+    <IRBM_Warhead_Tactical_BunkerBuster.description>A strong interaction force armor-piercing warhead with the name "Planet Cracker". Designed to have the capability to penetrate the planet crust, and can even directly destroy defensive facilities hidden inside mountains or pocket spaces.\nWhile using this warhead, you can click the top bar to switch maps and aim at the underground map or the pocket space.\nThis warhead's explosion ignores the target's Incoming Damage Factor. Furthermore, never let this warhead lock onto you and strike directly - beings hit directly by it will be torn apart and reduced to dust.</IRBM_Warhead_Tactical_BunkerBuster.description>
+
+    <IRBM_Warhead_Tactical_Deadlife.label>Tactical Deadlife Warhead</IRBM_Warhead_Tactical_Deadlife.label>
+    <IRBM_Warhead_Tactical_Deadlife.description>A high-tech specialized warhead that disperses a massive cloud of Deadlife dust upon detonation. This dust reanimates any biological corpses in the area as friendly shamblers to attack enemies. Due to the forbidden biotechnology involved, producing this warhead requires Bioferrite and Anomaly-related research.</IRBM_Warhead_Tactical_Deadlife.description>
+
+    <IRBM_Warhead_Tactical_Smoke.label>Tactical Aerosol Smoke Warhead</IRBM_Warhead_Tactical_Smoke.label>
+    <IRBM_Warhead_Tactical_Smoke.description>A non-lethal tactical payload designed to saturate a massive area with vision-blocking smoke particles. This smoke not only reduces enemy firing accuracy but also obstructs the line of sight for automated defense systems, making it ideal for masking large-scale advances or retreats.</IRBM_Warhead_Tactical_Smoke.description>
+
+    <IRBM_Warhead_Tactical_Tox.label>Tactical Tox-Cloud Drill Warhead</IRBM_Warhead_Tactical_Tox.label>
+    <IRBM_Warhead_Tactical_Tox.description>A chemical warfare payload specifically designed to release high-density toxic clouds. Armed with a special designed drill, it can penetrate the ground and release the toxic cloud underground. Biological organisms inhaling the gas will rapidly develop severe toxic buildup, leading to weakness, unconsciousness, or death. This warhead is highly effective at clearing surface organic forces without damaging structures or equipment.</IRBM_Warhead_Tactical_Tox.description>
+
+    <IRBM_Warhead_Tactical_Mine.label>Tactical Drilling Mine Distributor Warhead</IRBM_Warhead_Tactical_Mine.label>
+    <IRBM_Warhead_Tactical_Mine.description>A specialized tactical payload designed to penetrate the ground and deploy a large number of subsurface mines. These mines are highly destructive and can cause significant losses to enemy forces.\n\nUpon impact, you must manually select the deployed mines to claim them. Once claimed, the mines can be triggered.</IRBM_Warhead_Tactical_Mine.description>
+
+    <IRBM_Warhead_Tactical_Luciferium.label>Tactical Drilling Luciferium Warhead</IRBM_Warhead_Tactical_Luciferium.label>
+    <IRBM_Warhead_Tactical_Luciferium.description>A tactical payload designed to release unstable luciferium nanomachines after penetrating the ground. The luciferium rapidly invades biological organisms, causing instant death. Even if survivors manage to escape the initial blast, they will suffer from luciferium addiction, which will torment them for the rest of their lives.</IRBM_Warhead_Tactical_Luciferium.description>
+
+    <IRBM_Warhead_Tactical_Milira_Plasma.label>Tactical Plasma Warhead</IRBM_Warhead_Tactical_Milira_Plasma.label>
+    <IRBM_Warhead_Tactical_Milira_Plasma.description>A tactical warhead designed by the Milira civilization, which releases a burst of superheated plasma upon detonation, capable of melting through most materials and incinerating biological targets.</IRBM_Warhead_Tactical_Milira_Plasma.description>
+
+    <!-- AA Warheads -->
+    <IRBM_Warhead_AntiAir_Standard.label>AA Fragmentation Interceptor</IRBM_Warhead_AntiAir_Standard.label>
+    <IRBM_Warhead_AntiAir_Standard.description>A fragmentation interceptor designed for anti-aircraft defense. Not as effective against fast-moving missiles.</IRBM_Warhead_AntiAir_Standard.description>
+
+    <IRBM_Warhead_AntiAir_Kinetic.label>AA Kinetic Interceptor</IRBM_Warhead_AntiAir_Kinetic.label>
+    <IRBM_Warhead_AntiAir_Kinetic.description>A kinetic interceptor specifically designed for anti-missile purposes, utilizing direct impact to destroy incoming targets.</IRBM_Warhead_AntiAir_Kinetic.description>
+
+    <IRBM_Warhead_AntiAir_Quantum.label>AA Quantum Seeker</IRBM_Warhead_AntiAir_Quantum.label>
+    <IRBM_Warhead_AntiAir_Quantum.description>An archotech interceptor with quantum-entangled sensors, providing superior tracking and extremely low lock-break risk.</IRBM_Warhead_AntiAir_Quantum.description>
+
+    <!-- Strategic Warheads -->
+    <IRBM_Warhead_Strategic_Standard.label>Standard Strategic Nuclear Warhead</IRBM_Warhead_Strategic_Standard.label>
+    <IRBM_Warhead_Strategic_Standard.description>A traditional ultimate strike option. It vaporizes entire maps through a massive nuclear fission reaction. Its extreme power comes at the cost of severe radioactive fallout and significantly accelerates the countdown to the end of civilization.</IRBM_Warhead_Strategic_Standard.description>
+
+    <IRBM_Warhead_Strategic_Clean.label>Strategic Neutron Warhead</IRBM_Warhead_Strategic_Clean.label>
+    <IRBM_Warhead_Strategic_Clean.description>A neutron bomb utilizing radiation-enhancement technology, designed to kill all biological life and vegetation without destroying structures. Although nuclear material is reduced, its use is still recognized as initiating total nuclear war by monitoring systems.</IRBM_Warhead_Strategic_Clean.description>
+
+    <IRBM_Warhead_Strategic_Surgical.label>Directed Beam Energy Strategic Nuclear Warhead</IRBM_Warhead_Strategic_Surgical.label>
+    <IRBM_Warhead_Strategic_Surgical.description>Vaporizes target maps with localized fallout using minimal nuclear material. Its energy signature is masked by the signal-dampening measures of a persona core, allowing it to evade doomsday alert protocols.</IRBM_Warhead_Strategic_Surgical.description>
+
+    <IRBM_Warhead_Strategic_Collapse.label>Strategic Gravitational Singularity Fission Warhead</IRBM_Warhead_Strategic_Collapse.label>
+    <IRBM_Warhead_Strategic_Collapse.description>An archotech singularity device controlled by a persona core. It creates a temporary gravitational anomaly that swallows entire maps, and can even dig the whole deepest underground facilities out. Structures within the anomaly's reach will be torn apart by the distorted gravitational forces, leaving behind only the raw materials that composed them.</IRBM_Warhead_Strategic_Collapse.description>
+
+    <IRBM_Warhead_Strategic_GammaRay.label>Strategic Gamma-Ray Burst Warhead</IRBM_Warhead_Strategic_GammaRay.label>
+    <IRBM_Warhead_Strategic_GammaRay.description>Utilizes ultra-tech to generate a highly directed pulse of gamma radiation. It can instantly scan the entire map and penetrate thick overhead mountain roofs, precisely erasing all biological life signs without causing physical damage to structures.</IRBM_Warhead_Strategic_GammaRay.description>
+
+    <IRBM_Warhead_Strategic_SolarFlare.label>Strategic Solar Flare Warhead</IRBM_Warhead_Strategic_SolarFlare.label>
+    <IRBM_Warhead_Strategic_SolarFlare.description>A high-tech strategic payload designed to trigger a localized solar flare effect through high-altitude EMP bursts. It completely disables electronics and causes localized atmospheric disturbances.</IRBM_Warhead_Strategic_SolarFlare.description>
+
+    <IRBM_Warhead_Recon.label>Recon Satellite</IRBM_Warhead_Recon.label>
+    <IRBM_Warhead_Recon.description>An orbital observation payload integrated with high-resolution optics and energy sensors. Typically launched by heavy delivery rockets, it provides the command center with continuous real-time vision of the target area.</IRBM_Warhead_Recon.description>
+
+    <IRBM_Warhead_EnergyBeamSatellite.label>Orbital Energy Beam Satellite</IRBM_Warhead_EnergyBeamSatellite.label>
+    <IRBM_Warhead_EnergyBeamSatellite.description>A specialized satellite payload equipped with a high-intensity orbital energy beam emitter. Once deployed into orbit, it can be commanded to fire a devastating beam of energy at a surface target. The satellite requires a significant amount of time to recharge its capacitors after each shot.</IRBM_Warhead_EnergyBeamSatellite.description>
+
+    <IRBM_Warhead_Strategic_CloudSeeding.label>Strategic Cloud-Seeding Warhead</IRBM_Warhead_Strategic_CloudSeeding.label>
+    <IRBM_Warhead_Strategic_CloudSeeding.description>A strategic weather-modification payload. Instead of delivering destructive force, it disperses localized cooling agents and nucleation seeds into the upper atmosphere to trigger immediate rainfall.</IRBM_Warhead_Strategic_CloudSeeding.description>
+
+    <IRBM_Warhead_Strategic_Thunderstorm.label>Strategic Thunderstorm Warhead</IRBM_Warhead_Strategic_Thunderstorm.label>
+    <IRBM_Warhead_Strategic_Thunderstorm.description>A strategic payload designed to destabilize the local ionosphere. Upon impact, it triggers a massive dry thunderstorm accompanied by intense lightning strikes. It inflicts concussive damage to surface targets.</IRBM_Warhead_Strategic_Thunderstorm.description>
+
+    <IRBM_Warhead_Strategic_DeepFreeze.label>Strategic Absolute Zero Warhead</IRBM_Warhead_Strategic_DeepFreeze.label>
+    <IRBM_Warhead_Strategic_DeepFreeze.description>An advanced endothermic payload that rapidly absorbs thermal energy from the environment. It triggers an immediate, severe cold snap and heavy snowfall, plunging the target area into a localized mini-ice age.</IRBM_Warhead_Strategic_DeepFreeze.description>
+
+    <IRBM_Warhead_Strategic_BloodRain.label>Strategic Blood Rain Warhead</IRBM_Warhead_Strategic_BloodRain.label>
+    <IRBM_Warhead_Strategic_BloodRain.description>A dark-tech payload that utilizes forbidden archotech resonance to condense blood-like fluid in the clouds. The falling ichor drives biological organisms into a berserk frenzy.</IRBM_Warhead_Strategic_BloodRain.description>
+
+    <IRBM_Warhead_Strategic_Lava.label>Strategic Volcanic Warhead</IRBM_Warhead_Strategic_Lava.label>
+    <IRBM_Warhead_Strategic_Lava.description>An extreme tectonic-disruption payload designed to trigger massive tectonic disintegration. It causes a continuous rain of molten debris to shower the target area, destroying surface facilities.</IRBM_Warhead_Strategic_Lava.description>
+
+    <IRBM_Warhead_Strategic_Vacuum.label>Strategic Vacuum Warhead</IRBM_Warhead_Strategic_Vacuum.label>
+    <IRBM_Warhead_Strategic_Vacuum.description>A highly advanced payload that temporarily rips a hole in the atmosphere, exposing the surface to the void of space. This triggers a localized orbital environment effect.</IRBM_Warhead_Strategic_Vacuum.description>
+
+    <IRBM_Warhead_BombardmentSatellite.label>Orbital Bombardment Satellite</IRBM_Warhead_BombardmentSatellite.label>
+    <IRBM_Warhead_BombardmentSatellite.description>A specialized satellite payload equipped with a rapid-fire kinetic impactor magazine. Once deployed into orbit, it can be commanded to saturate a target area with multiple kinetic strikes over a short duration.</IRBM_Warhead_BombardmentSatellite.description>
+
+    <IRBM_Warhead_TractorSatellite.label>Quantum Entanglement Tractor Satellite</IRBM_Warhead_TractorSatellite.label>
+    <IRBM_Warhead_TractorSatellite.description>An archotech technology provided by Reina Heisenberg. This satellite payload is equipped with high-energy quantum entanglement projectors, capable of performing large-scale synchronized matter hauling tasks after entering orbit. It can establish instantaneous links between different maps to teleport all items safely and completely to a target location.</IRBM_Warhead_TractorSatellite.description>
+
+    <IRBM_Warhead_Tactical_Stonehenge.label>Kinetic AP Warhead</IRBM_Warhead_Tactical_Stonehenge.label>
+    <IRBM_Warhead_Tactical_Stonehenge.description>A massive kinetic warhead launched by the Stonehenge planetary defense system. It induces strong seismic effects in the target area, causing widespread ground destruction and casualties.</IRBM_Warhead_Tactical_Stonehenge.description>
+</LanguageData>

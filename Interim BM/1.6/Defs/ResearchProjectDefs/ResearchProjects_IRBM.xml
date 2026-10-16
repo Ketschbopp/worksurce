@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchTabDef>
+    <defName>IRBM</defName>
+    <label>IRBM</label>
+  </ResearchTabDef>
+
+  <!-- ==================== 工业时代 (Industrial Tier) ==================== -->
+
+  <ResearchProjectDef>
+    <defName>IRBM_BasicRocketry</defName>
+    <label>basic rocketry</label>
+    <description>Master the fundamentals of liquid and solid fuel propulsion to build early missile launch platforms.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>IRBM_EarlyWarheads</defName>
+    <label>early warheads</label>
+    <description>Repurpose standard mortar shells into specialized missile payloads for tactical strikes.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>IRBM_BasicRocketry</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>1</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>IRBM_EarlyDelivery</defName>
+    <label>early delivery vehicles</label>
+    <description>Develop early missile bodies like the Redstone and Tomahawk for short-to-medium range delivery.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>IRBM_BasicRocketry</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>IRBM_EarlyWarning</defName>
+    <label>doppler surveillance</label>
+    <description>Utilize Doppler radar technology to detect high-speed suborbital objects entering local airspace.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>IRBM_BasicRocketry</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>1</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- ==================== 太空时代 (Space Tier) ==================== -->
+
+  <ResearchProjectDef>
+    <defName>IRBM_AdvancedAerospace</defName>
+    <label>advanced aerospace</label>
+    <description>Refine propulsion and hull materials to support larger payloads and orbital capabilities.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>IRBM_EarlyDelivery</li>
+      <li>MultiAnalyzer</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>IRBM_OrbitalRecon</defName>
+    <label>orbital reconnaissance</label>
+    <description>Launch specialized satellites into orbit to provide persistent observation of the world map.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>IRBM_AdvancedAerospace</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>3</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>IRBM_NuclearDeterrence</defName>
+    <label>strategic deterrence</label>
+    <description>Develop massive multi-stage rockets and heavy nuclear payloads to ensure total map annihilation.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>IRBM_AdvancedAerospace</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>3</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>IRBM_KineticInterception</defName>
+    <label>kinetic interception</label>
+    <description>Combine high-speed computation with rapid-fire cannons or agile missiles to intercept hostile projectiles.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>IRBM_AdvancedAerospace</li>
+      <li>IRBM_EarlyWarning</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>3</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- ==================== 极致时代 (Ultra-tech Tier) ==================== -->
+
+  <ResearchProjectDef>
+    <defName>IRBM_PrecisionPropulsion</defName>
+    <label>precision propulsion</label>
+    <description>Implement ultra-tech guidance systems and multi-pulse engines for superior range and accuracy.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>IRBM_AdvancedAerospace</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>IRBM_SpecializedPayloads</defName>
+    <label>specialized payloads</label>
+    <description>Create advanced tactical warheads utilizing chemical, electromagnetic, and miniature nuclear reactions.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>IRBM_PrecisionPropulsion</li>
+      <li>IRBM_EarlyWarheads</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>IRBM_HypersonicResearch</defName>
+    <label>hypersonic flight</label>
+    <description>Study high-speed atmospheric gliding to develop missiles that are nearly impossible to intercept.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>IRBM_PrecisionPropulsion</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>IRBM_AdvancedInterception</defName>
+    <label>advanced interception</label>
+    <description>Use phased-array radar and directed energy weapons for absolute airspace denial.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>IRBM_PrecisionPropulsion</li>
+      <li>IRBM_KineticInterception</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>IRBM_WeatherControl</defName>
+    <label>weather control</label>
+    <description>Master the art of precise atmospheric intervention. By dispersing specialized nucleation catalysts or stimulating high-altitude atmospheric energy, immediate reshaping of local climates can be achieved.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Archotech</techLevel>
+    <prerequisites>
+      <li>IRBM_VacuumEnergy</li>
+      <li>IRBM_SpecializedPayloads</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>6</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- ==================== 超凡时代 (Archotech Tier) ==================== -->
+
+  <ResearchProjectDef>
+    <defName>IRBM_VacuumEnergy</defName>
+    <label>vacuum energy</label>
+    <description>Harness fundamental physical constants to achieve near-instantaneous delivery and absolute destruction.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Archotech</techLevel>
+    <prerequisites>
+      <li>IRBM_PrecisionPropulsion</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>6</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>IRBM_OrbitalStrike</defName>
+    <label>orbital strike</label>
+    <description>Master the technology to coordinate precision strikes from orbital platforms, enabling the deployment of offensive satellite payloads.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Archotech</techLevel>
+    <prerequisites>
+      <li>IRBM_OrbitalRecon</li>
+      <li>IRBM_AtomicAnnihilation</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>8</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>IRBM_AtomicAnnihilation</defName>
+    <label>atomic annihilation</label>
+    <description>Develop warheads that use antimatter or advanced shielding to bypass political consequences and physical defenses.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Archotech</techLevel>
+    <prerequisites>
+      <li>IRBM_VacuumEnergy</li>
+      <li>IRBM_SpecializedPayloads</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>7</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>IRBM_BunkerBusterTech</defName>
+    <label>crust penetration</label>
+    <description>Combine molecular drills with heavy penetrators to strike targets deep beneath the surface.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Archotech</techLevel>
+    <prerequisites>
+      <li>IRBM_VacuumEnergy</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>7</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>IRBM_UltimateDelivery</defName>
+    <label>ultimate delivery platforms</label>
+    <description>Unlock the final generation of missile bodies, including hypersonic glide vehicles and heavy strategic carriers.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Archotech</techLevel>
+    <prerequisites>
+      <li>IRBM_VacuumEnergy</li>
+      <li>IRBM_HypersonicResearch</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>7</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>IRBM_ZeroPointCollapse</defName>
+    <label>zero-point collapse</label>
+    <description>The ultimate weapon. Create a controlled singularity that swallows maps without a trace. Requires persona core regulation.</description>
+    <baseCost>10000</baseCost>
+    <techLevel>Archotech</techLevel>
+    <prerequisites>
+      <li>IRBM_AtomicAnnihilation</li>
+      <li>IRBM_UltimateDelivery</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>8</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>IRBM_HeisenbergAnalysis</defName>
+    <label>Heisenberg signal analysis</label>
+    <description>Decrypt ancient, high-frequency signals emanating from the planet's core and orbital derelicts. This may reveal the existence of a dormant, automated global defense system.</description>
+    <baseCost>8000</baseCost>
+    <techLevel>Archotech</techLevel>
+    <prerequisites>
+      <li>IRBM_ZeroPointCollapse</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>IRBM</tab>
+    <researchViewX>9</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>IRBM_QuantumEntanglement</defName>
+    <label>quantum entanglement projection</label>
+    <description>A mysterious, god-like technology derived from high-dimensional space. By utilizing quantum entanglement properties, physical matter can be projected across any distance instantaneously. This technology is encoded within a hidden signal and cannot be researched through conventional means.</description>
+    <baseCost>10000</baseCost>
+    <techLevel>Archotech</techLevel>
+    <requiredResearchBuilding>IRBM_UnknownSignalFacility</requiredResearchBuilding>
+    <tab>IRBM</tab>
+    <researchViewX>9</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

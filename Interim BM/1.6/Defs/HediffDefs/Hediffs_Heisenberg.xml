@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <defName>IRBM_HeisenbergUncertainty</defName>
+    <label>永久隐形（海森堡测不准体质）</label>
+    <description>“海森堡同学是测不准的！”\n\n玲奈·海森堡的存在本身就是一个极大的不确定性因子。由于其在逻辑层面被禁止观测，所有敌人和自动化防御系统都会下意识地忽略她的存在。只要她不主动显露恶意，她就是纯粹的幽灵。</description>
+    <hediffClass>IRBM.Hediff_HeisenbergUncertainty</hediffClass>
+    <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+    <isBad>false</isBad>
+  </HediffDef>
+
+</Defs>
