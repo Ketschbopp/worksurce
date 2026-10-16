@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<MainButtonDef>
+		<defName>TN_NewsConsole</defName>
+		<label>News</label>
+		<description>View delayed reports about world events.</description>
+		<tabWindowClass>TheNews.MainTabWindow_NewsConsole</tabWindowClass>
+		<workerClass>TheNews.MainButtonWorker_TheNews</workerClass>
+		<defaultHotKey>None</defaultHotKey>
+		<order>64</order>
+	</MainButtonDef>
+
+	<MainButtonDef>
+		<defName>TN_Diplomacy</defName>
+		<label>Diplomacy</label>
+		<description>Manage diplomatic missions to improve relations with other factions.</description>
+		<tabWindowClass>TheNews.MainTabWindow_Diplomacy</tabWindowClass>
+		<workerClass>TheNews.MainButtonWorker_Diplomacy</workerClass>
+		<defaultHotKey>None</defaultHotKey>
+		<order>65</order> <!-- Place after other tabs -->
+	</MainButtonDef>
+
+	<MainButtonDef>
+		<defName>TN_Markets</defName>
+		<label>Markets</label>
+		<description>Read world economies: prosperity, prices, shortages, and trade.</description>
+		<tabWindowClass>TheNews.MainTabWindow_Markets</tabWindowClass>
+		<workerClass>TheNews.MainButtonWorker_Markets</workerClass>
+		<defaultHotKey>None</defaultHotKey>
+		<order>66</order> <!-- After Diplomacy -->
+	</MainButtonDef>
+</Defs>

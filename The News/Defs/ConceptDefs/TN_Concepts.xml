@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ConceptDef>
+		<defName>TN_Concept_FirstNews</defName>
+		<label>News console</label>
+		<helpText>Your first world report has arrived. The News tab collects radio intercepts, traveler accounts, and diplomat dispatches from across the planet. Wars, plagues, coups, famines, and other distant events can ripple back into your colony - open the News tab to read reports, verify rumors, request briefings, and respond.</helpText>
+		<priority>60</priority>
+		<needsOpportunity>true</needsOpportunity>
+	</ConceptDef>
+
+	<ConceptDef>
+		<defName>TN_Concept_FirstVerify</defName>
+		<label>Verifying rumors</label>
+		<helpText>Some reports arrive as rumors - they may be true, or they may be propaganda. Select a rumor and use the Verify button to dispatch a comms-console verification request. A few in-game hours later you'll get a definitive answer; if the rumor turns out to be false, a correction will be filed and any pending effects are cancelled.&#10;&#10;Verifying requires a powered Comms Console and the World Comms Protocols research.</helpText>
+		<priority>55</priority>
+		<needsOpportunity>true</needsOpportunity>
+	</ConceptDef>
+
+	<ConceptDef>
+		<defName>TN_Concept_FirstAid</defName>
+		<label>Sending aid</label>
+		<helpText>When a plague affects a neighboring faction, you can send a small shipment of medicine and meals to help contain it. Open the affected report and click Send Aid. It costs a fixed bundle of supplies from your colony, shortens the outbreak, and improves your standing with the recipient faction.</helpText>
+		<priority>50</priority>
+		<needsOpportunity>true</needsOpportunity>
+	</ConceptDef>
+
+	<ConceptDef>
+		<defName>TN_Concept_FirstRuins</defName>
+		<label>Abandoned settlements</label>
+		<helpText>A settlement has been abandoned after a regional disaster. Its location is now marked on the world map as a ruin. Some catastrophes drive survivors to found a new settlement on safer ground; others scatter them entirely. Watch the News Console timeline for the follow-up report.</helpText>
+		<priority>45</priority>
+		<needsOpportunity>true</needsOpportunity>
+	</ConceptDef>
+
+	<ConceptDef>
+		<defName>TN_Concept_FirstDiplomat</defName>
+		<label>Diplomatic missions</label>
+		<helpText>You've dispatched a diplomat. They will live at the target faction's base, slowly raising your goodwill each day while their mission lasts. Skilled diplomats (Social, Intellectual) push goodwill further per day. You can recall them at any time from the Diplomacy tab. While a diplomat is in the field, goodwill decay with that faction is suspended. Costs silver up front and burns the pawn's time away from the colony.</helpText>
+		<priority>52</priority>
+		<needsOpportunity>true</needsOpportunity>
+	</ConceptDef>
+
+</Defs>

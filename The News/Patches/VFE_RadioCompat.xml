@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Vanilla Furniture Expanded compatibility.
+
+	When VFE's radios are loaded, attach TheNews' CompRadioReceiver to them so they act as a
+	radio receiver (gates the News Console, contributes reception, monitorable) alongside the
+	mod's own TN_RadioReceiver, which stays buildable. Reception itself is research-gated by
+	TN_RadioMonitoring in code, so until that's researched the radio stays a decorative VFE joy item.
+
+	Each add is wrapped in a PatchOperationConditional that only fires when the target def exists,
+	so this file is a no-op when VFE is not active.
+-->
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Radio_Industrial"]/comps</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Radio_Industrial"]/comps</xpath>
+			<value>
+				<li Class="TheNews.CompProperties_RadioReceiver" />
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Radio_Spacer"]/comps</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Radio_Spacer"]/comps</xpath>
+			<value>
+				<li Class="TheNews.CompProperties_RadioReceiver" />
+			</value>
+		</match>
+	</Operation>
+</Patch>

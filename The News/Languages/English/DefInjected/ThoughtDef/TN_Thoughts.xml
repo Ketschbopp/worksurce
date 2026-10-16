@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TN_HeardNewsOnRadio.stages.0.label>Up to date</TN_HeardNewsOnRadio.stages.0.label>
+  <TN_HeardNewsOnRadio.stages.0.description>Heard the latest world news on the radio.</TN_HeardNewsOnRadio.stages.0.description>
+  <TN_RadioOperatorFocus.stages.0.label>Decoded world signal</TN_RadioOperatorFocus.stages.0.label>
+  <TN_RadioOperatorFocus.stages.0.description>Spent time pulling a useful report out of the static.</TN_RadioOperatorFocus.stages.0.description>
+  <TN_RadioMonitoringShift.stages.0.label>worked the radio desk</TN_RadioMonitoringShift.stages.0.label>
+  <TN_RadioMonitoringShift.stages.0.description>Spent a focused shift sorting signals and chatter into something useful.</TN_RadioMonitoringShift.stages.0.description>
+  <TN_NewsChatterConcerned.stages.0.label>heard worrying news</TN_NewsChatterConcerned.stages.0.label>
+  <TN_NewsChatterConcerned.stages.0.description>The colony is talking about troubling news from beyond the walls.</TN_NewsChatterConcerned.stages.0.description>
+  <TN_NewsChatterRumor.stages.0.label>heard unsettling rumors</TN_NewsChatterRumor.stages.0.label>
+  <TN_NewsChatterRumor.stages.0.description>Second-hand rumors are moving through the colony. Nobody knows what to believe yet.</TN_NewsChatterRumor.stages.0.description>
+  <TN_NewsChatterInformed.stages.0.label>briefed on world events</TN_NewsChatterInformed.stages.0.label>
+  <TN_NewsChatterInformed.stages.0.description>Got a clearer picture of what is happening outside the colony.</TN_NewsChatterInformed.stages.0.description>
+  <TN_NewsChatterReassured.stages.0.label>heard reassuring news</TN_NewsChatterReassured.stages.0.label>
+  <TN_NewsChatterReassured.stages.0.description>Some news from outside was encouraging enough to lift the room.</TN_NewsChatterReassured.stages.0.description>
+  <TN_DiplomaticUpdate.stages.0.label>useful diplomatic briefing</TN_DiplomaticUpdate.stages.0.label>
+  <TN_DiplomaticUpdate.stages.0.description>Clear information from abroad makes the world feel a little less opaque.</TN_DiplomaticUpdate.stages.0.description>
+  <TN_DiplomatReturned.stages.0.label>returned from diplomacy</TN_DiplomatReturned.stages.0.label>
+  <TN_DiplomatReturned.stages.0.description>Finished a diplomatic mission and came home with useful experience from abroad.</TN_DiplomatReturned.stages.0.description>
+  <TN_DiplomatEvacuated.stages.0.label>evacuated from diplomatic post</TN_DiplomatEvacuated.stages.0.label>
+  <TN_DiplomatEvacuated.stages.0.description>The mission ended suddenly, and the return home was too close for comfort.</TN_DiplomatEvacuated.stages.0.description>
+  <TN_ColonyPulseAnxiety.stages.0.label>tense news cycle</TN_ColonyPulseAnxiety.stages.0.label>
+  <TN_ColonyPulseAnxiety.stages.0.description>Everyone keeps circling back to the same bad news. It is starting to wear on the colony.</TN_ColonyPulseAnxiety.stages.0.description>
+  <TN_ColonyPulseRumor.stages.0.label>rumor mill running</TN_ColonyPulseRumor.stages.0.label>
+  <TN_ColonyPulseRumor.stages.0.description>Too many stories are moving around without proof. Hard to tell signal from static.</TN_ColonyPulseRumor.stages.0.description>
+  <TN_ColonyPulseConfidence.stages.0.label>steady briefing rhythm</TN_ColonyPulseConfidence.stages.0.label>
+  <TN_ColonyPulseConfidence.stages.0.description>The colony has a better grip on outside events today. Reliable information helps.</TN_ColonyPulseConfidence.stages.0.description>
+  <TN_ColonyAdvisoryBriefed.stages.0.label>received colony advisory</TN_ColonyAdvisoryBriefed.stages.0.label>
+  <TN_ColonyAdvisoryBriefed.stages.0.description>The radio desk turned outside news into a clear colony advisory. It helps to know what the report actually means.</TN_ColonyAdvisoryBriefed.stages.0.description>
+  <TN_HealthAdvisoryPrepared.stages.0.label>health advisory prepared</TN_HealthAdvisoryPrepared.stages.0.label>
+  <TN_HealthAdvisoryPrepared.stages.0.description>The colony has clear medical instructions for an outside outbreak. That makes the risk feel more manageable.</TN_HealthAdvisoryPrepared.stages.0.description>
+  <TN_PublicHealthSickArrivals.stages.0.label>sick visitors arrived</TN_PublicHealthSickArrivals.stages.0.label>
+  <TN_PublicHealthSickArrivals.stages.0.description>Visitors arrived showing symptoms from an outside outbreak. That makes the risk feel immediate.</TN_PublicHealthSickArrivals.stages.0.description>
+  <TN_PublicHealthPreparedArrivals.stages.0.label>ready for sick arrivals</TN_PublicHealthPreparedArrivals.stages.0.label>
+  <TN_PublicHealthPreparedArrivals.stages.0.description>Sick visitors arrived, but the colony had medical instructions and supplies ready.</TN_PublicHealthPreparedArrivals.stages.0.description>
+  <TN_TradeAdvisoryPrepared.stages.0.label>trade advisory prepared</TN_TradeAdvisoryPrepared.stages.0.label>
+  <TN_TradeAdvisoryPrepared.stages.0.description>The colony has a practical plan for disrupted roads and strained supplies.</TN_TradeAdvisoryPrepared.stages.0.description>
+  <TN_WarNearby.stages.0.label>war nearby</TN_WarNearby.stages.0.label>
+  <TN_WarNearby.stages.0.description>Confirmed reports of fighting near our territory. Hard to focus with that going on.</TN_WarNearby.stages.0.description>
+  <TN_WarDistant.stages.0.label>distant conflict</TN_WarDistant.stages.0.label>
+  <TN_WarDistant.stages.0.description>Heard about a war breaking out somewhere out there. Unsettling news to wake up to.</TN_WarDistant.stages.0.description>
+  <TN_PlagueNearby.stages.0.label>plague spreading</TN_PlagueNearby.stages.0.label>
+  <TN_PlagueNearby.stages.0.description>A plague has been confirmed nearby. It's hard not to think about what that means for us.</TN_PlagueNearby.stages.0.description>
+  <TN_PlagueDistant.stages.0.label>plague reported</TN_PlagueDistant.stages.0.label>
+  <TN_PlagueDistant.stages.0.description>Reports of sickness spreading somewhere. Unpleasant to hear about even at a distance.</TN_PlagueDistant.stages.0.description>
+  <TN_CoupNearby.stages.0.label>political crisis nearby</TN_CoupNearby.stages.0.label>
+  <TN_CoupNearby.stages.0.description>A coup's been reported close to us. Instability like that has a way of spreading.</TN_CoupNearby.stages.0.description>
+  <TN_AllianceGoodNews.stages.0.label>good news from abroad</TN_AllianceGoodNews.stages.0.label>
+  <TN_AllianceGoodNews.stages.0.description>Encouraging news from the outside world. Helps to hear things aren't all bad out there.</TN_AllianceGoodNews.stages.0.description>
+  <TN_ProxyAction.stages.0.label>uneasy about our actions</TN_ProxyAction.stages.0.label>
+  <TN_ProxyAction.stages.0.description>Heard our colony may be involved in something sensitive. Hard not to feel a bit uneasy about it.</TN_ProxyAction.stages.0.description>
+  <TN_RumorDistressing.stages.0.label>disturbing rumors</TN_RumorDistressing.stages.0.label>
+  <TN_RumorDistressing.stages.0.description>Picked up some troubling rumors on the radio. Who knows if they're true, but they stick with you.</TN_RumorDistressing.stages.0.description>
+  <TN_WarEscalatesNearby.stages.0.label>war erupts nearby</TN_WarEscalatesNearby.stages.0.label>
+  <TN_WarEscalatesNearby.stages.0.description>Open fighting has broken out between factions near our territory. The sound of it carries and so does the unease.</TN_WarEscalatesNearby.stages.0.description>
+  <TN_FamineNearby.stages.0.label>famine strikes nearby</TN_FamineNearby.stages.0.label>
+  <TN_FamineNearby.stages.0.description>People are starving in a faction near our colony. Hard not to think about what that means for supply lines and for them.</TN_FamineNearby.stages.0.description>
+  <TN_PeaceRestored.stages.0.label>peace restored nearby</TN_PeaceRestored.stages.0.label>
+  <TN_PeaceRestored.stages.0.description>The fighting between nearby factions has stopped. Trade routes are reopening and the region feels a little safer to be in.</TN_PeaceRestored.stages.0.description>
+<TN_EspionageNearby.stages.0.label>spy scandal nearby</TN_EspionageNearby.stages.0.label>
+  <TN_EspionageNearby.stages.0.description>A foreign spy network was exposed near our colony. It is hard not to wonder who else might be watching.</TN_EspionageNearby.stages.0.description>
+  <TN_EconomicCrisisNearby.stages.0.label>economic collapse nearby</TN_EconomicCrisisNearby.stages.0.label>
+  <TN_EconomicCrisisNearby.stages.0.description>A nearby faction's economy has collapsed. Supply chains are disrupting and prices are climbing.</TN_EconomicCrisisNearby.stages.0.description>
+  <TN_TechBreakthroughInspired.stages.0.label>inspired by discovery</TN_TechBreakthroughInspired.stages.0.label>
+  <TN_TechBreakthroughInspired.stages.0.description>Word of a technological breakthrough nearby has sparked fresh ideas. Maybe we can build on it.</TN_TechBreakthroughInspired.stages.0.description>
+  <TN_CultRiseUnsettling.stages.0.label>strange cult nearby</TN_CultRiseUnsettling.stages.0.label>
+  <TN_CultRiseUnsettling.stages.0.description>A fanatical movement is spreading through the region. Its influence feels uncomfortably close to home.</TN_CultRiseUnsettling.stages.0.description>
+  <TN_PirateRaidFear.stages.0.label>raiders hitting nearby</TN_PirateRaidFear.stages.0.label>
+  <TN_PirateRaidFear.stages.0.description>Coordinated pirates are striking trade routes in the area. We could be next if they find us attractive.</TN_PirateRaidFear.stages.0.description>
+  <TN_AncientSiteWonder.stages.0.label>ancient ruins found</TN_AncientSiteWonder.stages.0.label>
+  <TN_AncientSiteWonder.stages.0.description>Pre-collapse ruins were found nearby. Whatever the old world was, part of it is still out there.</TN_AncientSiteWonder.stages.0.description>
+  <TN_EnvCatastropheNearby.stages.0.label>environmental disaster nearby</TN_EnvCatastropheNearby.stages.0.label>
+  <TN_EnvCatastropheNearby.stages.0.description>A toxic event has contaminated land near our colony. The long-term effects are unknown and that is troubling.</TN_EnvCatastropheNearby.stages.0.description>
+  <TN_ColonistCelebrity.stages.0.label>famous across the rim</TN_ColonistCelebrity.stages.0.label>
+  <TN_ColonistCelebrity.stages.0.description>The whole region is saying my name. It is a strange and heady thing to be a legend.</TN_ColonistCelebrity.stages.0.description>
+  <TN_ColonistNotorious.stages.0.label>notorious across the rim</TN_ColonistNotorious.stages.0.label>
+  <TN_ColonistNotorious.stages.0.description>The whole region knows what I did, and not kindly. Knowing there is a price on my name sits heavy.</TN_ColonistNotorious.stages.0.description>
+</LanguageData>

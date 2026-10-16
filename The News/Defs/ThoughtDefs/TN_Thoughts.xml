@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- v1.01 Famous Colonists: a colonist whose heroic deeds reached the wider world feels the glow of renown.
+       Lasts ~2 weeks (a full quadrum is 15 days) so the moment of fame lingers. -->
+  <ThoughtDef>
+    <defName>TN_ColonistCelebrity</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>14</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_Celebrity_Label</label>
+        <description>TN_Thought_Celebrity_Desc</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- v1.01 Famous Colonists: the parallel effect for infamy. The notorious colonist carries the weight of
+       a price on their head; same ~2-week decay as fame. -->
+  <ThoughtDef>
+    <defName>TN_ColonistNotorious</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>14</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_Notorious_Label</label>
+        <description>TN_Thought_Notorious_Desc</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_HeardNewsOnRadio</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>0.35</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_HeardNews_Label</label>
+        <description>TN_Thought_HeardNews_Desc</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_RadioOperatorFocus</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_RadioOperatorFocus_Label</label>
+        <description>TN_Thought_RadioOperatorFocus_Desc</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_RadioMonitoringShift</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>0.75</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_RadioMonitoringShift_Label</label>
+        <description>TN_Thought_RadioMonitoringShift_Desc</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_NewsChatterConcerned</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1.5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_NewsChatterConcerned_Label</label>
+        <description>TN_Thought_NewsChatterConcerned_Desc</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_NewsChatterRumor</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_NewsChatterRumor_Label</label>
+        <description>TN_Thought_NewsChatterRumor_Desc</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_NewsChatterInformed</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1.5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_NewsChatterInformed_Label</label>
+        <description>TN_Thought_NewsChatterInformed_Desc</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_NewsChatterReassured</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>2</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_NewsChatterReassured_Label</label>
+        <description>TN_Thought_NewsChatterReassured_Desc</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_DiplomaticUpdate</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1.5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_DiplomaticUpdate_Label</label>
+        <description>TN_Thought_DiplomaticUpdate_Desc</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_DiplomatReturned</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>2</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_DiplomatReturned_Label</label>
+        <description>TN_Thought_DiplomatReturned_Desc</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_DiplomatEvacuated</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>2</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_DiplomatEvacuated_Label</label>
+        <description>TN_Thought_DiplomatEvacuated_Desc</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_ColonyPulseAnxiety</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_ColonyPulseAnxiety_Label</label>
+        <description>TN_Thought_ColonyPulseAnxiety_Desc</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_ColonyPulseRumor</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_ColonyPulseRumor_Label</label>
+        <description>TN_Thought_ColonyPulseRumor_Desc</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_ColonyPulseConfidence</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1.5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_ColonyPulseConfidence_Label</label>
+        <description>TN_Thought_ColonyPulseConfidence_Desc</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_ColonyAdvisoryBriefed</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_ColonyAdvisoryBriefed_Label</label>
+        <description>TN_Thought_ColonyAdvisoryBriefed_Desc</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_HealthAdvisoryPrepared</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1.5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_HealthAdvisoryPrepared_Label</label>
+        <description>TN_Thought_HealthAdvisoryPrepared_Desc</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_PublicHealthSickArrivals</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_PublicHealthSickArrivals_Label</label>
+        <description>TN_Thought_PublicHealthSickArrivals_Desc</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_PublicHealthPreparedArrivals</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_PublicHealthPreparedArrivals_Label</label>
+        <description>TN_Thought_PublicHealthPreparedArrivals_Desc</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_TradeAdvisoryPrepared</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_TradeAdvisoryPrepared_Label</label>
+        <description>TN_Thought_TradeAdvisoryPrepared_Desc</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- World event reactions -->
+  <ThoughtDef>
+    <defName>TN_WarNearby</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_WarNearby_Label</label>
+        <description>TN_Thought_WarNearby_Desc</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_WarDistant</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_WarDistant_Label</label>
+        <description>TN_Thought_WarDistant_Desc</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_PlagueNearby</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_PlagueNearby_Label</label>
+        <description>TN_Thought_PlagueNearby_Desc</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_PlagueDistant</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_PlagueDistant_Label</label>
+        <description>TN_Thought_PlagueDistant_Desc</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_CoupNearby</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>4</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_CoupNearby_Label</label>
+        <description>TN_Thought_CoupNearby_Desc</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_AllianceGoodNews</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>4</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_AllianceGoodNews_Label</label>
+        <description>TN_Thought_AllianceGoodNews_Desc</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_ProxyAction</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_ProxyAction_Label</label>
+        <description>TN_Thought_ProxyAction_Desc</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TN_RumorDistressing</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>2</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>TN_Thought_RumorDistressing_Label</label>
+        <description>TN_Thought_RumorDistressing_Desc</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- War escalation (open conflict confirmed nearby) -->
+  <ThoughtDef>
+    <defName>TN_WarEscalatesNearby</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>7</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>war erupts nearby</label>
+        <description>Open conflict has broken out between factions near our colony. We may feel the effects.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Famine nearby -->
+  <ThoughtDef>
+    <defName>TN_FamineNearby</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>famine strikes nearby</label>
+        <description>People are starving in a faction near our colony. We could be next if things don't improve.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Peace restored - armistice signed -->
+  <ThoughtDef>
+    <defName>TN_PeaceRestored</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>peace restored nearby</label>
+        <description>The fighting between nearby factions has ended. Trade routes are reopening and the region feels safer.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+<!-- Espionage scandal discovered nearby -->
+  <ThoughtDef>
+    <defName>TN_EspionageNearby</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>4</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>spy scandal nearby</label>
+        <description>A foreign spy network was uncovered near our colony. Who else might be watching?</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Economic crisis in a neighboring faction -->
+  <ThoughtDef>
+    <defName>TN_EconomicCrisisNearby</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>economic collapse nearby</label>
+        <description>A nearby faction's economy has collapsed. Prices are rising and supply chains are disrupted.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Tech breakthrough - inspired by discovery -->
+  <ThoughtDef>
+    <defName>TN_TechBreakthroughInspired</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>4</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>inspired by discovery</label>
+        <description>Word of a nearby technological breakthrough has sparked fresh ideas and optimism.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Cult rising nearby - unsettling -->
+  <ThoughtDef>
+    <defName>TN_CultRiseUnsettling</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>4</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>strange cult nearby</label>
+        <description>A fanatical movement is spreading through the region. Its influence feels uncomfortably close.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Pirate raid nearby - fear -->
+  <ThoughtDef>
+    <defName>TN_PirateRaidFear</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>raiders striking nearby</label>
+        <description>Coordinated pirates are hitting trade routes nearby. Our colony could be next.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Ancient site discovered - wonder -->
+  <ThoughtDef>
+    <defName>TN_AncientSiteWonder</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>4</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>ancient ruins discovered</label>
+        <description>Pre-collapse ruins have been found nearby. The mystery of the old world feels suddenly closer.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Environmental catastrophe nearby - dread -->
+  <ThoughtDef>
+    <defName>TN_EnvCatastropheNearby</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>environmental disaster nearby</label>
+        <description>A toxic event has contaminated land near our colony. The long-term effects are unknown.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Caravan scavenged an abandoned ruins - small, lingering dread -->
+  <ThoughtDef>
+    <defName>TN_SawDeadCity</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>4</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>saw the dead city</label>
+        <description>I helped pick over the bones of a city that died. There was nobody left to bury the dead. It is not the kind of thing you forget.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Drought nearby - dry sky, slow crops, low water -->
+  <ThoughtDef>
+    <defName>TN_DroughtNearby</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>drought is here</label>
+        <description>The skies are dry and the crops are barely growing. Every meal feels like it costs more than the last.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- v1.3 Homeland Ties: a colonist hears confirmed catastrophe (war/plague/coup/famine/disaster) striking
+       the faction they hail from. Dread-for-kin: large, slow-decaying, and can stack as the homeland suffers. -->
+  <ThoughtDef>
+    <defName>TN_HomelandGrief</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>8</durationDays>
+    <stackLimit>2</stackLimit>
+    <stages>
+      <li>
+        <label>dread for my homeland</label>
+        <description>The news from home is grim. My people are suffering and there is nothing I can do but listen.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- v1.3 Homeland Ties: bad news about the homeland turned out to be wrong - relief that the worst was a false report. -->
+  <ThoughtDef>
+    <defName>TN_HomelandRelief</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>4</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>homeland spared</label>
+        <description>The frightening report about home was wrong after all. I can breathe again.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- v1.3 Homeland Ties: the homeland forged an alliance / scored a triumph - quiet pride. -->
+  <ThoughtDef>
+    <defName>TN_HomelandPride</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>proud of my homeland</label>
+        <description>My people are making their mark out there. It is good to hear my homeland spoken of well.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- v1.3 Divided House: a colonist who takes an unverified, alarming rumor to heart. -->
+  <ThoughtDef>
+    <defName>TN_RumorBeliever</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1.5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>troubled by the rumor</label>
+        <description>They say something terrible is happening out there. I can't shake the feeling that it's true.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- v1.3 Divided House: a colonist who scoffs at the same unverified rumor - a small composure of skepticism. -->
+  <ThoughtDef>
+    <defName>TN_RumorSkeptic</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1.5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>unmoved by the rumor</label>
+        <description>People will believe anything they hear on the radio. I'll wait for something I can actually trust.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- v1.3 The Long Dread: low-grade unease while a major foreign crisis drags on, unresolved, in the feed. -->
+  <ThoughtDef>
+    <defName>TN_LongDread</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>2</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>shadow of a distant crisis</label>
+        <description>The trouble out there just keeps grinding on. Every bulletin sits a little heavier than the last.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- v1.3 The Long Dread: the prolonged crisis the colony had been following finally resolves - the long wait is over. -->
+  <ThoughtDef>
+    <defName>TN_DreadLifted</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>a crisis finally ends</label>
+        <description>That long, grinding trouble out there is over at last. The whole colony seems to exhale.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- v1.3 Refugees: those taken in as temporary lodgers (the "take as guests" path) feel relief and
+       gratitude at finding shelter, food, and work after fleeing a crisis. Fades over their stay. -->
+  <ThoughtDef>
+    <defName>TN_RefugeeFoundRefuge</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>12</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>found refuge</label>
+        <description>After everything we ran from, these people took us in - a roof, food, and honest work. It is more than I let myself hope for.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- v1.3 Ideology: a charity/community-minded colonist (Collectivist faith) is gladdened when the
+       colony shelters refugees - living their values. Stacks modestly across repeated acts of mercy. -->
+  <ThoughtDef>
+    <defName>TN_RefugeeCharityApproved</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>8</durationDays>
+    <stackLimit>2</stackLimit>
+    <stages>
+      <li>
+        <label>sheltered the desperate</label>
+        <description>We opened our doors to people who had nothing left. Lifting up the desperate is what we are for.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- v1.3 Ideology: a supremacist or raider colonist resents the colony harbouring weak outsiders -
+       beneath a people who see themselves as superior, or who live by taking rather than sheltering. -->
+  <ThoughtDef>
+    <defName>TN_RefugeeCharityViolated</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>8</durationDays>
+    <stackLimit>2</stackLimit>
+    <stages>
+      <li>
+        <label>harboured weak outsiders</label>
+        <description>We took in strangers too soft to fend for themselves. They do not belong among us, and feeding them shames our strength.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

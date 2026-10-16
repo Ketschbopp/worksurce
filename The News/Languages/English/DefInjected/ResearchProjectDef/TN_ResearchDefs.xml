@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TN_RadioMonitoring.label>radio monitoring</TN_RadioMonitoring.label>
+  <TN_RadioMonitoring.description>Learn to intercept and decode radio transmissions from nearby factions, allowing you to gather news and intelligence about events happening across the planet.</TN_RadioMonitoring.description>
+  <TN_WorldCommsProtocols.label>world communications protocols</TN_WorldCommsProtocols.label>
+  <TN_WorldCommsProtocols.description>Develop advanced communication protocols to interact with distant factions through your comms console. Allows you to send aid, request briefings, and engage in diplomatic actions.</TN_WorldCommsProtocols.description>
+  <TN_DiplomaticCorps.label>diplomatic corps</TN_DiplomaticCorps.label>
+  <TN_DiplomaticCorps.description>Establish a diplomatic corps to send skilled colonists on missions to improve relations with other factions. Diplomats generate daily goodwill based on their social and intellectual skills, and gain experience over time. Active diplomats prevent goodwill decay, but once recalled, relations will gradually return to their natural state.</TN_DiplomaticCorps.description>
+</LanguageData>

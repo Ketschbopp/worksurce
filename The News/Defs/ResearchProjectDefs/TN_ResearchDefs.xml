@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Base research for radio monitoring -->
+	<ResearchProjectDef>
+		<defName>TN_RadioMonitoring</defName>
+		<label>radio monitoring</label>
+		<description>Learn to intercept and decode radio transmissions from nearby factions, allowing you to gather news and intelligence about events happening across the planet.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Electricity</li>
+		</prerequisites>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>4.50</researchViewY>
+		<tab>Main</tab>
+	</ResearchProjectDef>
+
+	<!-- Advanced research for communication protocols -->
+	<ResearchProjectDef>
+		<defName>TN_WorldCommsProtocols</defName>
+		<label>world communications protocols</label>
+		<description>Develop advanced communication protocols to interact with distant factions through your comms console. Allows you to send aid, request briefings, and engage in diplomatic actions.</description>
+		<baseCost>1200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>TN_RadioMonitoring</li>
+			<li>MicroelectronicsBasics</li>
+		</prerequisites>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>4.50</researchViewY>
+		<tab>Main</tab>
+	</ResearchProjectDef>
+
+	<!-- Signal Decoder research: unlocks the comms-console action that decodes
+	     stray numbers-station broadcasts received through the radio. -->
+	<ResearchProjectDef>
+		<defName>TN_SignalDecoder</defName>
+		<label>signal decoder</label>
+		<description>Build a hardware-and-cipher decoder capable of reading the strange, coded broadcasts that occasionally cut across the receiver's bands. Most decoded transmissions merely confirm or contradict an existing rumor - but a few reveal the coordinates of forgotten caches, abandoned drop-sites, or pre-collapse vaults. The receiver provides the signal; this research provides the key.</description>
+		<baseCost>1400</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>TN_WorldCommsProtocols</li>
+		</prerequisites>
+		<researchViewX>10.00</researchViewX>
+		<researchViewY>5.50</researchViewY>
+		<tab>Main</tab>
+	</ResearchProjectDef>
+
+	<!-- Diplomatic corps research -->
+	<ResearchProjectDef>
+		<defName>TN_DiplomaticCorps</defName>
+		<label>diplomatic corps</label>
+		<description>Establish a diplomatic corps to send skilled colonists on missions to improve relations with other factions. Diplomats generate daily goodwill based on their social and intellectual skills, and gain experience over time. Active diplomats prevent goodwill decay, but once recalled, relations will gradually return to their natural state.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>TN_WorldCommsProtocols</li>
+		</prerequisites>
+		<researchViewX>10.00</researchViewX>
+		<researchViewY>4.50</researchViewY>
+		<tab>Main</tab>
+	</ResearchProjectDef>
+</Defs>

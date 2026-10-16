@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>The News</name>
+	<author>The Doctor</author>
+	<packageId>xwe1ss.thenews</packageId>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+	</modDependencies>
+
+	<description>
+The News adds a living world to RimWorld - distant events arrive as radio intercepts, traveler reports, and diplomat dispatches, and they reach into your colony in ways you'll feel.
+
+When a war erupts nearby, trade routes close, prices spike, and colonists grow anxious. When plague hits a neighboring faction, their caravans carry sickness to your gates - and some survivors may beg to join your colony. Coups destabilize factions and can end wars. Alliances between former enemies cancel conflicts. Famines drive desperate wanderers toward any colony that will take them.
+
+Colonists passively react to the world around them: ongoing wars and plagues press on their mood every few days whether or not they've heard the formal report. A plague subsiding brings genuine relief. An alliance forming between hostile factions changes how every colonist feels about the news.
+
+Events span 20+ types: wars, coups, plagues, alliances, famines, espionage scandals, economic crises, technological breakthroughs, rising cults, pirate fleets, ancient site discoveries, environmental catastrophes, and more. Each has cause-specific narrative text, dedicated gameplay consequences, and colonist thought reactions.
+
+Build radio equipment, staff monitoring shifts, issue colony advisories, deploy diplomats, run covert operations, and shape what your colony knows and believes before distant crises arrive at your map.
+	</description>
+</ModMetaData>

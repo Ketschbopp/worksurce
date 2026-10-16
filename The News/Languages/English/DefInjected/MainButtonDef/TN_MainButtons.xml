@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TN_NewsConsole.label>News</TN_NewsConsole.label>
+  <TN_NewsConsole.description>Monitor the outside world through radio intercepts and traveler reports. Issue advisories, request briefings, and coordinate diplomacy based on what your scouts discover.</TN_NewsConsole.description>
+  <TN_Diplomacy.label>Diplomacy</TN_Diplomacy.label>
+  <TN_Diplomacy.description>Manage diplomatic missions to improve relations with other factions.</TN_Diplomacy.description>
+</LanguageData>

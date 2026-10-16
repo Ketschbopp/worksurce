@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Numbers-feed loot caches. One-tile world-map sites whose coordinates are
+	     revealed by decoding a numbers-station broadcast. They expire after a
+	     fixed lifetime (set in code), and a player caravan on the tile can
+	     scavenge them once. Whether the cache is clean or hostile is independent
+	     of the tier and not visible from the world map. -->
+	<WorldObjectDef>
+		<defName>TN_LootCache</defName>
+		<label>decoded cache coordinates</label>
+		<description>A location revealed by a decoded numbers-station broadcast. What waits inside is unknown until you set foot on the tile.</description>
+		<worldObjectClass>TheNews.TN_LootCacheWorldObject</worldObjectClass>
+		<texture>World/WorldObjects/TN_AbandonedRuins</texture>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconTexture>World/WorldObjects/TN_AbandonedRuins</expandingIconTexture>
+		<expandingIconPriority>14</expandingIconPriority>
+		<selectable>true</selectable>
+		<canHaveFaction>false</canHaveFaction>
+		<saved>true</saved>
+		<useDynamicDrawer>false</useDynamicDrawer>
+	</WorldObjectDef>
+
+	<!-- Live Intercept / Manhunt target. A MOVING world object: a fugitive walking overland from a
+	     spawn tile toward a safe haven, on a route that passes near the colony. The player races a
+	     caravan onto its current tile to cut them off. Movement, drawing and the gizmo are handled in
+	     code (TN_InterceptTargetWorldObject). useDynamicDrawer=true so the dot redraws as it moves. -->
+	<WorldObjectDef>
+		<defName>TN_InterceptTarget</defName>
+		<label>fugitive on the move</label>
+		<description>Someone is crossing the region on foot, trying to slip past before anyone can reach them. Move a caravan onto their tile to cut them off.</description>
+		<worldObjectClass>TheNews.TN_InterceptTargetWorldObject</worldObjectClass>
+		<texture>World/WorldObjects/TN_InterceptMarker</texture>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconTexture>World/WorldObjects/TN_InterceptMarker</expandingIconTexture>
+		<expandingIconPriority>16</expandingIconPriority>
+		<selectable>true</selectable>
+		<canHaveFaction>false</canHaveFaction>
+		<saved>true</saved>
+		<useDynamicDrawer>true</useDynamicDrawer>
+	</WorldObjectDef>
+
+	<!-- Faction Patrol. A MOVING world object: an AI faction's column travelling overland with a
+	     place-anchored objective (garrison sweep around its own town, or a war-front march toward an
+	     enemy). Movement/draw/inspect handled in code (TN_FactionPatrolWorldObject); the marker is
+	     tinted by the patrolling faction's color. canHaveFaction stays true for the tooltip but the
+	     spawner does NOT SetFaction (keeps it out of quest/raid targeting). useDynamicDrawer=true so
+	     the dot redraws as it moves. -->
+	<WorldObjectDef>
+		<defName>TN_FactionPatrol</defName>
+		<label>faction patrol</label>
+		<description>An armed column crossing the region with a clear objective. You can watch where it goes, but you cannot meet it.</description>
+		<worldObjectClass>TheNews.TN_FactionPatrolWorldObject</worldObjectClass>
+		<texture>World/WorldObjects/TN_PatrolMarker</texture>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconTexture>World/WorldObjects/TN_PatrolMarker</expandingIconTexture>
+		<expandingIconPriority>16</expandingIconPriority>
+		<selectable>true</selectable>
+		<canHaveFaction>true</canHaveFaction>
+		<saved>true</saved>
+		<useDynamicDrawer>true</useDynamicDrawer>
+	</WorldObjectDef>
+
+	<!-- Patrol skirmish: a transient battle-map host for "attack patrol". A blank Encounter map (no
+	     baked-in occupants) populated in code with the patrol's defenders + the player's caravan. The
+	     FormCaravan comp lets the player leave after winning; the map is removed once they're gone. -->
+	<WorldObjectDef>
+		<defName>TN_PatrolBattlefield</defName>
+		<label>patrol skirmish</label>
+		<description>A faction patrol your caravan has fallen upon. Settle it here.</description>
+		<worldObjectClass>TheNews.TN_PatrolBattlefieldWorldObject</worldObjectClass>
+		<canHaveFaction>true</canHaveFaction>
+		<canHaveMap>true</canHaveMap>
+		<saved>true</saved>
+		<isTempIncidentMapOwner>true</isTempIncidentMapOwner>
+		<useDynamicDrawer>false</useDynamicDrawer>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconTexture>World/WorldObjects/Expanding/Ambush</expandingIconTexture>
+		<texture>World/WorldObjects/Ambush</texture>
+		<expandingIconPriority>80</expandingIconPriority>
+		<selectable>true</selectable>
+		<comps>
+			<li Class="RimWorld.WorldObjectCompProperties_FormCaravan" />
+		</comps>
+	</WorldObjectDef>
+
+	<WorldObjectDef>
+		<defName>TN_AbandonedRuins</defName>
+		<label>abandoned ruins</label>
+		<description>The remains of a settlement abandoned after a regional disaster. The land here is empty.</description>
+		<worldObjectClass>TheNews.TN_AbandonedRuinsWorldObject</worldObjectClass>
+		<texture>World/WorldObjects/TN_AbandonedRuins</texture>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconTexture>World/WorldObjects/TN_AbandonedRuins</expandingIconTexture>
+		<expandingIconPriority>15</expandingIconPriority>
+		<selectable>true</selectable>
+		<canHaveFaction>false</canHaveFaction>
+		<saved>true</saved>
+		<useDynamicDrawer>false</useDynamicDrawer>
+	</WorldObjectDef>
+
+	<!-- Settlement overlay flags. Ephemeral world objects placed near a foreign settlement
+	     to make an active news thread visible on the world map. Refreshed daily by the
+	     world component from the active-threads / drought-region state; they are NOT saved
+	     (saved=false) so the source of truth stays the news system. Selecting them opens
+	     a tooltip with the same content the settlement tooltip itself shows. -->
+
+	<WorldObjectDef Name="TN_ThreadFlagBase" Abstract="True">
+		<worldObjectClass>TheNews.TN_ThreadFlagWorldObject</worldObjectClass>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconPriority>120</expandingIconPriority>
+		<selectable>true</selectable>
+		<canHaveFaction>false</canHaveFaction>
+		<saved>false</saved>
+		<useDynamicDrawer>true</useDynamicDrawer>
+	</WorldObjectDef>
+
+	<WorldObjectDef ParentName="TN_ThreadFlagBase">
+		<defName>TN_FlagWar</defName>
+		<label>war flashpoint</label>
+		<description>A war is active around this settlement. Trade routes and prices may be disrupted.</description>
+		<texture>World/WorldObjects/TN_FlagWar</texture>
+		<expandingIconTexture>World/WorldObjects/TN_FlagWar</expandingIconTexture>
+	</WorldObjectDef>
+
+	<WorldObjectDef ParentName="TN_ThreadFlagBase">
+		<defName>TN_FlagPlague</defName>
+		<label>plague outbreak</label>
+		<description>A plague is active in this faction. Visitors and traders carry health risk; medicine and food prices may rise.</description>
+		<texture>World/WorldObjects/TN_FlagPlague</texture>
+		<expandingIconTexture>World/WorldObjects/TN_FlagPlague</expandingIconTexture>
+	</WorldObjectDef>
+
+	<WorldObjectDef ParentName="TN_ThreadFlagBase">
+		<defName>TN_FlagCoup</defName>
+		<label>political crisis</label>
+		<description>A coup is unfolding in this faction. Leadership and diplomatic stance may shift.</description>
+		<texture>World/WorldObjects/TN_FlagCoup</texture>
+		<expandingIconTexture>World/WorldObjects/TN_FlagCoup</expandingIconTexture>
+	</WorldObjectDef>
+
+	<WorldObjectDef ParentName="TN_ThreadFlagBase">
+		<defName>TN_FlagFamine</defName>
+		<label>famine pressure</label>
+		<description>A famine is active in this region. Food prices are elevated; refugee pressure may follow.</description>
+		<texture>World/WorldObjects/TN_FlagFamine</texture>
+		<expandingIconTexture>World/WorldObjects/TN_FlagFamine</expandingIconTexture>
+	</WorldObjectDef>
+
+	<WorldObjectDef ParentName="TN_ThreadFlagBase">
+		<defName>TN_FlagEnvCatastrophe</defName>
+		<label>environmental disaster</label>
+		<description>An environmental catastrophe is affecting this region. Trade and stability may be impacted.</description>
+		<texture>World/WorldObjects/TN_FlagEnvCatastrophe</texture>
+		<expandingIconTexture>World/WorldObjects/TN_FlagEnvCatastrophe</expandingIconTexture>
+	</WorldObjectDef>
+
+	<WorldObjectDef ParentName="TN_ThreadFlagBase">
+		<defName>TN_FlagEspionage</defName>
+		<label>espionage scandal</label>
+		<description>A spy network or intelligence operation has been exposed around this faction. Trust is reduced.</description>
+		<texture>World/WorldObjects/TN_FlagEspionage</texture>
+		<expandingIconTexture>World/WorldObjects/TN_FlagEspionage</expandingIconTexture>
+	</WorldObjectDef>
+
+	<WorldObjectDef ParentName="TN_ThreadFlagBase">
+		<defName>TN_FlagAlliance</defName>
+		<label>diplomatic alliance</label>
+		<description>An alliance or treaty negotiation involves this faction. Diplomatic posture and trade may benefit.</description>
+		<texture>World/WorldObjects/TN_FlagAlliance</texture>
+		<expandingIconTexture>World/WorldObjects/TN_FlagAlliance</expandingIconTexture>
+	</WorldObjectDef>
+
+	<WorldObjectDef ParentName="TN_ThreadFlagBase">
+		<defName>TN_FlagDrought</defName>
+		<label>drought region</label>
+		<description>This faction is under an active regional drought. Visited maps may receive the drought condition.</description>
+		<texture>World/WorldObjects/TN_FlagDrought</texture>
+		<expandingIconTexture>World/WorldObjects/TN_FlagDrought</expandingIconTexture>
+	</WorldObjectDef>
+
+</Defs>
